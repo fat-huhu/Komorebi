@@ -1,0 +1,211 @@
+{
+  "generatedAt": "2026-04-27T02:05:35.999Z",
+  "total": 5,
+  "posts": [
+    {
+      "slug": "2026/designing-motion-systems",
+      "title": "Designing Motion Systems That Feel Expensive",
+      "date": "2026-04-12",
+      "updated": "2026-04-18",
+      "summary": "用克制的时间曲线、延迟和层级关系，把页面动效做出一种不急不躁的“贵感”。",
+      "tags": [
+        "motion",
+        "ui",
+        "portfolio"
+      ],
+      "cover": null,
+      "category": "Motion",
+      "accent": "#ff7a1a",
+      "lang": "zh-CN",
+      "readingTime": 1,
+      "path": "2026/designing-motion-systems.json",
+      "headings": [
+        {
+          "depth": 1,
+          "text": "Designing Motion Systems That Feel Expensive",
+          "id": "designing-motion-systems-that-feel-expensive"
+        },
+        {
+          "depth": 2,
+          "text": "Delay is composition",
+          "id": "delay-is-composition"
+        },
+        {
+          "depth": 2,
+          "text": "Overshoot must be scarce",
+          "id": "overshoot-must-be-scarce"
+        },
+        {
+          "depth": 2,
+          "text": "Light should trail, not flood",
+          "id": "light-should-trail-not-flood"
+        }
+      ],
+      "indexLabel": "01"
+    },
+    {
+      "slug": "2026/dark-editorial-layouts",
+      "title": "Dark Editorial Layouts Without Losing Readability",
+      "date": "2026-04-04",
+      "updated": null,
+      "summary": "深色界面不是把背景调黑就行，真正决定可读性的，是密度、对比和节奏。",
+      "tags": [
+        "typography",
+        "layout",
+        "dark-mode"
+      ],
+      "cover": null,
+      "category": "Editorial UI",
+      "accent": "#6ee7ff",
+      "lang": "zh-CN",
+      "readingTime": 1,
+      "path": "2026/dark-editorial-layouts.json",
+      "headings": [
+        {
+          "depth": 1,
+          "text": "Dark Editorial Layouts Without Losing Readability",
+          "id": "dark-editorial-layouts-without-losing-readability"
+        },
+        {
+          "depth": 2,
+          "text": "Contrast by role",
+          "id": "contrast-by-role"
+        },
+        {
+          "depth": 2,
+          "text": "Dense is fine, muddy is not",
+          "id": "dense-is-fine-muddy-is-not"
+        },
+        {
+          "depth": 2,
+          "text": "Use light as punctuation",
+          "id": "use-light-as-punctuation"
+        }
+      ],
+      "indexLabel": "02"
+    },
+    {
+      "slug": "2026/identity-through-interactive-code",
+      "title": "Building Personal Identity Through Interactive Code",
+      "date": "2026-03-23",
+      "updated": null,
+      "summary": "个人主页真正有辨识度，不是靠一句自我介绍，而是靠页面的节奏、语言和交互细节一起说话。",
+      "tags": [
+        "branding",
+        "frontend",
+        "creative-coding"
+      ],
+      "cover": null,
+      "category": "Brand",
+      "accent": "#f95d9b",
+      "lang": "zh-CN",
+      "readingTime": 1,
+      "path": "2026/identity-through-interactive-code.json",
+      "headings": [
+        {
+          "depth": 1,
+          "text": "Building Personal Identity Through Interactive Code",
+          "id": "building-personal-identity-through-interactive-code"
+        },
+        {
+          "depth": 2,
+          "text": "Tone is interaction",
+          "id": "tone-is-interaction"
+        },
+        {
+          "depth": 2,
+          "text": "Repetition builds signature",
+          "id": "repetition-builds-signature"
+        },
+        {
+          "depth": 2,
+          "text": "Code is not just implementation",
+          "id": "code-is-not-just-implementation"
+        }
+      ],
+      "indexLabel": "03"
+    },
+    {
+      "slug": "2026/micro-interaction-physics",
+      "title": "Micro-Interaction Physics for Hover-Heavy Interfaces",
+      "date": "2026-03-08",
+      "updated": null,
+      "summary": "悬浮态最容易做得廉价。真正好看的 hover，不是更花，而是像有重量、有惯性。",
+      "tags": [
+        "hover",
+        "motion",
+        "interaction"
+      ],
+      "cover": null,
+      "category": "Interaction",
+      "accent": "#c7ff4d",
+      "lang": "zh-CN",
+      "readingTime": 1,
+      "path": "2026/micro-interaction-physics.json",
+      "headings": [
+        {
+          "depth": 1,
+          "text": "Micro-Interaction Physics for Hover-Heavy Interfaces",
+          "id": "micro-interaction-physics-for-hover-heavy-interfaces"
+        },
+        {
+          "depth": 2,
+          "text": "Tension before movement",
+          "id": "tension-before-movement"
+        },
+        {
+          "depth": 2,
+          "text": "Bounce needs direction",
+          "id": "bounce-needs-direction"
+        },
+        {
+          "depth": 2,
+          "text": "Motion should reveal structure",
+          "id": "motion-should-reveal-structure"
+        }
+      ],
+      "indexLabel": "04"
+    },
+    {
+      "slug": "2026/signal-over-noise",
+      "title": "Signal Over Noise in a Creative Developer Portfolio",
+      "date": "2026-02-28",
+      "updated": null,
+      "summary": "作品集最难的是控制欲。你能做很多效果，不代表每个效果都该同时出场。",
+      "tags": [
+        "portfolio",
+        "strategy",
+        "design"
+      ],
+      "cover": null,
+      "category": "Strategy",
+      "accent": "#ffb84d",
+      "lang": "zh-CN",
+      "readingTime": 1,
+      "path": "2026/signal-over-noise.json",
+      "headings": [
+        {
+          "depth": 1,
+          "text": "Signal Over Noise in a Creative Developer Portfolio",
+          "id": "signal-over-noise-in-a-creative-developer-portfolio"
+        },
+        {
+          "depth": 2,
+          "text": "Every effect spends attention",
+          "id": "every-effect-spends-attention"
+        },
+        {
+          "depth": 2,
+          "text": "Restraint is part of style",
+          "id": "restraint-is-part-of-style"
+        },
+        {
+          "depth": 2,
+          "text": "A portfolio must still communicate fast",
+          "id": "a-portfolio-must-still-communicate-fast"
+        }
+      ],
+      "indexLabel": "05"
+    }
+  ]
+}

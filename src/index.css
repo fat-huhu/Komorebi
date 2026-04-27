@@ -128,3 +128,204 @@
     @apply font-sans;
     }
 }
+
+@keyframes journal-mask {
+  0% {
+    clip-path: inset(0 0 100% 0);
+    opacity: 0;
+  }
+  20% {
+    clip-path: inset(0 0 0 0);
+    opacity: 1;
+  }
+  80% {
+    clip-path: inset(0 0 0 0);
+    opacity: 1;
+  }
+  100% {
+    clip-path: inset(100% 0 0 0);
+    opacity: 0;
+  }
+}
+
+@keyframes journal-bar-slide {
+  0% {
+    transform: translateX(-102%) scaleX(0.22);
+  }
+  30% {
+    transform: translateX(0%) scaleX(0.7);
+  }
+  55% {
+    transform: translateX(22%) scaleX(1);
+  }
+  75% {
+    transform: translateX(12%) scaleX(0.84);
+  }
+  100% {
+    transform: translateX(18%) scaleX(0.92);
+  }
+}
+
+@keyframes journal-pulse-bounce {
+  0% {
+    transform: translateX(-6px) translateY(0) scale(0.9);
+  }
+  25% {
+    transform: translateX(18px) translateY(-3px) scale(1);
+  }
+  55% {
+    transform: translateX(54px) translateY(2px) scale(1.12);
+  }
+  75% {
+    transform: translateX(44px) translateY(-2px) scale(0.98);
+  }
+  100% {
+    transform: translateX(56px) translateY(0) scale(1);
+  }
+}
+
+.journal-transition-mask {
+  animation: journal-mask 780ms cubic-bezier(0.77, 0, 0.18, 1) both;
+}
+
+.journal-search-shell {
+  position: relative;
+  background:
+    linear-gradient(135deg, rgb(255 126 68 / 0.2), rgb(255 214 106 / 0.08) 26%, rgb(125 211 252 / 0.08) 58%, rgb(217 70 239 / 0.16));
+  box-shadow:
+    0 10px 30px rgb(0 0 0 / 0.28),
+    0 0 0 1px rgb(255 255 255 / 0.03) inset;
+}
+
+.journal-search-shell::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(
+    120deg,
+    rgb(255 255 255 / 0.14),
+    rgb(255 166 87 / 0.16) 25%,
+    rgb(121 187 255 / 0.12) 56%,
+    rgb(238 130 238 / 0.14)
+  );
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.journal-search {
+  overflow: hidden;
+  border-radius: inherit;
+  box-shadow:
+    0 0 0 1px rgb(255 255 255 / 0.02) inset,
+    0 18px 45px rgb(0 0 0 / 0.32);
+}
+
+.journal-search-inner {
+  position: relative;
+  overflow: hidden;
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 0.045),
+    inset 0 -1px 0 rgb(255 255 255 / 0.015);
+}
+
+.journal-search-inner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background:
+    radial-gradient(120% 100% at 0% 0%, rgb(255 197 143 / 0.08), transparent 38%),
+    radial-gradient(100% 100% at 100% 100%, rgb(121 187 255 / 0.07), transparent 34%);
+  pointer-events: none;
+}
+
+.journal-row::before {
+  content: "";
+  position: absolute;
+  inset: 12px -18px;
+  opacity: 0;
+  background:
+    linear-gradient(90deg, transparent 0%, color-mix(in oklab, var(--journal-accent) 12%, transparent) 18%, transparent 58%),
+    linear-gradient(180deg, rgb(255 255 255 / 0.03), transparent 65%);
+  filter: blur(0px);
+  transition:
+    opacity 420ms ease,
+    transform 420ms ease;
+  transform: scale(0.985);
+}
+
+.journal-row:hover::before {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.journal-signal {
+  position: relative;
+  width: min(240px, 52vw);
+  height: 20px;
+}
+
+.journal-signal__line,
+.journal-signal__bar,
+.journal-signal__pulse {
+  position: absolute;
+  left: 0;
+}
+
+.journal-signal__line {
+  top: 10px;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, rgb(255 255 255 / 0.3), rgb(255 255 255 / 0.08));
+}
+
+.journal-signal__bar {
+  top: 8px;
+  width: 118px;
+  height: 5px;
+  border-radius: 999px;
+  background: linear-gradient(
+    90deg,
+    color-mix(in oklab, var(--journal-accent) 82%, white 8%),
+    color-mix(in oklab, var(--journal-accent) 55%, transparent)
+  );
+  transform: translateX(-102%) scaleX(0.2);
+  transform-origin: left center;
+  opacity: 0.86;
+  box-shadow: 0 0 24px color-mix(in oklab, var(--journal-accent) 44%, transparent);
+}
+
+.journal-signal__pulse {
+  top: 5px;
+  width: 11px;
+  height: 11px;
+  border-radius: 999px;
+  background: var(--journal-accent);
+  box-shadow:
+    0 0 0 1px rgb(255 255 255 / 0.15),
+    0 0 18px color-mix(in oklab, var(--journal-accent) 72%, transparent);
+  transform: translateX(-6px) scale(0.9);
+}
+
+.journal-row:hover .journal-signal__bar {
+  animation: journal-bar-slide 880ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.journal-row:hover .journal-signal__pulse {
+  animation: journal-pulse-bounce 880ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.journal-arrow {
+  filter: drop-shadow(0 0 0 transparent);
+}
+
+.journal-row:hover .journal-arrow {
+  filter: drop-shadow(0 0 12px color-mix(in oklab, var(--journal-accent) 55%, transparent));
+}
