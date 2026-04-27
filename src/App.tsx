@@ -468,7 +468,7 @@ function JournalIndex({
               Editorial Index
             </div>
 
-            <h1 className="max-w-[920px] text-[clamp(3rem,9vw,8.5rem)] font-black uppercase leading-[0.9] tracking-[-0.04em] text-white">
+            <h1 className="max-w-230 text-[clamp(3rem,9vw,8.5rem)] font-black uppercase leading-[0.9] tracking-[-0.04em] text-white">
               Journal
             </h1>
             <p className="mt-5 max-w-2xl text-sm leading-7 text-white/62 md:text-base">
