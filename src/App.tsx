@@ -478,7 +478,7 @@ function JournalIndex({
           </div>
 
           <div className="w-full max-w-105 lg:pb-2">
-            <div className="journal-search-shell rounded-[28px] p-[1px]">
+            <div className="journal-search-shell rounded-[28px] p-px">
               <BorderBeam
                 size="line"
                 theme="dark"
