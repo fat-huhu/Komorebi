@@ -477,7 +477,7 @@ function JournalIndex({
             </p>
           </div>
 
-          <div className="w-full max-w-[420px] lg:pb-2">
+          <div className="w-full max-w-105 lg:pb-2">
             <div className="journal-search-shell rounded-[28px] p-[1px]">
               <BorderBeam
                 size="line"
@@ -572,7 +572,9 @@ function JournalIndex({
                   <div className="text-[11px] uppercase tracking-[0.36em] text-white/26">
                     {formatPostDate(entry.date)}
                   </div>
-                  <div className="mt-2 text-sm text-white/56">{formatReadTime(entry.readingTime)}</div>
+                  <div className="mt-2 text-sm text-white/56">
+                    {formatReadTime(entry.readingTime)}
+                  </div>
                 </div>
                 <div className="flex flex-wrap gap-2 md:justify-end">
                   {entry.tags.map((tag) => (
@@ -604,13 +606,7 @@ function JournalIndex({
   )
 }
 
-function ArticleView({
-  summary,
-  onBack,
-}: {
-  summary: PostSummary
-  onBack: () => void
-}) {
+function ArticleView({ summary, onBack }: { summary: PostSummary; onBack: () => void }) {
   const [article, setArticle] = useState<PostDetail | null>(null)
   const [loadError, setLoadError] = useState<string | null>(null)
 
@@ -720,7 +716,10 @@ function ArticleView({
                   <div className="text-[10px] uppercase tracking-[0.34em] text-white/28">Media</div>
                   <div className="mt-4 space-y-3">
                     {detail.media.map((item) => (
-                      <div key={item.src} className="rounded-2xl border border-white/8 bg-black/20 p-3 text-xs text-white/44">
+                      <div
+                        key={item.src}
+                        className="rounded-2xl border border-white/8 bg-black/20 p-3 text-xs text-white/44"
+                      >
                         {item.fileName}
                       </div>
                     ))}
@@ -736,10 +735,15 @@ function ArticleView({
                 {loadError}
               </div>
             ) : article ? (
-              <article className="article-prose" dangerouslySetInnerHTML={{ __html: article.html }} />
+              <article
+                className="article-prose"
+                dangerouslySetInnerHTML={{ __html: article.html }}
+              />
             ) : (
               <div className="rounded-[28px] border border-dashed border-white/10 px-8 py-12">
-                <div className="text-[11px] uppercase tracking-[0.42em] text-white/28">Loading Article</div>
+                <div className="text-[11px] uppercase tracking-[0.42em] text-white/28">
+                  Loading Article
+                </div>
                 <div className="article-loading-bar mt-6 h-[3px] overflow-hidden rounded-full bg-white/8">
                   <span className="block h-full w-40 article-loading-bar__fill rounded-full bg-[var(--article-accent)]" />
                 </div>
@@ -749,7 +753,9 @@ function ArticleView({
 
           <aside className="article-stage article-stage--meta hidden xl:block">
             <div className="sticky top-8 rounded-[24px] border border-white/8 bg-white/[0.025] p-5 backdrop-blur-xl">
-              <div className="text-[10px] uppercase tracking-[0.34em] text-white/28">Reading Trace</div>
+              <div className="text-[10px] uppercase tracking-[0.34em] text-white/28">
+                Reading Trace
+              </div>
               <div className="mt-5 space-y-6">
                 {detail.headings.map((heading) => (
                   <div key={heading.id} className="border-l border-white/10 pl-4">
@@ -842,7 +848,7 @@ export function App() {
       </div>
 
       <div
-        className={`transition duration-700 ${(view === 'journal' || view === 'article') ? 'opacity-100' : 'pointer-events-none opacity-0'}`}
+        className={`transition duration-700 ${view === 'journal' || view === 'article' ? 'opacity-100' : 'pointer-events-none opacity-0'}`}
       >
         {view === 'journal' ? (
           <JournalIndex
