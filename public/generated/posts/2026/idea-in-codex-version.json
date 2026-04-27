@@ -1,0 +1,27 @@
+{
+  "slug": "2026/idea-in-codex-version",
+  "title": "在idea中更新其托管codex版本",
+  "date": "2026-04-25",
+  "updated": null,
+  "summary": "解决idea默认覆盖版本问题",
+  "tags": [
+    "ide"
+  ],
+  "cover": null,
+  "category": "ide",
+  "accent": "#ff7a1a",
+  "lang": "zh-CN",
+  "readingTime": 1,
+  "path": "2026/idea-in-codex-version.json",
+  "headings": [],
+  "media": [
+    {
+      "alt": "img.png",
+      "src": "generated/media/2026/idea-in-codex-version/img.png",
+      "fileName": "img.png"
+    }
+  ],
+  "indexLabel": "01",
+  "html": "<p>idea会默认检查codex版本，其他托管agent应该同理<br>首选去GitHub下载新版codex <a href=\"https://github.com/openai/codex/releases/\" rel=\"noreferrer\" target=\"_blank\">https://github.com/openai/codex/releases/</a><br>codex-x86_64-pc-windows-msvc.exe.zip<br>然后替换idea的本地托管文件<br>重点来了，在idea内搜索注册表，注册表内搜索codex，修改版本号<br><figure class=\"article-media\"><img src=\"generated/media/2026/idea-in-codex-version/img.png\" alt=\"img.png\" loading=\"lazy\" /><figcaption>img.png</figcaption></figure><br>重启即可使用新版codex</p>\n",
+  "plainText": "idea会默认检查codex版本，其他托管agent应该同理 首选去GitHub下载新版codex https://github.com/openai/codex/releases/ codex x86 64 pc windows msvc.exe.zip 然后替换idea的本地托管文件 重点来了，在idea内搜索注册表，注册表内搜索codex，修改版本号 重启即可使用新版codex"
+}

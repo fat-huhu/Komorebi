@@ -648,3 +648,281 @@
 .article-prose .hljs-type {
   color: #d8a5ff;
 }
+
+@keyframes row-enter {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+    filter: blur(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+.journal-row-enter {
+  animation: row-enter 500ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@media (pointer: coarse) {
+  .cursor-follower {
+    display: none;
+  }
+}
+
+/* ── VoidSlash ───────────────────────────────────────────── */
+
+.void-fragment {
+  will-change: transform, opacity;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  contain: layout paint style;
+  background: #020816;
+}
+
+.void-fragment-reality {
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+.void-fragment-reality--cyan,
+.void-fragment-reality--red {
+  opacity: 0.18;
+  mix-blend-mode: screen;
+}
+
+.void-fragment-reality--cyan {
+  filter: saturate(0) brightness(1.15) sepia(1) hue-rotate(135deg);
+  transform: translate3d(3px, 0, 0);
+}
+
+.void-fragment-reality--red {
+  filter: saturate(0) brightness(1.1) sepia(1) hue-rotate(-48deg);
+  transform: translate3d(-3px, 0, 0);
+}
+
+/* chromatic aberration flicker on slash peak */
+@keyframes void-aberration {
+  0%   { text-shadow: -3px 0 #ff003c, 3px 0 #00f0ff; filter: brightness(1.4); }
+  25%  { text-shadow: 3px 0 #ff003c, -3px 0 #00f0ff; filter: brightness(1.8); }
+  50%  { text-shadow: -2px 0 #ff003c, 2px 0 #00f0ff; filter: brightness(1.2); }
+  75%  { text-shadow: 2px 0 #ff003c, -2px 0 #00f0ff; filter: brightness(2.0); }
+  100% { text-shadow: none; filter: brightness(1); }
+}
+
+.void-aberration-active h1,
+.void-aberration-active p {
+  animation: void-aberration 0.18s steps(1) infinite;
+}
+
+/* ── Works Cards ─────────────────────────────────────────── */
+
+@keyframes works-card-in {
+  0% {
+    opacity: 0;
+    transform: var(--card-enter-transform) scale(0.72);
+    filter: blur(22px) brightness(2.4);
+  }
+  40% {
+    opacity: 1;
+    filter: blur(0) brightness(1.2);
+  }
+  70% {
+    transform: var(--card-settle-transform) scale(1.03);
+  }
+  100% {
+    transform: translate(0, 0) rotateY(0deg) scale(1);
+    filter: blur(0) brightness(1);
+  }
+}
+
+@keyframes works-card-out {
+  0% { opacity: 1; transform: translate(0,0) scale(1); filter: blur(0); }
+  100% { opacity: 0; transform: var(--card-enter-transform) scale(0.72); filter: blur(22px); }
+}
+
+@keyframes holo-shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+@keyframes scanline-drift {
+  0%   { transform: translateY(-100%); }
+  100% { transform: translateY(100vh); }
+}
+
+@keyframes glitch-x {
+  0%, 100% { clip-path: inset(0 0 96% 0); transform: translateX(0); }
+  20%       { clip-path: inset(14% 0 72% 0); transform: translateX(-4px); }
+  40%       { clip-path: inset(44% 0 38% 0); transform: translateX(4px); }
+  60%       { clip-path: inset(68% 0 18% 0); transform: translateX(-2px); }
+  80%       { clip-path: inset(82% 0 4% 0);  transform: translateX(3px); }
+}
+
+@keyframes glitch-y {
+  0%, 100% { clip-path: inset(0 0 96% 0); transform: translateX(0); }
+  20%       { clip-path: inset(8% 0 80% 0);  transform: translateX(5px); }
+  40%       { clip-path: inset(36% 0 52% 0); transform: translateX(-5px); }
+  60%       { clip-path: inset(60% 0 28% 0); transform: translateX(3px); }
+  80%       { clip-path: inset(78% 0 10% 0); transform: translateX(-3px); }
+}
+
+@keyframes particle-burst {
+  0%   { transform: translate(0,0) scale(1); opacity: 1; }
+  100% { transform: translate(var(--px), var(--py)) scale(0); opacity: 0; }
+}
+
+@keyframes border-orbit {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes card-float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  33%       { transform: translateY(-6px) rotate(0.4deg); }
+  66%       { transform: translateY(3px) rotate(-0.3deg); }
+}
+
+.works-card {
+  position: relative;
+  animation: works-card-in 1.1s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.works-card::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(
+    135deg,
+    var(--card-color-a) 0%,
+    transparent 40%,
+    transparent 60%,
+    var(--card-color-b) 100%
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+  animation: border-orbit 4s linear infinite;
+  background-size: 200% 200%;
+}
+
+.works-card:hover::before {
+  opacity: 1;
+}
+
+.works-card__holo {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(
+    105deg,
+    transparent 20%,
+    rgba(255,255,255,0.06) 30%,
+    rgba(255,255,255,0.12) 40%,
+    rgba(255,255,255,0.06) 50%,
+    transparent 60%
+  );
+  background-size: 200% 100%;
+  animation: holo-shimmer 3.5s linear infinite;
+  pointer-events: none;
+  mix-blend-mode: screen;
+}
+
+.works-card__scanline {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.works-card__scanline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--card-color-a), transparent);
+  opacity: 0.35;
+  animation: scanline-drift 3s linear infinite;
+}
+
+.works-card__glitch {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.works-card:hover .works-card__glitch {
+  opacity: 1;
+}
+
+.works-card__glitch::before,
+.works-card__glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.works-card__glitch::before {
+  color: #ff003c;
+  animation: glitch-x 0.6s steps(1) infinite;
+}
+
+.works-card__glitch::after {
+  color: #00f0ff;
+  animation: glitch-y 0.6s steps(1) infinite 0.1s;
+}
+
+.works-card--float {
+  animation: works-card-in 1.1s cubic-bezier(0.16, 1, 0.3, 1) both,
+             card-float 6s ease-in-out infinite 1.2s;
+}
+
+.works-card__tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  border: 1px solid var(--card-color-a);
+  color: var(--card-color-a);
+  background: color-mix(in oklab, var(--card-color-a) 8%, transparent);
+  transition: background 0.25s, color 0.25s;
+}
+
+.works-card:hover .works-card__tag {
+  background: color-mix(in oklab, var(--card-color-a) 18%, transparent);
+}
+.fragment {
+    /* 每一个碎片的边缘加上冷蓝色的发光，模拟次元切断的能量 */
+    box-shadow: inset 0 0 15px rgba(0, 140, 255, 0.4);
+    filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.8));
+    will-change: transform, opacity;
+}
+
+/* 第一屏容器的基础样式修正 */
+.hero-container {
+    background-attachment: fixed;
+    background-size: cover;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}

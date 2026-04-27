@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -v \"^ui$\")",
+      "Bash(npx tsc *)",
+      "WebFetch(domain:music.163.com)",
+      "WebFetch(domain:u.cmread.com)",
+      "WebFetch(domain:n.cmread.com)",
+      "WebSearch",
+      "Bash(npm list *)",
+      "Bash(npm install *)",
+      "Bash(node -e ' *)",
+      "Bash(node -e \"const fs=require\\('fs'\\);const src=fs.readFileSync\\('C:/Users/31899/WebstormProjects/Komorebi/Komorebi/src/components/HomeExperience.tsx','utf8'\\);let d=0,max=0,maxLine=0;const lines=src.split\\('\\\\n'\\);for\\(let i=0;i<lines.length;i++\\){const l=lines[i];for\\(const c of l\\){if\\(c==='{'\\)d++;if\\(c==='}'\\)d--;}if\\(d===0&&i>170&&i<lines.length-3\\)console.log\\('depth=0 at line',i+1,':',lines[i].trim\\(\\).slice\\(0,60\\)\\);}console.log\\('final depth:',d\\);\")",
+      "Bash(node -e \"const fs=require\\('fs'\\);const src=fs.readFileSync\\('C:/Users/31899/WebstormProjects/Komorebi/Komorebi/src/components/HomeExperience.tsx','utf8'\\);let d=0;for\\(const c of src\\){if\\(c==='{'\\)d++;if\\(c==='}'\\)d--;}console.log\\('final depth:',d,'lines:',src.split\\('\\\\n'\\).length\\);\")",
+      "Bash(node -e \"const fs=require\\('fs'\\);const lines=fs.readFileSync\\('C:/Users/31899/WebstormProjects/Komorebi/Komorebi/src/components/HomeExperience.tsx','utf8'\\).split\\('\\\\n'\\);console.log\\(lines[lines.length-1]\\);\")"
+    ]
+  }
+}
