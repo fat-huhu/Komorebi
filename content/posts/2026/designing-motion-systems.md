@@ -22,6 +22,8 @@ lang: zh-CN
 
 延迟不是附属品，它本身就是视觉构图的一部分。标题、辅助信息、装饰性高光不应该同时出现，它们要像同一段呼吸里的不同拍点。
 
+![Motion spectrum diagram](./assets/motion-spectrum.svg)
+
 ## Overshoot must be scarce
 
 弹性和回弹很容易让界面显得有触感，但如果到处都在弹，质感会立刻掉下来。回弹应该只给真正的焦点元素，比如主按钮、hover signal、关键状态确认。
@@ -29,3 +31,24 @@ lang: zh-CN
 ## Light should trail, not flood
 
 高光和 beam 动效不要铺满整个界面。让它只在边缘、底线或者交互焦点上短暂扫过，页面就会更像精密仪表，而不是演示模板。
+
+```ts
+const spring = {
+  tension: 210,
+  friction: 18,
+  mass: 0.9,
+}
+
+const revealSequence = ['title', 'meta', 'signal', 'supporting-copy']
+
+export function stageReveal(index: number) {
+  return {
+    opacity: 1,
+    y: 0,
+    transition: {
+      ...spring,
+      delay: index * 0.045,
+    },
+  }
+}
+```

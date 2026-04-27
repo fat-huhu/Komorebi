@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-27T02:05:35.999Z",
+  "generatedAt": "2026-04-27T02:29:35.018Z",
   "total": 5,
   "posts": [
     {
@@ -39,6 +39,13 @@
           "depth": 2,
           "text": "Light should trail, not flood",
           "id": "light-should-trail-not-flood"
+        }
+      ],
+      "media": [
+        {
+          "alt": "Motion spectrum diagram",
+          "src": "generated/media/2026/designing-motion-systems/motion-spectrum.svg",
+          "fileName": "motion-spectrum.svg"
         }
       ],
       "indexLabel": "01"
@@ -82,6 +89,7 @@
           "id": "use-light-as-punctuation"
         }
       ],
+      "media": [],
       "indexLabel": "02"
     },
     {
@@ -123,6 +131,7 @@
           "id": "code-is-not-just-implementation"
         }
       ],
+      "media": [],
       "indexLabel": "03"
     },
     {
@@ -164,6 +173,7 @@
           "id": "motion-should-reveal-structure"
         }
       ],
+      "media": [],
       "indexLabel": "04"
     },
     {
@@ -205,6 +215,7 @@
           "id": "a-portfolio-must-still-communicate-fast"
         }
       ],
+      "media": [],
       "indexLabel": "05"
     }
   ]

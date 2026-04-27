@@ -12,7 +12,13 @@ export type PostSummary = {
   readingTime: number
   path: string
   headings: Array<{ depth: number; text: string; id: string }>
+  media: Array<{ alt: string; src: string; fileName: string }>
   indexLabel: string
+}
+
+export type PostDetail = PostSummary & {
+  html: string
+  plainText: string
 }
 
 export type PostsManifest = {
@@ -24,12 +30,7 @@ export type PostsManifest = {
 export type SearchIndex = {
   version: number
   generatedAt: string
-  documents: Array<
-    Pick<
-      PostSummary,
-      'slug' | 'title' | 'summary' | 'date' | 'updated' | 'category' | 'accent' | 'tags' | 'lang' | 'readingTime' | 'indexLabel'
-    >
-  >
+  documents: PostSummary[]
   postings: Record<string, Array<[string, number]>>
 }
 
@@ -41,6 +42,10 @@ export async function loadPostsManifest() {
 
 export async function loadSearchIndex() {
   return fetchJson<SearchIndex>(generatedPath('search-index.json'))
+}
+
+export async function loadPostDetail(postPath: string) {
+  return fetchJson<PostDetail>(generatedPath(`posts/${postPath}`))
 }
 
 export function searchPosts(index: SearchIndex, query: string) {

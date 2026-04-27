@@ -2,6 +2,8 @@ import fs from 'node:fs/promises'
 import path from 'node:path'
 import matter from 'gray-matter'
 import { marked } from 'marked'
+import hljs from 'highlight.js'
+import { markedHighlight } from 'marked-highlight'
 
 const rootDir = process.cwd()
 const contentDir = path.join(rootDir, 'content', 'posts')
@@ -10,9 +12,36 @@ const postsOutputDir = path.join(outputDir, 'posts')
 
 const ACCENTS = ['#ff7a1a', '#6ee7ff', '#f95d9b', '#c7ff4d', '#ffb84d', '#9b8cff']
 
+marked.use(
+  markedHighlight({
+    langPrefix: 'hljs language-',
+    emptyLangClass: 'hljs',
+    highlight(code, language) {
+      if (language && hljs.getLanguage(language)) {
+        return hljs.highlight(code, { language }).value
+      }
+      return hljs.highlightAuto(code).value
+    },
+  }),
+)
+
+const renderer = new marked.Renderer()
+renderer.image = ({ href, title, text }) => {
+  const caption = text ? `<figcaption>${escapeHtml(text)}</figcaption>` : ''
+  const titleAttr = title ? ` title="${escapeHtml(title)}"` : ''
+  return `<figure class="article-media"><img src="${escapeHtml(href || '')}" alt="${escapeHtml(text || '')}" loading="lazy"${titleAttr} />${caption}</figure>`
+}
+renderer.link = ({ href, title, text }) => {
+  const titleAttr = title ? ` title="${escapeHtml(title)}"` : ''
+  const isExternal = href ? /^https?:\/\//i.test(href) : false
+  const rel = isExternal ? ' rel="noreferrer"' : ''
+  const target = isExternal ? ' target="_blank"' : ''
+  return `<a href="${escapeHtml(href || '')}"${titleAttr}${rel}${target}>${text}</a>`
+}
 marked.setOptions({
   gfm: true,
   breaks: false,
+  renderer,
 })
 
 async function main() {
@@ -38,9 +67,10 @@ async function main() {
     const category = String(data.category || 'Notes')
     const accent = String(data.accent || ACCENTS[posts.length % ACCENTS.length])
     const tags = Array.isArray(data.tags) ? data.tags.map((tag) => String(tag)) : []
-    const plainText = markdownToPlainText(content)
+    const { markdown: preparedMarkdown, media } = await prepareMarkdownAssets(content, filePath, slug)
+    const plainText = markdownToPlainText(preparedMarkdown)
     const headings = extractHeadings(content)
-    const html = await marked.parse(content)
+    const html = unwrapBlockFigures(await marked.parse(preparedMarkdown))
     const readingTime = calculateReadingTimeMinutes(plainText)
     const articleOutputPath = path.join(postsOutputDir, `${slug}.json`)
 
@@ -60,6 +90,7 @@ async function main() {
       readingTime,
       path: `${slug}.json`,
       headings,
+      media,
     }
 
     posts.push({
@@ -98,24 +129,10 @@ async function main() {
     })
   }
 
-  const searchDocuments = manifestPosts.map((post) => ({
-    slug: post.slug,
-    title: post.title,
-    summary: post.summary,
-    date: post.date,
-    updated: post.updated,
-    category: post.category,
-    accent: post.accent,
-    tags: post.tags,
-    readingTime: post.readingTime,
-    lang: post.lang,
-    indexLabel: post.indexLabel,
-  }))
-
   const searchIndex = {
     version: 1,
     generatedAt: new Date().toISOString(),
-    documents: searchDocuments,
+    documents: manifestPosts,
     postings: Object.fromEntries(
       [...searchPostings.entries()]
         .sort((a, b) => a[0].localeCompare(b[0]))
@@ -165,6 +182,39 @@ async function writeJson(filePath, data) {
   await fs.writeFile(filePath, `${JSON.stringify(data, null, 2)}\n`, 'utf8')
 }
 
+async function prepareMarkdownAssets(markdown, markdownPath, slug) {
+  const media = []
+  let preparedMarkdown = markdown
+  const matches = [...markdown.matchAll(/!\[([^\]]*)]\(([^)\s]+)(?:\s+"([^"]*)")?\)/g)]
+
+  for (const match of matches) {
+    const [, alt, originalHref] = match
+    if (isRemoteAsset(originalHref) || originalHref.startsWith('/')) continue
+
+    const sourcePath = path.resolve(path.dirname(markdownPath), originalHref)
+    const assetStat = await fs.stat(sourcePath)
+    if (!assetStat.isFile()) continue
+
+    const fileName = path.basename(sourcePath)
+    const outputPath = path.join(outputDir, 'media', slug, fileName)
+    const outputHref = `generated/media/${slug}/${fileName}`.replace(/\\/g, '/')
+
+    await fs.mkdir(path.dirname(outputPath), { recursive: true })
+    await fs.copyFile(sourcePath, outputPath)
+    preparedMarkdown = preparedMarkdown.replace(originalHref, outputHref)
+    media.push({
+      alt: alt || '',
+      src: outputHref,
+      fileName,
+    })
+  }
+
+  return {
+    markdown: preparedMarkdown,
+    media,
+  }
+}
+
 function markdownToPlainText(markdown) {
   return markdown
     .replace(/```[\s\S]*?```/g, ' ')
@@ -211,6 +261,10 @@ function normalizeDateValue(value) {
     return `${year}-${month}-${day}`
   }
   return String(value)
+}
+
+function isRemoteAsset(value) {
+  return /^https?:\/\//i.test(value) || value.startsWith('data:')
 }
 
 function tokenize(input, options = {}) {
@@ -266,6 +320,18 @@ function slugify(value) {
     .toLowerCase()
     .replace(/[\s/]+/g, '-')
     .replace(/[^\p{Letter}\p{Number}-]+/gu, '')
+}
+
+function escapeHtml(value) {
+  return value
+    .replaceAll('&', '&amp;')
+    .replaceAll('<', '&lt;')
+    .replaceAll('>', '&gt;')
+    .replaceAll('"', '&quot;')
+}
+
+function unwrapBlockFigures(html) {
+  return html.replace(/<p>(\s*<figure class="article-media">[\s\S]*?<\/figure>\s*)<\/p>/g, '$1')
 }
 
 main().catch((error) => {
