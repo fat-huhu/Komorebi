@@ -1,7 +1,13 @@
 import type { CSSProperties } from 'react'
 import { useEffect, useState } from 'react'
 import { ArrowLeft } from 'lucide-react'
-import { formatPostDate, formatReadTime, loadPostDetail, type PostDetail, type PostSummary } from '@/lib/blog'
+import {
+  formatPostDate,
+  formatReadTime,
+  loadPostDetail,
+  type PostDetail,
+  type PostSummary,
+} from '@/lib/blog'
 
 function useReadingProgress() {
   const [progress, setProgress] = useState(0)
@@ -32,7 +38,9 @@ function useActiveHeading(article: PostDetail | null) {
       },
       { rootMargin: '-15% 0% -70% 0%' },
     )
-    document.querySelectorAll('.article-prose h1, .article-prose h2, .article-prose h3').forEach((el) => observer.observe(el))
+    document
+      .querySelectorAll('.article-prose h1, .article-prose h2, .article-prose h3')
+      .forEach((el) => observer.observe(el))
     return () => observer.disconnect()
   }, [article])
   return activeId
@@ -47,9 +55,16 @@ export function ArticleView({ summary, onBack }: { summary: PostSummary; onBack:
   useEffect(() => {
     let isMounted = true
     loadPostDetail(summary.path)
-      .then((detail) => { if (isMounted) setArticle(detail) })
-      .catch((error) => { if (isMounted) setLoadError(error instanceof Error ? error.message : 'Unable to load article.') })
-    return () => { isMounted = false }
+      .then((detail) => {
+        if (isMounted) setArticle(detail)
+      })
+      .catch((error) => {
+        if (isMounted)
+          setLoadError(error instanceof Error ? error.message : 'Unable to load article.')
+      })
+    return () => {
+      isMounted = false
+    }
   }, [summary.path])
 
   const detail = article ?? summary
@@ -92,7 +107,7 @@ export function ArticleView({ summary, onBack }: { summary: PostSummary; onBack:
                 <span className="h-px flex-1 bg-white/10" />
                 <span>{detail.category}</span>
               </div>
-              <h1 className="article-stage article-stage--title max-w-6xl text-[clamp(2rem,5vw,5.5rem)] font-black uppercase leading-[0.9] tracking-[-0.05em] text-white">
+              <h1 className="article-stage article-stage--title max-w-6xl text-[clamp(2rem,2vw,3rem)] font-black uppercase leading-[0.9] tracking-[-0.05em] text-white">
                 {detail.title}
               </h1>
               <div className="mt-8 flex flex-wrap items-center gap-x-5 gap-y-3 text-[11px] uppercase tracking-[0.34em] text-white/36">
@@ -129,7 +144,10 @@ export function ArticleView({ summary, onBack }: { summary: PostSummary; onBack:
               <div className="text-[10px] uppercase tracking-[0.34em] text-white/28">Signals</div>
               <div className="mt-5 flex flex-wrap gap-2">
                 {detail.tags.map((tag) => (
-                  <span key={tag} className="rounded-full border border-white/10 px-3 py-1 text-[10px] uppercase tracking-[0.24em] text-white/48">
+                  <span
+                    key={tag}
+                    className="rounded-full border border-white/10 px-3 py-1 text-[10px] uppercase tracking-[0.24em] text-white/48"
+                  >
                     {tag}
                   </span>
                 ))}
@@ -139,7 +157,10 @@ export function ArticleView({ summary, onBack }: { summary: PostSummary; onBack:
                   <div className="text-[10px] uppercase tracking-[0.34em] text-white/28">Media</div>
                   <div className="mt-4 space-y-3">
                     {detail.media.map((item) => (
-                      <div key={item.src} className="rounded-2xl border border-white/8 bg-black/20 p-3 text-xs text-white/44">
+                      <div
+                        key={item.src}
+                        className="rounded-2xl border border-white/8 bg-black/20 p-3 text-xs text-white/44"
+                      >
                         {item.fileName}
                       </div>
                     ))}
@@ -151,12 +172,19 @@ export function ArticleView({ summary, onBack }: { summary: PostSummary; onBack:
 
           <main className="article-stage article-stage--body">
             {loadError ? (
-              <div className="rounded-[28px] border border-dashed border-white/10 px-8 py-10 text-sm text-amber-200/72">{loadError}</div>
+              <div className="rounded-[28px] border border-dashed border-white/10 px-8 py-10 text-sm text-amber-200/72">
+                {loadError}
+              </div>
             ) : article ? (
-              <article className="article-prose" dangerouslySetInnerHTML={{ __html: article.html }} />
+              <article
+                className="article-prose"
+                dangerouslySetInnerHTML={{ __html: article.html }}
+              />
             ) : (
               <div className="rounded-[28px] border border-dashed border-white/10 px-8 py-12">
-                <div className="text-[11px] uppercase tracking-[0.42em] text-white/28">Loading Article</div>
+                <div className="text-[11px] uppercase tracking-[0.42em] text-white/28">
+                  Loading Article
+                </div>
                 <div className="article-loading-bar mt-6 h-[3px] overflow-hidden rounded-full bg-white/8">
                   <span className="block h-full w-40 article-loading-bar__fill rounded-full bg-[var(--article-accent)]" />
                 </div>
@@ -166,7 +194,9 @@ export function ArticleView({ summary, onBack }: { summary: PostSummary; onBack:
 
           <aside className="article-stage article-stage--meta hidden xl:block">
             <div className="sticky top-8 rounded-[24px] border border-white/8 bg-white/[0.025] p-5 backdrop-blur-xl">
-              <div className="text-[10px] uppercase tracking-[0.34em] text-white/28">Reading Trace</div>
+              <div className="text-[10px] uppercase tracking-[0.34em] text-white/28">
+                Reading Trace
+              </div>
               <div className="mt-5 space-y-6">
                 {detail.headings.map((heading) => (
                   <a
@@ -178,8 +208,12 @@ export function ArticleView({ summary, onBack }: { summary: PostSummary; onBack:
                         : 'border-white/10 hover:border-white/30'
                     }`}
                   >
-                    <div className="text-[10px] uppercase tracking-[0.28em] text-white/22">H{heading.depth}</div>
-                    <div className={`mt-2 text-sm leading-6 transition-colors duration-200 ${activeHeading === heading.id ? 'text-white/80' : 'text-white/54'}`}>
+                    <div className="text-[10px] uppercase tracking-[0.28em] text-white/22">
+                      H{heading.depth}
+                    </div>
+                    <div
+                      className={`mt-2 text-sm leading-6 transition-colors duration-200 ${activeHeading === heading.id ? 'text-white/80' : 'text-white/54'}`}
+                    >
                       {heading.text}
                     </div>
                   </a>

@@ -18,11 +18,13 @@ export function JournalIndex({
   onQueryChange,
   onBack,
   onOpenArticle,
+  onOpenResources,
 }: {
   query: string
   onQueryChange: (value: string) => void
   onBack: () => void
   onOpenArticle: (entry: PostSummary, rect: DOMRect) => void
+  onOpenResources: () => void
 }) {
   const [pointer, setPointer] = useState({ x: 0, y: 0 })
   const [posts, setPosts] = useState<PostSummary[]>([])
@@ -94,7 +96,18 @@ export function JournalIndex({
               Notes on motion, layout systems, visual identity, and frontend craft. Built as an index, not a feed.
             </p>
           </div>
-          <div className="w-full max-w-105 lg:pb-2">
+          <div className="w-full max-w-[440px] space-y-4 lg:pb-2">
+            <div className="inline-flex w-fit rounded-full border border-white/10 bg-white/[0.03] p-1">
+              <button className="rounded-full border border-white/10 bg-white/[0.08] px-4 py-2 text-[11px] uppercase tracking-[0.28em] text-white">
+                Journal
+              </button>
+              <button
+                onClick={onOpenResources}
+                className="rounded-full px-4 py-2 text-[11px] uppercase tracking-[0.28em] text-white/46 transition hover:text-white"
+              >
+                Resources
+              </button>
+            </div>
             <div className="journal-search-shell rounded-[28px] p-px">
               <BorderBeam
                 size="line"

@@ -5,8 +5,9 @@ import { CursorFollower } from '@/components/CursorFollower'
 import { HomeExperience } from '@/components/HomeExperience'
 import { JournalIndex } from '@/components/JournalIndex'
 import { ArticleView } from '@/components/ArticleView'
+import { ResourcesIndex } from '@/components/ResourcesIndex'
 
-type View = 'home' | 'journal' | 'article'
+type View = 'home' | 'journal' | 'article' | 'resources'
 type TransitionState = 'idle' | 'to-journal' | 'to-home'
 
 type ArticleLaunch = {
@@ -26,6 +27,7 @@ export function App() {
   const [view, setView] = useState<View>('home')
   const [transitionState, setTransitionState] = useState<TransitionState>('idle')
   const [query, setQuery] = useState('')
+  const [resourceQuery, setResourceQuery] = useState('')
   const [activeArticle, setActiveArticle] = useState<PostSummary | null>(null)
   const [articleLaunch, setArticleLaunch] = useState<ArticleLaunch | null>(null)
 
@@ -45,6 +47,25 @@ export function App() {
       window.scrollTo({ top: 0, behavior: 'auto' })
     }, 320)
     window.setTimeout(() => setTransitionState('idle'), 780)
+  }
+
+  const openResources = () => {
+    setTransitionState('to-journal')
+    window.setTimeout(() => {
+      setView('resources')
+      window.scrollTo({ top: 0, behavior: 'auto' })
+    }, 320)
+    window.setTimeout(() => setTransitionState('idle'), 780)
+  }
+
+  const openResourcesFromJournal = () => {
+    setView('resources')
+    window.scrollTo({ top: 0, behavior: 'auto' })
+  }
+
+  const openJournalFromResources = () => {
+    setView('journal')
+    window.scrollTo({ top: 0, behavior: 'auto' })
   }
 
   const openArticle = (entry: PostSummary, rect: DOMRect) => {
@@ -88,18 +109,35 @@ export function App() {
       />
 
       <div className={`transition duration-700 ${view === 'home' ? 'opacity-100' : 'pointer-events-none opacity-0'}`}>
-        {view === 'home' ? <HomeExperience onEnterJournal={openJournal} /> : null}
+        {view === 'home' ? <HomeExperience onEnterJournal={openJournal} onEnterResources={openResources} /> : null}
       </div>
 
       <div className={`transition duration-700 ${view === 'journal' || view === 'article' ? 'opacity-100' : 'pointer-events-none opacity-0'}`}>
         {view === 'journal' ? (
-          <JournalIndex query={query} onQueryChange={setQuery} onBack={closeJournal} onOpenArticle={openArticle} />
+          <JournalIndex
+            query={query}
+            onQueryChange={setQuery}
+            onBack={closeJournal}
+            onOpenArticle={openArticle}
+            onOpenResources={openResourcesFromJournal}
+          />
         ) : null}
       </div>
 
       <div className={`transition duration-700 ${view === 'article' ? 'opacity-100' : 'pointer-events-none opacity-0'}`}>
         {view === 'article' && activeArticle ? (
           <ArticleView key={activeArticle.slug} summary={activeArticle} onBack={closeArticle} />
+        ) : null}
+      </div>
+
+      <div className={`transition duration-700 ${view === 'resources' ? 'opacity-100' : 'pointer-events-none opacity-0'}`}>
+        {view === 'resources' ? (
+          <ResourcesIndex
+            query={resourceQuery}
+            onQueryChange={setResourceQuery}
+            onBack={closeJournal}
+            onOpenJournal={openJournalFromResources}
+          />
         ) : null}
       </div>
 

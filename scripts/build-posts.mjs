@@ -6,7 +6,8 @@ import hljs from 'highlight.js'
 import { markedHighlight } from 'marked-highlight'
 
 const rootDir = process.cwd()
-const contentDir = path.join(rootDir, 'content', 'posts')
+const postsContentDir = path.join(rootDir, 'content', 'posts')
+const resourcesContentPath = path.join(rootDir, 'content', 'resources', 'entries.json')
 const outputDir = path.join(rootDir, 'public', 'generated')
 const postsOutputDir = path.join(outputDir, 'posts')
 
@@ -45,17 +46,26 @@ marked.setOptions({
 })
 
 async function main() {
-  const markdownFiles = await collectMarkdownFiles(contentDir)
-  const posts = []
-  const searchPostings = new Map()
-
   await fs.rm(outputDir, { recursive: true, force: true })
   await fs.mkdir(postsOutputDir, { recursive: true })
+  const [postBuild, resourceBuild] = await Promise.all([buildPosts(), buildResources()])
+
+  await fs.writeFile(path.join(outputDir, '.nojekyll'), '')
+
+  console.log(
+    `Built ${postBuild.count} posts and ${resourceBuild.count} resources into ${path.relative(rootDir, outputDir)}`,
+  )
+}
+
+async function buildPosts() {
+  const markdownFiles = await collectMarkdownFiles(postsContentDir)
+  const posts = []
+  const searchPostings = new Map()
 
   for (const filePath of markdownFiles) {
     const raw = await fs.readFile(filePath, 'utf8')
     const { data, content } = matter(raw)
-    const relativePath = path.relative(contentDir, filePath)
+    const relativePath = path.relative(postsContentDir, filePath)
     const baseSlug = relativePath.replace(/\\/g, '/').replace(/\.md$/i, '')
     const slug = String(data.slug || baseSlug)
 
@@ -152,9 +162,74 @@ async function main() {
   })
 
   await writeJson(path.join(outputDir, 'search-index.json'), searchIndex)
-  await fs.writeFile(path.join(outputDir, '.nojekyll'), '')
+  return { count: manifestPosts.length }
+}
 
-  console.log(`Built ${manifestPosts.length} posts into ${path.relative(rootDir, outputDir)}`)
+async function buildResources() {
+  const resources = await loadResourcesSource()
+  const entries = []
+  const searchPostings = new Map()
+
+  for (const [index, resource] of resources.entries()) {
+    validateResource(resource, index)
+
+    const entry = {
+      id: String(resource.id),
+      title: String(resource.title),
+      url: String(resource.url),
+      description: String(resource.description),
+      notes: String(resource.notes || ''),
+      kind: String(resource.kind),
+      status: String(resource.status),
+      addedAt: normalizeDateValue(resource.addedAt),
+      source: resource.source ? String(resource.source) : 'unknown',
+      tags: normalizeStringArray(resource.tags),
+      stack: normalizeStringArray(resource.stack),
+      indexLabel: String(index + 1).padStart(2, '0'),
+    }
+
+    entries.push(entry)
+
+    addWeightedTokens(searchPostings, tokenize(entry.title, { includeSingleHan: true, includePrefixes: true }), entry.id, 10)
+    addWeightedTokens(searchPostings, tokenize(entry.description, { includeSingleHan: true, includePrefixes: true }), entry.id, 7)
+    addWeightedTokens(searchPostings, tokenize(entry.notes, { includeSingleHan: true, includePrefixes: true }), entry.id, 6)
+    addWeightedTokens(searchPostings, tokenize(entry.kind, { includeSingleHan: true, includePrefixes: true }), entry.id, 5)
+    addWeightedTokens(searchPostings, tokenize(entry.status, { includeSingleHan: true, includePrefixes: true }), entry.id, 5)
+    addWeightedTokens(searchPostings, tokenize(entry.tags.join(' '), { includeSingleHan: true, includePrefixes: true }), entry.id, 8)
+    addWeightedTokens(searchPostings, tokenize(entry.stack.join(' '), { includeSingleHan: true, includePrefixes: true }), entry.id, 6)
+  }
+
+  entries.sort((a, b) => compareDates(b.addedAt, a.addedAt))
+
+  const orderedEntries = entries.map((entry, index) => ({
+    ...entry,
+    indexLabel: String(index + 1).padStart(2, '0'),
+  }))
+
+  const searchIndex = {
+    version: 1,
+    generatedAt: new Date().toISOString(),
+    documents: orderedEntries,
+    postings: Object.fromEntries(
+      [...searchPostings.entries()]
+        .sort((a, b) => a[0].localeCompare(b[0]))
+        .map(([token, matches]) => [
+          token,
+          [...matches.entries()]
+            .sort((a, b) => b[1] - a[1])
+            .map(([id, score]) => [id, score]),
+        ]),
+    ),
+  }
+
+  await writeJson(path.join(outputDir, 'resources-manifest.json'), {
+    generatedAt: new Date().toISOString(),
+    total: orderedEntries.length,
+    resources: orderedEntries,
+  })
+
+  await writeJson(path.join(outputDir, 'resources-search-index.json'), searchIndex)
+  return { count: orderedEntries.length }
 }
 
 async function collectMarkdownFiles(dir) {
@@ -180,6 +255,24 @@ async function collectMarkdownFiles(dir) {
 async function writeJson(filePath, data) {
   await fs.mkdir(path.dirname(filePath), { recursive: true })
   await fs.writeFile(filePath, `${JSON.stringify(data, null, 2)}\n`, 'utf8')
+}
+
+async function loadResourcesSource() {
+  try {
+    const raw = await fs.readFile(resourcesContentPath, 'utf8')
+    const parsed = JSON.parse(raw)
+    if (!Array.isArray(parsed)) {
+      throw new Error('Resource entries must be a JSON array.')
+    }
+    return parsed
+  } catch (error) {
+    if (error && typeof error === 'object' && 'code' in error && error.code === 'ENOENT') {
+      await fs.mkdir(path.dirname(resourcesContentPath), { recursive: true })
+      await writeJson(resourcesContentPath, [])
+      return []
+    }
+    throw error
+  }
 }
 
 async function prepareMarkdownAssets(markdown, markdownPath, slug) {
@@ -261,6 +354,19 @@ function normalizeDateValue(value) {
     return `${year}-${month}-${day}`
   }
   return String(value)
+}
+
+function normalizeStringArray(value) {
+  return Array.isArray(value) ? value.map((item) => String(item)) : []
+}
+
+function validateResource(resource, index) {
+  const requiredFields = ['id', 'title', 'url', 'description', 'kind', 'status', 'addedAt']
+  for (const field of requiredFields) {
+    if (!resource?.[field]) {
+      throw new Error(`Missing required field "${field}" in resource entry at index ${index}.`)
+    }
+  }
 }
 
 function isRemoteAsset(value) {
