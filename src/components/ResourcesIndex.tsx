@@ -20,6 +20,7 @@ const kindMeta: Record<string, { label: string; color: string }> = {
   'open-source': { label: 'Open Source', color: '#f95d9b' },
   tool: { label: 'Tool', color: '#c7ff4d' },
   library: { label: 'Library', color: '#9b8cff' },
+  skill: { label: 'Skill', color: '#8cffde' },
 }
 
 const statusMeta: Record<string, { label: string; color: string }> = {
@@ -394,21 +395,13 @@ export function ResourcesIndex({
                 <span>JSON Source</span>
               </div>
               <div className="mt-6 grid gap-3 sm:grid-cols-2">
-                {[
-                  'title',
-                  'url',
-                  'description',
-                  'notes',
-                  'kind',
-                  'status',
-                  'addedAt',
-                  'tags',
-                  'stack',
-                ].map((field) => (
-                  <div key={field} className="resource-chip">
-                    {field}
-                  </div>
-                ))}
+                {['title', 'url', 'description', 'notes', 'kind', 'status', 'addedAt', 'tags'].map(
+                  (field) => (
+                    <div key={field} className="resource-chip">
+                      {field}
+                    </div>
+                  ),
+                )}
               </div>
               <p className="mt-6 max-w-2xl text-sm leading-7 text-white/58">
                 Use one record per link. Keep `description` focused on what it is, and put your own

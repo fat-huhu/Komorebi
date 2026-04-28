@@ -12,12 +12,7 @@
       "status": "using",
       "addedAt": "2026-04-28",
       "source": "official",
-      "tags": [
-        "react",
-        "ui",
-        "tailwind",
-        "design-system"
-      ],
+      "tags": ["react", "ui", "tailwind", "design-system"],
       "stack": [],
       "indexLabel": "01"
     },
@@ -31,9 +26,7 @@
       "status": "using",
       "addedAt": "2026-04-27",
       "source": "official",
-      "tags": [
-        "ui"
-      ],
+      "tags": ["ui"],
       "stack": [],
       "indexLabel": "02"
     },
@@ -43,14 +36,11 @@
       "url": "https://github.com/Cocoon-AI/architecture-diagram-generator",
       "description": "一个画流程图的skill",
       "notes": "一个画流程图的skill",
-      "kind": "skill",
+      "kind": "Skill",
       "status": "marked",
       "addedAt": "2026-04-25",
       "source": "github",
-      "tags": [
-        "ai",
-        "skill"
-      ],
+      "tags": ["ai", "skill"],
       "stack": [],
       "indexLabel": "03"
     },
@@ -60,33 +50,13 @@
       "url": "https://github.com/coleam00/excalidraw-diagram-skill",
       "description": "一个手绘风格流程图的skill",
       "notes": "一个手绘风格流程图的skill",
-      "kind": "skill",
+      "kind": "Skill",
       "status": "marked",
       "addedAt": "2026-04-25",
       "source": "github",
-      "tags": [
-        "ai",
-        "skill"
-      ],
+      "tags": ["ai", "skill"],
       "stack": [],
       "indexLabel": "04"
-    },
-    {
-      "id": "excalidraw-diagram-skill",
-      "title": "excalidraw-diagram-skill",
-      "url": "https://github.com/coleam00/excalidraw-diagram-skill",
-      "description": "一个手绘风格流程图的skill",
-      "notes": "一个手绘风格流程图的skill",
-      "kind": "skill",
-      "status": "marked",
-      "addedAt": "2026-04-25",
-      "source": "github",
-      "tags": [
-        "ai",
-        "skill"
-      ],
-      "stack": [],
-      "indexLabel": "05"
     }
   ]
 }
