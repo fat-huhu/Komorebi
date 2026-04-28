@@ -1,0 +1,2991 @@
+{
+  "version": 1,
+  "generatedAt": "2026-04-28T00:44:37.501Z",
+  "documents": [
+    {
+      "id": "shadcn-ui",
+      "title": "shadcn/ui",
+      "url": "https://ui.shadcn.com/",
+      "description": "可组合的 React 组件集合，适合快速搭建一致性较高的产品级界面。",
+      "notes": "适合做中后台和内容工具，复制到本地后可按项目风格继续改，不会被组件库约束死。",
+      "kind": "component",
+      "status": "using",
+      "addedAt": "2026-04-28",
+      "source": "official",
+      "tags": [
+        "react",
+        "ui",
+        "tailwind",
+        "design-system"
+      ],
+      "stack": [
+        "React",
+        "Tailwind CSS",
+        "Radix UI"
+      ],
+      "indexLabel": "01"
+    },
+    {
+      "id": "motion-primitives",
+      "title": "Motion-Primitives",
+      "url": "https://motion-primitives.com/",
+      "description": "偏展示和交互动效的现成组件集合，适合补充页面的微交互层。",
+      "notes": "适合局部提气，但不要整站滥用，最好只挑关键入口和状态反馈位置接入。",
+      "kind": "component",
+      "status": "marked",
+      "addedAt": "2026-04-27",
+      "source": "official",
+      "tags": [
+        "animation",
+        "react",
+        "interaction"
+      ],
+      "stack": [
+        "React",
+        "Motion"
+      ],
+      "indexLabel": "02"
+    },
+    {
+      "id": "tweakcn",
+      "title": "TweakCN",
+      "url": "https://tweakcn.com/",
+      "description": "针对 shadcn 生态的主题和样式生成工具，适合快速试配色和 token。",
+      "notes": "适合前期找方向，最终仍然应该把变量收回项目内统一管理。",
+      "kind": "tool",
+      "status": "watching",
+      "addedAt": "2026-04-26",
+      "source": "community",
+      "tags": [
+        "theme",
+        "shadcn",
+        "tailwind"
+      ],
+      "stack": [
+        "Tailwind CSS",
+        "shadcn/ui"
+      ],
+      "indexLabel": "03"
+    },
+    {
+      "id": "react-scan",
+      "title": "React Scan",
+      "url": "https://github.com/aidenybai/react-scan",
+      "description": "定位不必要重渲染的调试工具，适合前端性能排查。",
+      "notes": "组件变复杂后很有价值，尤其是做列表、表单和拖拽交互时。",
+      "kind": "open-source",
+      "status": "marked",
+      "addedAt": "2026-04-25",
+      "source": "github",
+      "tags": [
+        "performance",
+        "debug",
+        "react"
+      ],
+      "stack": [
+        "React"
+      ],
+      "indexLabel": "04"
+    }
+  ],
+  "postings": {
+    "按": [
+      [
+        "shadcn-ui",
+        6
+      ]
+    ],
+    "按项": [
+      [
+        "shadcn-ui",
+        6
+      ]
+    ],
+    "把": [
+      [
+        "tweakcn",
+        6
+      ]
+    ],
+    "把变": [
+      [
+        "tweakcn",
+        6
+      ]
+    ],
+    "被": [
+      [
+        "shadcn-ui",
+        6
+      ]
+    ],
+    "被组": [
+      [
+        "shadcn-ui",
+        6
+      ]
+    ],
+    "本": [
+      [
+        "shadcn-ui",
+        6
+      ]
+    ],
+    "本地": [
+      [
+        "shadcn-ui",
+        6
+      ]
+    ],
+    "必": [
+      [
+        "react-scan",
+        7
+      ]
+    ],
+    "必要": [
+      [
+        "react-scan",
+        7
+      ]
+    ],
+    "变": [
+      [
+        "tweakcn",
+        6
+      ],
+      [
+        "react-scan",
+        6
+      ]
+    ],
+    "变复": [
+      [
+        "react-scan",
+        6
+      ]
+    ],
+    "变量": [
+      [
+        "tweakcn",
+        6
+      ]
+    ],
+    "表": [
+      [
+        "react-scan",
+        6
+      ]
+    ],
+    "表单": [
+      [
+        "react-scan",
+        6
+      ]
+    ],
+    "表单和拖拽交互时": [
+      [
+        "react-scan",
+        6
+      ]
+    ],
+    "补": [
+      [
+        "motion-primitives",
+        7
+      ]
+    ],
+    "补充": [
+      [
+        "motion-primitives",
+        7
+      ]
+    ],
+    "不": [
+      [
+        "react-scan",
+        7
+      ],
+      [
+        "shadcn-ui",
+        6
+      ],
+      [
+        "motion-primitives",
+        6
+      ]
+    ],
+    "不必": [
+      [
+        "react-scan",
+        7
+      ]
+    ],
+    "不会": [
+      [
+        "shadcn-ui",
+        6
+      ]
+    ],
+    "不要": [
+      [
+        "motion-primitives",
+        6
+      ]
+    ],
+    "部": [
+      [
+        "motion-primitives",
+        6
+      ]
+    ],
+    "部提": [
+      [
+        "motion-primitives",
+        6
+      ]
+    ],
+    "层": [
+      [
+        "motion-primitives",
+        7
+      ]
+    ],
+    "查": [
+      [
+        "react-scan",
+        7
+      ]
+    ],
+    "产": [
+      [
+        "shadcn-ui",
+        7
+      ]
+    ],
+    "产品": [
+      [
+        "shadcn-ui",
+        7
+      ]
+    ],
+    "成": [
+      [
+        "motion-primitives",
+        7
+      ],
+      [
+        "tweakcn",
+        7
+      ]
+    ],
+    "成工": [
+      [
+        "tweakcn",
+        7
+      ]
+    ],
+    "成组": [
+      [
+        "motion-primitives",
+        7
+      ]
+    ],
+    "充": [
+      [
+        "motion-primitives",
+        7
+      ]
+    ],
+    "充页": [
+      [
+        "motion-primitives",
+        7
+      ]
+    ],
+    "搭": [
+      [
+        "shadcn-ui",
+        7
+      ]
+    ],
+    "搭建": [
+      [
+        "shadcn-ui",
+        7
+      ]
+    ],
+    "单": [
+      [
+        "react-scan",
+        6
+      ]
+    ],
+    "单和": [
+      [
+        "react-scan",
+        6
+      ]
+    ],
+    "但": [
+      [
+        "motion-primitives",
+        6
+      ]
+    ],
+    "但不": [
+      [
+        "motion-primitives",
+        6
+      ]
+    ],
+    "但不要整站滥用": [
+      [
+        "motion-primitives",
+        6
+      ]
+    ],
+    "到": [
+      [
+        "shadcn-ui",
+        6
+      ]
+    ],
+    "到本": [
+      [
+        "shadcn-ui",
+        6
+      ]
+    ],
+    "地": [
+      [
+        "shadcn-ui",
+        6
+      ]
+    ],
+    "地后": [
+      [
+        "shadcn-ui",
+        6
+      ]
+    ],
+    "的": [
+      [
+        "shadcn-ui",
+        7
+      ],
+      [
+        "motion-primitives",
+        7
+      ],
+      [
+        "tweakcn",
+        7
+      ],
+      [
+        "react-scan",
+        7
+      ]
+    ],
+    "的产": [
+      [
+        "shadcn-ui",
+        7
+      ]
+    ],
+    "的调": [
+      [
+        "react-scan",
+        7
+      ]
+    ],
+    "的微": [
+      [
+        "motion-primitives",
+        7
+      ]
+    ],
+    "的现": [
+      [
+        "motion-primitives",
+        7
+      ]
+    ],
+    "的主": [
+      [
+        "tweakcn",
+        7
+      ]
+    ],
+    "调": [
+      [
+        "react-scan",
+        7
+      ]
+    ],
+    "调试": [
+      [
+        "react-scan",
+        7
+      ]
+    ],
+    "定": [
+      [
+        "react-scan",
+        7
+      ]
+    ],
+    "定位": [
+      [
+        "react-scan",
+        7
+      ]
+    ],
+    "动": [
+      [
+        "motion-primitives",
+        7
+      ]
+    ],
+    "动效": [
+      [
+        "motion-primitives",
+        7
+      ]
+    ],
+    "端": [
+      [
+        "react-scan",
+        7
+      ]
+    ],
+    "端性": [
+      [
+        "react-scan",
+        7
+      ]
+    ],
+    "对": [
+      [
+        "tweakcn",
+        7
+      ]
+    ],
+    "反": [
+      [
+        "motion-primitives",
+        6
+      ]
+    ],
+    "反馈": [
+      [
+        "motion-primitives",
+        6
+      ]
+    ],
+    "方": [
+      [
+        "tweakcn",
+        6
+      ]
+    ],
+    "方向": [
+      [
+        "tweakcn",
+        6
+      ]
+    ],
+    "风": [
+      [
+        "shadcn-ui",
+        6
+      ]
+    ],
+    "风格": [
+      [
+        "shadcn-ui",
+        6
+      ]
+    ],
+    "复": [
+      [
+        "shadcn-ui",
+        6
+      ],
+      [
+        "react-scan",
+        6
+      ]
+    ],
+    "复杂": [
+      [
+        "react-scan",
+        6
+      ]
+    ],
+    "复制": [
+      [
+        "shadcn-ui",
+        6
+      ]
+    ],
+    "该": [
+      [
+        "tweakcn",
+        6
+      ]
+    ],
+    "该把": [
+      [
+        "tweakcn",
+        6
+      ]
+    ],
+    "改": [
+      [
+        "shadcn-ui",
+        6
+      ]
+    ],
+    "高": [
+      [
+        "shadcn-ui",
+        7
+      ]
+    ],
+    "高的": [
+      [
+        "shadcn-ui",
+        7
+      ]
+    ],
+    "格": [
+      [
+        "shadcn-ui",
+        6
+      ]
+    ],
+    "格继": [
+      [
+        "shadcn-ui",
+        6
+      ]
+    ],
+    "工": [
+      [
+        "tweakcn",
+        7
+      ],
+      [
+        "react-scan",
+        7
+      ],
+      [
+        "shadcn-ui",
+        6
+      ]
+    ],
+    "工具": [
+      [
+        "tweakcn",
+        7
+      ],
+      [
+        "react-scan",
+        7
+      ],
+      [
+        "shadcn-ui",
+        6
+      ]
+    ],
+    "关": [
+      [
+        "motion-primitives",
+        6
+      ]
+    ],
+    "关键": [
+      [
+        "motion-primitives",
+        6
+      ]
+    ],
+    "管": [
+      [
+        "tweakcn",
+        6
+      ]
+    ],
+    "管理": [
+      [
+        "tweakcn",
+        6
+      ]
+    ],
+    "好": [
+      [
+        "motion-primitives",
+        6
+      ]
+    ],
+    "好只": [
+      [
+        "motion-primitives",
+        6
+      ]
+    ],
+    "合": [
+      [
+        "shadcn-ui",
+        13
+      ],
+      [
+        "motion-primitives",
+        13
+      ],
+      [
+        "tweakcn",
+        13
+      ],
+      [
+        "react-scan",
+        7
+      ]
+    ],
+    "合补": [
+      [
+        "motion-primitives",
+        7
+      ]
+    ],
+    "合的": [
+      [
+        "shadcn-ui",
+        7
+      ]
+    ],
+    "合局": [
+      [
+        "motion-primitives",
+        6
+      ]
+    ],
+    "合快": [
+      [
+        "shadcn-ui",
+        7
+      ],
+      [
+        "tweakcn",
+        7
+      ]
+    ],
+    "合前": [
+      [
+        "react-scan",
+        7
+      ],
+      [
+        "tweakcn",
+        6
+      ]
+    ],
+    "合做": [
+      [
+        "shadcn-ui",
+        6
+      ]
+    ],
+    "和": [
+      [
+        "motion-primitives",
+        13
+      ],
+      [
+        "tweakcn",
+        7
+      ],
+      [
+        "shadcn-ui",
+        6
+      ],
+      [
+        "react-scan",
+        6
+      ]
+    ],
+    "和交": [
+      [
+        "motion-primitives",
+        7
+      ]
+    ],
+    "和内": [
+      [
+        "shadcn-ui",
+        6
+      ]
+    ],
+    "和拖": [
+      [
+        "react-scan",
+        6
+      ]
+    ],
+    "和样": [
+      [
+        "tweakcn",
+        7
+      ]
+    ],
+    "和状": [
+      [
+        "motion-primitives",
+        6
+      ]
+    ],
+    "很": [
+      [
+        "react-scan",
+        6
+      ]
+    ],
+    "很有": [
+      [
+        "react-scan",
+        6
+      ]
+    ],
+    "后": [
+      [
+        "shadcn-ui",
+        6
+      ],
+      [
+        "react-scan",
+        6
+      ]
+    ],
+    "后很": [
+      [
+        "react-scan",
+        6
+      ]
+    ],
+    "后可": [
+      [
+        "shadcn-ui",
+        6
+      ]
+    ],
+    "后台": [
+      [
+        "shadcn-ui",
+        6
+      ]
+    ],
+    "互": [
+      [
+        "motion-primitives",
+        7
+      ],
+      [
+        "react-scan",
+        6
+      ]
+    ],
+    "互层": [
+      [
+        "motion-primitives",
+        7
+      ]
+    ],
+    "互动": [
+      [
+        "motion-primitives",
+        7
+      ]
+    ],
+    "互时": [
+      [
+        "react-scan",
+        6
+      ]
+    ],
+    "回": [
+      [
+        "tweakcn",
+        6
+      ]
+    ],
+    "回项": [
+      [
+        "tweakcn",
+        6
+      ]
+    ],
+    "会": [
+      [
+        "shadcn-ui",
+        6
+      ]
+    ],
+    "会被": [
+      [
+        "shadcn-ui",
+        6
+      ]
+    ],
+    "级": [
+      [
+        "shadcn-ui",
+        7
+      ]
+    ],
+    "级界": [
+      [
+        "shadcn-ui",
+        7
+      ]
+    ],
+    "集": [
+      [
+        "shadcn-ui",
+        7
+      ],
+      [
+        "motion-primitives",
+        7
+      ]
+    ],
+    "集合": [
+      [
+        "shadcn-ui",
+        7
+      ],
+      [
+        "motion-primitives",
+        7
+      ]
+    ],
+    "继": [
+      [
+        "shadcn-ui",
+        6
+      ]
+    ],
+    "继续": [
+      [
+        "shadcn-ui",
+        6
+      ]
+    ],
+    "价": [
+      [
+        "react-scan",
+        6
+      ]
+    ],
+    "价值": [
+      [
+        "react-scan",
+        6
+      ]
+    ],
+    "件": [
+      [
+        "shadcn-ui",
+        13
+      ],
+      [
+        "motion-primitives",
+        7
+      ],
+      [
+        "react-scan",
+        6
+      ]
+    ],
+    "件变": [
+      [
+        "react-scan",
+        6
+      ]
+    ],
+    "件集": [
+      [
+        "shadcn-ui",
+        7
+      ],
+      [
+        "motion-primitives",
+        7
+      ]
+    ],
+    "件库": [
+      [
+        "shadcn-ui",
+        6
+      ]
+    ],
+    "建": [
+      [
+        "shadcn-ui",
+        7
+      ]
+    ],
+    "建一": [
+      [
+        "shadcn-ui",
+        7
+      ]
+    ],
+    "键": [
+      [
+        "motion-primitives",
+        6
+      ]
+    ],
+    "键入": [
+      [
+        "motion-primitives",
+        6
+      ]
+    ],
+    "交": [
+      [
+        "motion-primitives",
+        7
+      ],
+      [
+        "react-scan",
+        6
+      ]
+    ],
+    "交互": [
+      [
+        "motion-primitives",
+        7
+      ],
+      [
+        "react-scan",
+        6
+      ]
+    ],
+    "较": [
+      [
+        "shadcn-ui",
+        7
+      ]
+    ],
+    "较高": [
+      [
+        "shadcn-ui",
+        7
+      ]
+    ],
+    "接": [
+      [
+        "motion-primitives",
+        6
+      ]
+    ],
+    "接入": [
+      [
+        "motion-primitives",
+        6
+      ]
+    ],
+    "界": [
+      [
+        "shadcn-ui",
+        7
+      ]
+    ],
+    "界面": [
+      [
+        "shadcn-ui",
+        7
+      ]
+    ],
+    "局": [
+      [
+        "motion-primitives",
+        6
+      ]
+    ],
+    "局部": [
+      [
+        "motion-primitives",
+        6
+      ]
+    ],
+    "具": [
+      [
+        "tweakcn",
+        7
+      ],
+      [
+        "react-scan",
+        7
+      ],
+      [
+        "shadcn-ui",
+        6
+      ]
+    ],
+    "可": [
+      [
+        "shadcn-ui",
+        13
+      ]
+    ],
+    "可按": [
+      [
+        "shadcn-ui",
+        6
+      ]
+    ],
+    "可组": [
+      [
+        "shadcn-ui",
+        7
+      ]
+    ],
+    "可组合的": [
+      [
+        "shadcn-ui",
+        7
+      ]
+    ],
+    "口": [
+      [
+        "motion-primitives",
+        6
+      ]
+    ],
+    "口和": [
+      [
+        "motion-primitives",
+        6
+      ]
+    ],
+    "库": [
+      [
+        "shadcn-ui",
+        6
+      ]
+    ],
+    "库约": [
+      [
+        "shadcn-ui",
+        6
+      ]
+    ],
+    "快": [
+      [
+        "shadcn-ui",
+        7
+      ],
+      [
+        "tweakcn",
+        7
+      ]
+    ],
+    "快速": [
+      [
+        "shadcn-ui",
+        7
+      ],
+      [
+        "tweakcn",
+        7
+      ]
+    ],
+    "馈": [
+      [
+        "motion-primitives",
+        6
+      ]
+    ],
+    "馈位": [
+      [
+        "motion-primitives",
+        6
+      ]
+    ],
+    "滥": [
+      [
+        "motion-primitives",
+        6
+      ]
+    ],
+    "滥用": [
+      [
+        "motion-primitives",
+        6
+      ]
+    ],
+    "理": [
+      [
+        "tweakcn",
+        6
+      ]
+    ],
+    "量": [
+      [
+        "tweakcn",
+        6
+      ]
+    ],
+    "量收": [
+      [
+        "tweakcn",
+        6
+      ]
+    ],
+    "列": [
+      [
+        "react-scan",
+        6
+      ]
+    ],
+    "列表": [
+      [
+        "react-scan",
+        6
+      ]
+    ],
+    "面": [
+      [
+        "shadcn-ui",
+        7
+      ],
+      [
+        "motion-primitives",
+        7
+      ]
+    ],
+    "面的": [
+      [
+        "motion-primitives",
+        7
+      ]
+    ],
+    "目": [
+      [
+        "shadcn-ui",
+        6
+      ],
+      [
+        "tweakcn",
+        6
+      ]
+    ],
+    "目风": [
+      [
+        "shadcn-ui",
+        6
+      ]
+    ],
+    "目内": [
+      [
+        "tweakcn",
+        6
+      ]
+    ],
+    "内": [
+      [
+        "shadcn-ui",
+        6
+      ],
+      [
+        "tweakcn",
+        6
+      ]
+    ],
+    "内容": [
+      [
+        "shadcn-ui",
+        6
+      ]
+    ],
+    "内统": [
+      [
+        "tweakcn",
+        6
+      ]
+    ],
+    "能": [
+      [
+        "react-scan",
+        7
+      ]
+    ],
+    "能排": [
+      [
+        "react-scan",
+        7
+      ]
+    ],
+    "排": [
+      [
+        "react-scan",
+        7
+      ]
+    ],
+    "排查": [
+      [
+        "react-scan",
+        7
+      ]
+    ],
+    "配": [
+      [
+        "tweakcn",
+        7
+      ]
+    ],
+    "配色": [
+      [
+        "tweakcn",
+        7
+      ]
+    ],
+    "偏": [
+      [
+        "motion-primitives",
+        7
+      ]
+    ],
+    "偏展": [
+      [
+        "motion-primitives",
+        7
+      ]
+    ],
+    "品": [
+      [
+        "shadcn-ui",
+        7
+      ]
+    ],
+    "品级": [
+      [
+        "shadcn-ui",
+        7
+      ]
+    ],
+    "期": [
+      [
+        "tweakcn",
+        6
+      ]
+    ],
+    "期找": [
+      [
+        "tweakcn",
+        6
+      ]
+    ],
+    "其": [
+      [
+        "react-scan",
+        6
+      ]
+    ],
+    "其是": [
+      [
+        "react-scan",
+        6
+      ]
+    ],
+    "气": [
+      [
+        "motion-primitives",
+        6
+      ]
+    ],
+    "前": [
+      [
+        "react-scan",
+        7
+      ],
+      [
+        "tweakcn",
+        6
+      ]
+    ],
+    "前端": [
+      [
+        "react-scan",
+        7
+      ]
+    ],
+    "前期": [
+      [
+        "tweakcn",
+        6
+      ]
+    ],
+    "然": [
+      [
+        "tweakcn",
+        6
+      ]
+    ],
+    "然应": [
+      [
+        "tweakcn",
+        6
+      ]
+    ],
+    "染": [
+      [
+        "react-scan",
+        7
+      ]
+    ],
+    "染的": [
+      [
+        "react-scan",
+        7
+      ]
+    ],
+    "仍": [
+      [
+        "tweakcn",
+        6
+      ]
+    ],
+    "仍然": [
+      [
+        "tweakcn",
+        6
+      ]
+    ],
+    "容": [
+      [
+        "shadcn-ui",
+        6
+      ]
+    ],
+    "容工": [
+      [
+        "shadcn-ui",
+        6
+      ]
+    ],
+    "入": [
+      [
+        "motion-primitives",
+        6
+      ]
+    ],
+    "入口": [
+      [
+        "motion-primitives",
+        6
+      ]
+    ],
+    "色": [
+      [
+        "tweakcn",
+        7
+      ]
+    ],
+    "色和": [
+      [
+        "tweakcn",
+        7
+      ]
+    ],
+    "生": [
+      [
+        "tweakcn",
+        7
+      ]
+    ],
+    "生成": [
+      [
+        "tweakcn",
+        7
+      ]
+    ],
+    "生态": [
+      [
+        "tweakcn",
+        7
+      ]
+    ],
+    "时": [
+      [
+        "react-scan",
+        6
+      ]
+    ],
+    "示": [
+      [
+        "motion-primitives",
+        7
+      ]
+    ],
+    "示和": [
+      [
+        "motion-primitives",
+        7
+      ]
+    ],
+    "式": [
+      [
+        "tweakcn",
+        7
+      ]
+    ],
+    "式生": [
+      [
+        "tweakcn",
+        7
+      ]
+    ],
+    "试": [
+      [
+        "tweakcn",
+        7
+      ],
+      [
+        "react-scan",
+        7
+      ]
+    ],
+    "试工": [
+      [
+        "react-scan",
+        7
+      ]
+    ],
+    "试配": [
+      [
+        "tweakcn",
+        7
+      ]
+    ],
+    "是": [
+      [
+        "react-scan",
+        6
+      ]
+    ],
+    "是做": [
+      [
+        "react-scan",
+        6
+      ]
+    ],
+    "适": [
+      [
+        "shadcn-ui",
+        13
+      ],
+      [
+        "motion-primitives",
+        13
+      ],
+      [
+        "tweakcn",
+        13
+      ],
+      [
+        "react-scan",
+        7
+      ]
+    ],
+    "适合": [
+      [
+        "shadcn-ui",
+        13
+      ],
+      [
+        "motion-primitives",
+        13
+      ],
+      [
+        "tweakcn",
+        13
+      ],
+      [
+        "react-scan",
+        7
+      ]
+    ],
+    "适合局部提气": [
+      [
+        "motion-primitives",
+        6
+      ]
+    ],
+    "适合快速试配色和": [
+      [
+        "tweakcn",
+        7
+      ]
+    ],
+    "适合前端性能排查": [
+      [
+        "react-scan",
+        7
+      ]
+    ],
+    "适合前期找方向": [
+      [
+        "tweakcn",
+        6
+      ]
+    ],
+    "收": [
+      [
+        "tweakcn",
+        6
+      ]
+    ],
+    "收回": [
+      [
+        "tweakcn",
+        6
+      ]
+    ],
+    "束": [
+      [
+        "shadcn-ui",
+        6
+      ]
+    ],
+    "束死": [
+      [
+        "shadcn-ui",
+        6
+      ]
+    ],
+    "死": [
+      [
+        "shadcn-ui",
+        6
+      ]
+    ],
+    "速": [
+      [
+        "shadcn-ui",
+        7
+      ],
+      [
+        "tweakcn",
+        7
+      ]
+    ],
+    "速搭": [
+      [
+        "shadcn-ui",
+        7
+      ]
+    ],
+    "速试": [
+      [
+        "tweakcn",
+        7
+      ]
+    ],
+    "台": [
+      [
+        "shadcn-ui",
+        6
+      ]
+    ],
+    "台和": [
+      [
+        "shadcn-ui",
+        6
+      ]
+    ],
+    "态": [
+      [
+        "tweakcn",
+        7
+      ],
+      [
+        "motion-primitives",
+        6
+      ]
+    ],
+    "态的": [
+      [
+        "tweakcn",
+        7
+      ]
+    ],
+    "态反": [
+      [
+        "motion-primitives",
+        6
+      ]
+    ],
+    "提": [
+      [
+        "motion-primitives",
+        6
+      ]
+    ],
+    "提气": [
+      [
+        "motion-primitives",
+        6
+      ]
+    ],
+    "题": [
+      [
+        "tweakcn",
+        7
+      ]
+    ],
+    "题和": [
+      [
+        "tweakcn",
+        7
+      ]
+    ],
+    "挑": [
+      [
+        "motion-primitives",
+        6
+      ]
+    ],
+    "挑关": [
+      [
+        "motion-primitives",
+        6
+      ]
+    ],
+    "统": [
+      [
+        "tweakcn",
+        6
+      ]
+    ],
+    "统一": [
+      [
+        "tweakcn",
+        6
+      ]
+    ],
+    "拖": [
+      [
+        "react-scan",
+        6
+      ]
+    ],
+    "拖拽": [
+      [
+        "react-scan",
+        6
+      ]
+    ],
+    "微": [
+      [
+        "motion-primitives",
+        7
+      ]
+    ],
+    "微交": [
+      [
+        "motion-primitives",
+        7
+      ]
+    ],
+    "位": [
+      [
+        "react-scan",
+        7
+      ],
+      [
+        "motion-primitives",
+        6
+      ]
+    ],
+    "位不": [
+      [
+        "react-scan",
+        7
+      ]
+    ],
+    "位置": [
+      [
+        "motion-primitives",
+        6
+      ]
+    ],
+    "现": [
+      [
+        "motion-primitives",
+        7
+      ]
+    ],
+    "现成": [
+      [
+        "motion-primitives",
+        7
+      ]
+    ],
+    "向": [
+      [
+        "tweakcn",
+        6
+      ]
+    ],
+    "项": [
+      [
+        "shadcn-ui",
+        6
+      ],
+      [
+        "tweakcn",
+        6
+      ]
+    ],
+    "项目": [
+      [
+        "shadcn-ui",
+        6
+      ],
+      [
+        "tweakcn",
+        6
+      ]
+    ],
+    "效": [
+      [
+        "motion-primitives",
+        7
+      ]
+    ],
+    "效的": [
+      [
+        "motion-primitives",
+        7
+      ]
+    ],
+    "性": [
+      [
+        "shadcn-ui",
+        7
+      ],
+      [
+        "react-scan",
+        7
+      ]
+    ],
+    "性较": [
+      [
+        "shadcn-ui",
+        7
+      ]
+    ],
+    "性能": [
+      [
+        "react-scan",
+        7
+      ]
+    ],
+    "续": [
+      [
+        "shadcn-ui",
+        6
+      ]
+    ],
+    "续改": [
+      [
+        "shadcn-ui",
+        6
+      ]
+    ],
+    "渲": [
+      [
+        "react-scan",
+        7
+      ]
+    ],
+    "渲染": [
+      [
+        "react-scan",
+        7
+      ]
+    ],
+    "样": [
+      [
+        "tweakcn",
+        7
+      ]
+    ],
+    "样式": [
+      [
+        "tweakcn",
+        7
+      ]
+    ],
+    "要": [
+      [
+        "react-scan",
+        7
+      ],
+      [
+        "motion-primitives",
+        6
+      ]
+    ],
+    "要整": [
+      [
+        "motion-primitives",
+        6
+      ]
+    ],
+    "要重": [
+      [
+        "react-scan",
+        7
+      ]
+    ],
+    "页": [
+      [
+        "motion-primitives",
+        7
+      ]
+    ],
+    "页面": [
+      [
+        "motion-primitives",
+        7
+      ]
+    ],
+    "一": [
+      [
+        "shadcn-ui",
+        7
+      ],
+      [
+        "tweakcn",
+        6
+      ]
+    ],
+    "一管": [
+      [
+        "tweakcn",
+        6
+      ]
+    ],
+    "一致": [
+      [
+        "shadcn-ui",
+        7
+      ]
+    ],
+    "应": [
+      [
+        "tweakcn",
+        6
+      ]
+    ],
+    "应该": [
+      [
+        "tweakcn",
+        6
+      ]
+    ],
+    "用": [
+      [
+        "motion-primitives",
+        6
+      ]
+    ],
+    "尤": [
+      [
+        "react-scan",
+        6
+      ]
+    ],
+    "尤其": [
+      [
+        "react-scan",
+        6
+      ]
+    ],
+    "尤其是做列表": [
+      [
+        "react-scan",
+        6
+      ]
+    ],
+    "有": [
+      [
+        "react-scan",
+        6
+      ]
+    ],
+    "有价": [
+      [
+        "react-scan",
+        6
+      ]
+    ],
+    "约": [
+      [
+        "shadcn-ui",
+        6
+      ]
+    ],
+    "约束": [
+      [
+        "shadcn-ui",
+        6
+      ]
+    ],
+    "杂": [
+      [
+        "react-scan",
+        6
+      ]
+    ],
+    "杂后": [
+      [
+        "react-scan",
+        6
+      ]
+    ],
+    "展": [
+      [
+        "motion-primitives",
+        7
+      ]
+    ],
+    "展示": [
+      [
+        "motion-primitives",
+        7
+      ]
+    ],
+    "站": [
+      [
+        "motion-primitives",
+        6
+      ]
+    ],
+    "站滥": [
+      [
+        "motion-primitives",
+        6
+      ]
+    ],
+    "找": [
+      [
+        "tweakcn",
+        6
+      ]
+    ],
+    "找方": [
+      [
+        "tweakcn",
+        6
+      ]
+    ],
+    "针": [
+      [
+        "tweakcn",
+        7
+      ]
+    ],
+    "针对": [
+      [
+        "tweakcn",
+        7
+      ]
+    ],
+    "整": [
+      [
+        "motion-primitives",
+        6
+      ]
+    ],
+    "整站": [
+      [
+        "motion-primitives",
+        6
+      ]
+    ],
+    "值": [
+      [
+        "react-scan",
+        6
+      ]
+    ],
+    "只": [
+      [
+        "motion-primitives",
+        6
+      ]
+    ],
+    "只挑": [
+      [
+        "motion-primitives",
+        6
+      ]
+    ],
+    "制": [
+      [
+        "shadcn-ui",
+        6
+      ]
+    ],
+    "制到": [
+      [
+        "shadcn-ui",
+        6
+      ]
+    ],
+    "致": [
+      [
+        "shadcn-ui",
+        7
+      ]
+    ],
+    "致性": [
+      [
+        "shadcn-ui",
+        7
+      ]
+    ],
+    "置": [
+      [
+        "motion-primitives",
+        6
+      ]
+    ],
+    "置接": [
+      [
+        "motion-primitives",
+        6
+      ]
+    ],
+    "中": [
+      [
+        "shadcn-ui",
+        6
+      ]
+    ],
+    "中后": [
+      [
+        "shadcn-ui",
+        6
+      ]
+    ],
+    "终": [
+      [
+        "tweakcn",
+        6
+      ]
+    ],
+    "终仍": [
+      [
+        "tweakcn",
+        6
+      ]
+    ],
+    "重": [
+      [
+        "react-scan",
+        7
+      ]
+    ],
+    "重渲": [
+      [
+        "react-scan",
+        7
+      ]
+    ],
+    "主": [
+      [
+        "tweakcn",
+        7
+      ]
+    ],
+    "主题": [
+      [
+        "tweakcn",
+        7
+      ]
+    ],
+    "拽": [
+      [
+        "react-scan",
+        6
+      ]
+    ],
+    "拽交": [
+      [
+        "react-scan",
+        6
+      ]
+    ],
+    "状": [
+      [
+        "motion-primitives",
+        6
+      ]
+    ],
+    "状态": [
+      [
+        "motion-primitives",
+        6
+      ]
+    ],
+    "组": [
+      [
+        "shadcn-ui",
+        13
+      ],
+      [
+        "motion-primitives",
+        7
+      ],
+      [
+        "react-scan",
+        6
+      ]
+    ],
+    "组合": [
+      [
+        "shadcn-ui",
+        7
+      ]
+    ],
+    "组件": [
+      [
+        "shadcn-ui",
+        13
+      ],
+      [
+        "motion-primitives",
+        7
+      ],
+      [
+        "react-scan",
+        6
+      ]
+    ],
+    "组件集合": [
+      [
+        "shadcn-ui",
+        7
+      ]
+    ],
+    "最": [
+      [
+        "motion-primitives",
+        6
+      ],
+      [
+        "tweakcn",
+        6
+      ]
+    ],
+    "最好": [
+      [
+        "motion-primitives",
+        6
+      ]
+    ],
+    "最终": [
+      [
+        "tweakcn",
+        6
+      ]
+    ],
+    "做": [
+      [
+        "shadcn-ui",
+        6
+      ],
+      [
+        "react-scan",
+        6
+      ]
+    ],
+    "做列": [
+      [
+        "react-scan",
+        6
+      ]
+    ],
+    "做中": [
+      [
+        "shadcn-ui",
+        6
+      ]
+    ],
+    "ani": [
+      [
+        "motion-primitives",
+        8
+      ]
+    ],
+    "anim": [
+      [
+        "motion-primitives",
+        8
+      ]
+    ],
+    "anima": [
+      [
+        "motion-primitives",
+        8
+      ]
+    ],
+    "animat": [
+      [
+        "motion-primitives",
+        8
+      ]
+    ],
+    "animati": [
+      [
+        "motion-primitives",
+        8
+      ]
+    ],
+    "animatio": [
+      [
+        "motion-primitives",
+        8
+      ]
+    ],
+    "animation": [
+      [
+        "motion-primitives",
+        8
+      ]
+    ],
+    "com": [
+      [
+        "shadcn-ui",
+        5
+      ],
+      [
+        "motion-primitives",
+        5
+      ]
+    ],
+    "comp": [
+      [
+        "shadcn-ui",
+        5
+      ],
+      [
+        "motion-primitives",
+        5
+      ]
+    ],
+    "compo": [
+      [
+        "shadcn-ui",
+        5
+      ],
+      [
+        "motion-primitives",
+        5
+      ]
+    ],
+    "compon": [
+      [
+        "shadcn-ui",
+        5
+      ],
+      [
+        "motion-primitives",
+        5
+      ]
+    ],
+    "compone": [
+      [
+        "shadcn-ui",
+        5
+      ],
+      [
+        "motion-primitives",
+        5
+      ]
+    ],
+    "componen": [
+      [
+        "shadcn-ui",
+        5
+      ],
+      [
+        "motion-primitives",
+        5
+      ]
+    ],
+    "component": [
+      [
+        "shadcn-ui",
+        5
+      ],
+      [
+        "motion-primitives",
+        5
+      ]
+    ],
+    "css": [
+      [
+        "shadcn-ui",
+        6
+      ],
+      [
+        "tweakcn",
+        6
+      ]
+    ],
+    "deb": [
+      [
+        "react-scan",
+        8
+      ]
+    ],
+    "debu": [
+      [
+        "react-scan",
+        8
+      ]
+    ],
+    "debug": [
+      [
+        "react-scan",
+        8
+      ]
+    ],
+    "des": [
+      [
+        "shadcn-ui",
+        8
+      ]
+    ],
+    "desi": [
+      [
+        "shadcn-ui",
+        8
+      ]
+    ],
+    "desig": [
+      [
+        "shadcn-ui",
+        8
+      ]
+    ],
+    "design": [
+      [
+        "shadcn-ui",
+        8
+      ]
+    ],
+    "int": [
+      [
+        "motion-primitives",
+        8
+      ]
+    ],
+    "inte": [
+      [
+        "motion-primitives",
+        8
+      ]
+    ],
+    "inter": [
+      [
+        "motion-primitives",
+        8
+      ]
+    ],
+    "intera": [
+      [
+        "motion-primitives",
+        8
+      ]
+    ],
+    "interac": [
+      [
+        "motion-primitives",
+        8
+      ]
+    ],
+    "interact": [
+      [
+        "motion-primitives",
+        8
+      ]
+    ],
+    "interacti": [
+      [
+        "motion-primitives",
+        8
+      ]
+    ],
+    "interactio": [
+      [
+        "motion-primitives",
+        8
+      ]
+    ],
+    "interaction": [
+      [
+        "motion-primitives",
+        8
+      ]
+    ],
+    "mar": [
+      [
+        "motion-primitives",
+        5
+      ],
+      [
+        "react-scan",
+        5
+      ]
+    ],
+    "mark": [
+      [
+        "motion-primitives",
+        5
+      ],
+      [
+        "react-scan",
+        5
+      ]
+    ],
+    "marke": [
+      [
+        "motion-primitives",
+        5
+      ],
+      [
+        "react-scan",
+        5
+      ]
+    ],
+    "marked": [
+      [
+        "motion-primitives",
+        5
+      ],
+      [
+        "react-scan",
+        5
+      ]
+    ],
+    "mot": [
+      [
+        "motion-primitives",
+        16
+      ]
+    ],
+    "moti": [
+      [
+        "motion-primitives",
+        16
+      ]
+    ],
+    "motio": [
+      [
+        "motion-primitives",
+        16
+      ]
+    ],
+    "motion": [
+      [
+        "motion-primitives",
+        16
+      ]
+    ],
+    "ope": [
+      [
+        "react-scan",
+        5
+      ]
+    ],
+    "open": [
+      [
+        "react-scan",
+        5
+      ]
+    ],
+    "per": [
+      [
+        "react-scan",
+        8
+      ]
+    ],
+    "perf": [
+      [
+        "react-scan",
+        8
+      ]
+    ],
+    "perfo": [
+      [
+        "react-scan",
+        8
+      ]
+    ],
+    "perfor": [
+      [
+        "react-scan",
+        8
+      ]
+    ],
+    "perform": [
+      [
+        "react-scan",
+        8
+      ]
+    ],
+    "performa": [
+      [
+        "react-scan",
+        8
+      ]
+    ],
+    "performan": [
+      [
+        "react-scan",
+        8
+      ]
+    ],
+    "performanc": [
+      [
+        "react-scan",
+        8
+      ]
+    ],
+    "performance": [
+      [
+        "react-scan",
+        8
+      ]
+    ],
+    "pri": [
+      [
+        "motion-primitives",
+        10
+      ]
+    ],
+    "prim": [
+      [
+        "motion-primitives",
+        10
+      ]
+    ],
+    "primi": [
+      [
+        "motion-primitives",
+        10
+      ]
+    ],
+    "primit": [
+      [
+        "motion-primitives",
+        10
+      ]
+    ],
+    "primiti": [
+      [
+        "motion-primitives",
+        10
+      ]
+    ],
+    "primitiv": [
+      [
+        "motion-primitives",
+        10
+      ]
+    ],
+    "primitive": [
+      [
+        "motion-primitives",
+        10
+      ]
+    ],
+    "primitives": [
+      [
+        "motion-primitives",
+        10
+      ]
+    ],
+    "rad": [
+      [
+        "shadcn-ui",
+        6
+      ]
+    ],
+    "radi": [
+      [
+        "shadcn-ui",
+        6
+      ]
+    ],
+    "radix": [
+      [
+        "shadcn-ui",
+        6
+      ]
+    ],
+    "rea": [
+      [
+        "react-scan",
+        24
+      ],
+      [
+        "shadcn-ui",
+        21
+      ],
+      [
+        "motion-primitives",
+        14
+      ]
+    ],
+    "reac": [
+      [
+        "react-scan",
+        24
+      ],
+      [
+        "shadcn-ui",
+        21
+      ],
+      [
+        "motion-primitives",
+        14
+      ]
+    ],
+    "react": [
+      [
+        "react-scan",
+        24
+      ],
+      [
+        "shadcn-ui",
+        21
+      ],
+      [
+        "motion-primitives",
+        14
+      ]
+    ],
+    "sca": [
+      [
+        "react-scan",
+        10
+      ]
+    ],
+    "scan": [
+      [
+        "react-scan",
+        10
+      ]
+    ],
+    "sha": [
+      [
+        "tweakcn",
+        21
+      ],
+      [
+        "shadcn-ui",
+        10
+      ]
+    ],
+    "shad": [
+      [
+        "tweakcn",
+        21
+      ],
+      [
+        "shadcn-ui",
+        10
+      ]
+    ],
+    "shadc": [
+      [
+        "tweakcn",
+        21
+      ],
+      [
+        "shadcn-ui",
+        10
+      ]
+    ],
+    "shadcn": [
+      [
+        "tweakcn",
+        21
+      ],
+      [
+        "shadcn-ui",
+        10
+      ]
+    ],
+    "sou": [
+      [
+        "react-scan",
+        5
+      ]
+    ],
+    "sour": [
+      [
+        "react-scan",
+        5
+      ]
+    ],
+    "sourc": [
+      [
+        "react-scan",
+        5
+      ]
+    ],
+    "source": [
+      [
+        "react-scan",
+        5
+      ]
+    ],
+    "sys": [
+      [
+        "shadcn-ui",
+        8
+      ]
+    ],
+    "syst": [
+      [
+        "shadcn-ui",
+        8
+      ]
+    ],
+    "syste": [
+      [
+        "shadcn-ui",
+        8
+      ]
+    ],
+    "system": [
+      [
+        "shadcn-ui",
+        8
+      ]
+    ],
+    "tai": [
+      [
+        "shadcn-ui",
+        14
+      ],
+      [
+        "tweakcn",
+        14
+      ]
+    ],
+    "tail": [
+      [
+        "shadcn-ui",
+        14
+      ],
+      [
+        "tweakcn",
+        14
+      ]
+    ],
+    "tailw": [
+      [
+        "shadcn-ui",
+        14
+      ],
+      [
+        "tweakcn",
+        14
+      ]
+    ],
+    "tailwi": [
+      [
+        "shadcn-ui",
+        14
+      ],
+      [
+        "tweakcn",
+        14
+      ]
+    ],
+    "tailwin": [
+      [
+        "shadcn-ui",
+        14
+      ],
+      [
+        "tweakcn",
+        14
+      ]
+    ],
+    "tailwind": [
+      [
+        "shadcn-ui",
+        14
+      ],
+      [
+        "tweakcn",
+        14
+      ]
+    ],
+    "the": [
+      [
+        "tweakcn",
+        8
+      ]
+    ],
+    "them": [
+      [
+        "tweakcn",
+        8
+      ]
+    ],
+    "theme": [
+      [
+        "tweakcn",
+        8
+      ]
+    ],
+    "tok": [
+      [
+        "tweakcn",
+        7
+      ]
+    ],
+    "toke": [
+      [
+        "tweakcn",
+        7
+      ]
+    ],
+    "token": [
+      [
+        "tweakcn",
+        7
+      ]
+    ],
+    "too": [
+      [
+        "tweakcn",
+        5
+      ]
+    ],
+    "tool": [
+      [
+        "tweakcn",
+        5
+      ]
+    ],
+    "twe": [
+      [
+        "tweakcn",
+        10
+      ]
+    ],
+    "twea": [
+      [
+        "tweakcn",
+        10
+      ]
+    ],
+    "tweak": [
+      [
+        "tweakcn",
+        10
+      ]
+    ],
+    "tweakc": [
+      [
+        "tweakcn",
+        10
+      ]
+    ],
+    "tweakcn": [
+      [
+        "tweakcn",
+        10
+      ]
+    ],
+    "ui": [
+      [
+        "shadcn-ui",
+        24
+      ],
+      [
+        "tweakcn",
+        6
+      ]
+    ],
+    "usi": [
+      [
+        "shadcn-ui",
+        5
+      ]
+    ],
+    "usin": [
+      [
+        "shadcn-ui",
+        5
+      ]
+    ],
+    "using": [
+      [
+        "shadcn-ui",
+        5
+      ]
+    ],
+    "wat": [
+      [
+        "tweakcn",
+        5
+      ]
+    ],
+    "watc": [
+      [
+        "tweakcn",
+        5
+      ]
+    ],
+    "watch": [
+      [
+        "tweakcn",
+        5
+      ]
+    ],
+    "watchi": [
+      [
+        "tweakcn",
+        5
+      ]
+    ],
+    "watchin": [
+      [
+        "tweakcn",
+        5
+      ]
+    ],
+    "watching": [
+      [
+        "tweakcn",
+        5
+      ]
+    ]
+  }
+}

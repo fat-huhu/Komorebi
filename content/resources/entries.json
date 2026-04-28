@@ -1,0 +1,54 @@
+[
+  {
+    "id": "shadcn-ui",
+    "title": "shadcn/ui",
+    "url": "https://ui.shadcn.com/",
+    "description": "可组合的 React 组件集合，适合快速搭建一致性较高的产品级界面。",
+    "notes": "适合做中后台和内容工具，复制到本地后可按项目风格继续改，不会被组件库约束死。",
+    "kind": "component",
+    "status": "using",
+    "addedAt": "2026-04-28",
+    "source": "official",
+    "tags": ["react", "ui", "tailwind", "design-system"],
+    "stack": ["React", "Tailwind CSS", "Radix UI"]
+  },
+  {
+    "id": "motion-primitives",
+    "title": "Motion-Primitives",
+    "url": "https://motion-primitives.com/",
+    "description": "偏展示和交互动效的现成组件集合，适合补充页面的微交互层。",
+    "notes": "适合局部提气，但不要整站滥用，最好只挑关键入口和状态反馈位置接入。",
+    "kind": "component",
+    "status": "marked",
+    "addedAt": "2026-04-27",
+    "source": "official",
+    "tags": ["animation", "react", "interaction"],
+    "stack": ["React", "Motion"]
+  },
+  {
+    "id": "tweakcn",
+    "title": "TweakCN",
+    "url": "https://tweakcn.com/",
+    "description": "针对 shadcn 生态的主题和样式生成工具，适合快速试配色和 token。",
+    "notes": "适合前期找方向，最终仍然应该把变量收回项目内统一管理。",
+    "kind": "tool",
+    "status": "watching",
+    "addedAt": "2026-04-26",
+    "source": "community",
+    "tags": ["theme", "shadcn", "tailwind"],
+    "stack": ["Tailwind CSS", "shadcn/ui"]
+  },
+  {
+    "id": "react-scan",
+    "title": "React Scan",
+    "url": "https://github.com/aidenybai/react-scan",
+    "description": "定位不必要重渲染的调试工具，适合前端性能排查。",
+    "notes": "组件变复杂后很有价值，尤其是做列表、表单和拖拽交互时。",
+    "kind": "open-source",
+    "status": "marked",
+    "addedAt": "2026-04-25",
+    "source": "github",
+    "tags": ["performance", "debug", "react"],
+    "stack": ["React"]
+  }
+]
