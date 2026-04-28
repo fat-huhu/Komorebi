@@ -41,19 +41,35 @@ export function JournalIndex({
   useEffect(() => {
     let isMounted = true
     loadPostsManifest()
-      .then((manifest) => { if (isMounted) setPosts(manifest.posts) })
-      .catch((error) => { if (isMounted) setLoadError(error instanceof Error ? error.message : 'Unable to load posts manifest.') })
-      .finally(() => { if (isMounted) setIsManifestLoading(false) })
-    return () => { isMounted = false }
+      .then((manifest) => {
+        if (isMounted) setPosts(manifest.posts)
+      })
+      .catch((error) => {
+        if (isMounted)
+          setLoadError(error instanceof Error ? error.message : 'Unable to load posts manifest.')
+      })
+      .finally(() => {
+        if (isMounted) setIsManifestLoading(false)
+      })
+    return () => {
+      isMounted = false
+    }
   }, [])
 
   useEffect(() => {
     if (!query.trim() || searchIndex) return
     let isMounted = true
     loadSearchIndex()
-      .then((index) => { if (isMounted) setSearchIndex(index) })
-      .catch((error) => { if (isMounted) setLoadError(error instanceof Error ? error.message : 'Unable to load search index.') })
-    return () => { isMounted = false }
+      .then((index) => {
+        if (isMounted) setSearchIndex(index)
+      })
+      .catch((error) => {
+        if (isMounted)
+          setLoadError(error instanceof Error ? error.message : 'Unable to load search index.')
+      })
+    return () => {
+      isMounted = false
+    }
   }, [query, searchIndex])
 
   const isSearchLoading = Boolean(query.trim()) && !searchIndex && !loadError
@@ -90,10 +106,10 @@ export function JournalIndex({
               Editorial Index
             </div>
             <h1 className="max-w-230 text-[clamp(2rem,5.5vw,5.5rem)] font-black uppercase leading-[0.9] tracking-[-0.04em] text-white">
-              Journal
+              博客
             </h1>
             <p className="mt-5 max-w-2xl text-sm leading-7 text-white/62 md:text-base">
-              Notes on motion, layout systems, visual identity, and frontend craft. Built as an index, not a feed.
+              记录一些问题排查记录和技术调研、实践。
             </p>
           </div>
           <div className="w-full max-w-[440px] space-y-4 lg:pb-2">
@@ -141,7 +157,9 @@ export function JournalIndex({
         </div>
 
         {loadError ? (
-          <div className="border-b border-dashed border-white/10 py-6 text-sm text-amber-200/72">{loadError}</div>
+          <div className="border-b border-dashed border-white/10 py-6 text-sm text-amber-200/72">
+            {loadError}
+          </div>
         ) : null}
 
         {isManifestLoading ? (
@@ -160,11 +178,18 @@ export function JournalIndex({
             <article
               key={entry.slug}
               className="journal-row journal-row-enter group relative grid cursor-pointer gap-6 py-7 transition duration-500 md:grid-cols-[88px_minmax(0,1fr)_220px] md:items-end"
-              style={{ '--journal-accent': entry.accent, animationDelay: `${Math.min(index, 9) * 55}ms` } as CSSProperties}
+              style={
+                {
+                  '--journal-accent': entry.accent,
+                  animationDelay: `${Math.min(index, 9) * 55}ms`,
+                } as CSSProperties
+              }
               onClick={(e) => onOpenArticle(entry, e.currentTarget.getBoundingClientRect())}
             >
               <div className="flex items-start justify-between md:block">
-                <span className="text-[11px] uppercase tracking-[0.42em] text-white/28">{entry.indexLabel}</span>
+                <span className="text-[11px] uppercase tracking-[0.42em] text-white/28">
+                  {entry.indexLabel}
+                </span>
                 <span className="inline-flex rounded-full border border-white/10 px-3 py-1 text-[10px] uppercase tracking-[0.28em] text-white/50 md:mt-4">
                   {entry.category}
                 </span>
@@ -185,12 +210,18 @@ export function JournalIndex({
                   <span className="journal-signal__bar" />
                   <span className="journal-signal__pulse" />
                 </div>
-                <p className="mt-6 max-w-3xl text-sm leading-7 text-white/56 md:text-[15px]">{entry.summary}</p>
+                <p className="mt-6 max-w-3xl text-sm leading-7 text-white/56 md:text-[15px]">
+                  {entry.summary}
+                </p>
               </div>
               <div className="flex flex-wrap items-center gap-x-5 gap-y-3 md:justify-end md:text-right">
                 <div>
-                  <div className="text-[11px] uppercase tracking-[0.36em] text-white/26">{formatPostDate(entry.date)}</div>
-                  <div className="mt-2 text-sm text-white/56">{formatReadTime(entry.readingTime)}</div>
+                  <div className="text-[11px] uppercase tracking-[0.36em] text-white/26">
+                    {formatPostDate(entry.date)}
+                  </div>
+                  <div className="mt-2 text-sm text-white/56">
+                    {formatReadTime(entry.readingTime)}
+                  </div>
                 </div>
                 <div className="flex flex-wrap gap-2 md:justify-end">
                   {entry.tags.map((tag) => (

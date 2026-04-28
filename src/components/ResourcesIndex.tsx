@@ -60,7 +60,10 @@ export function ResourcesIndex({
         if (isMounted) setResources(manifest.resources)
       })
       .catch((error) => {
-        if (isMounted) setLoadError(error instanceof Error ? error.message : 'Unable to load resources manifest.')
+        if (isMounted)
+          setLoadError(
+            error instanceof Error ? error.message : 'Unable to load resources manifest.',
+          )
       })
       .finally(() => {
         if (isMounted) setIsManifestLoading(false)
@@ -78,7 +81,10 @@ export function ResourcesIndex({
         if (isMounted) setSearchIndex(index)
       })
       .catch((error) => {
-        if (isMounted) setLoadError(error instanceof Error ? error.message : 'Unable to load resources search index.')
+        if (isMounted)
+          setLoadError(
+            error instanceof Error ? error.message : 'Unable to load resources search index.',
+          )
       })
     return () => {
       isMounted = false
@@ -135,7 +141,10 @@ export function ResourcesIndex({
       }))
   }, [filteredEntries])
 
-  const stackCount = useMemo(() => new Set(filteredEntries.flatMap((entry) => entry.stack)).size, [filteredEntries])
+  const stackCount = useMemo(
+    () => new Set(filteredEntries.flatMap((entry) => entry.stack)).size,
+    [filteredEntries],
+  )
   const usingCount = statusData.find((item) => item.status === 'using')?.total ?? 0
   const markedCount = statusData.find((item) => item.status === 'marked')?.total ?? 0
 
@@ -166,10 +175,10 @@ export function ResourcesIndex({
                 Resource Archive
               </div>
               <h1 className="text-[clamp(2rem,5.5vw,5.5rem)] font-black uppercase leading-[0.9] tracking-[-0.04em] text-white">
-                Stack Radar
+                资源雷达
               </h1>
               <p className="mt-5 max-w-2xl text-sm leading-7 text-white/62 md:text-base">
-                A searchable archive for plugins, open-source repos, components, and tools worth reusing or revisiting.
+                一个可搜索的插件、开源仓库、组件和工具档案。
               </p>
             </div>
 
@@ -213,10 +222,28 @@ export function ResourcesIndex({
           </div>
 
           <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-            <MetricPanel icon={<Bookmark className="h-4 w-4" />} label="Visible Nodes" value={String(filteredEntries.length).padStart(2, '0')} tone="orange" />
-            <MetricPanel icon={<Boxes className="h-4 w-4" />} label="Stacks Covered" value={String(stackCount).padStart(2, '0')} tone="cyan" />
-            <MetricPanel label="Using Now" value={String(usingCount).padStart(2, '0')} tone="lime" />
-            <MetricPanel label="Marked" value={String(markedCount).padStart(2, '0')} tone="violet" />
+            <MetricPanel
+              icon={<Bookmark className="h-4 w-4" />}
+              label="Visible Nodes"
+              value={String(filteredEntries.length).padStart(2, '0')}
+              tone="orange"
+            />
+            <MetricPanel
+              icon={<Boxes className="h-4 w-4" />}
+              label="Stacks Covered"
+              value={String(stackCount).padStart(2, '0')}
+              tone="cyan"
+            />
+            <MetricPanel
+              label="Using Now"
+              value={String(usingCount).padStart(2, '0')}
+              tone="lime"
+            />
+            <MetricPanel
+              label="Marked"
+              value={String(markedCount).padStart(2, '0')}
+              tone="violet"
+            />
           </div>
         </header>
 
@@ -226,7 +253,9 @@ export function ResourcesIndex({
         </div>
 
         {loadError ? (
-          <div className="border-b border-dashed border-white/10 py-6 text-sm text-amber-200/72">{loadError}</div>
+          <div className="border-b border-dashed border-white/10 py-6 text-sm text-amber-200/72">
+            {loadError}
+          </div>
         ) : null}
 
         {isManifestLoading ? (
@@ -249,7 +278,9 @@ export function ResourcesIndex({
               </div>
               <ChartContainer
                 className="mt-6 h-[260px] w-full"
-                config={Object.fromEntries(kindData.map((item) => [item.kind, { label: item.label, color: item.fill }]))}
+                config={Object.fromEntries(
+                  kindData.map((item) => [item.kind, { label: item.label, color: item.fill }]),
+                )}
               >
                 <BarChart data={kindData} margin={{ top: 8, right: 8, left: -24, bottom: 0 }}>
                   <CartesianGrid vertical={false} stroke="rgba(255,255,255,0.08)" />
@@ -268,15 +299,33 @@ export function ResourcesIndex({
             <section className="resource-panel">
               <div className="resource-panel__header">
                 <span>Status Mix</span>
-                <span>{statusData.reduce((sum, item) => sum + item.total, 0).toString().padStart(2, '0')} Total</span>
+                <span>
+                  {statusData
+                    .reduce((sum, item) => sum + item.total, 0)
+                    .toString()
+                    .padStart(2, '0')}{' '}
+                  Total
+                </span>
               </div>
               <div className="mt-6 grid gap-6 lg:grid-cols-[200px_minmax(0,1fr)] lg:items-center">
                 <ChartContainer
                   className="mx-auto h-[220px] w-full max-w-[220px]"
-                  config={Object.fromEntries(statusData.map((item) => [item.status, { label: item.label, color: item.fill }]))}
+                  config={Object.fromEntries(
+                    statusData.map((item) => [
+                      item.status,
+                      { label: item.label, color: item.fill },
+                    ]),
+                  )}
                 >
                   <PieChart>
-                    <Pie data={statusData} dataKey="total" nameKey="label" innerRadius={54} outerRadius={82} paddingAngle={3}>
+                    <Pie
+                      data={statusData}
+                      dataKey="total"
+                      nameKey="label"
+                      innerRadius={54}
+                      outerRadius={82}
+                      paddingAngle={3}
+                    >
                       {statusData.map((item) => (
                         <Cell key={item.status} fill={item.fill} />
                       ))}
@@ -288,10 +337,15 @@ export function ResourcesIndex({
                   {statusData.map((item) => (
                     <div key={item.status} className="resource-status-row">
                       <div className="flex items-center gap-3">
-                        <span className="h-2.5 w-2.5 rounded-full" style={{ backgroundColor: item.fill }} />
+                        <span
+                          className="h-2.5 w-2.5 rounded-full"
+                          style={{ backgroundColor: item.fill }}
+                        />
                         <span className="text-sm text-white/66">{item.label}</span>
                       </div>
-                      <span className="text-sm text-white/46">{String(item.total).padStart(2, '0')}</span>
+                      <span className="text-sm text-white/46">
+                        {String(item.total).padStart(2, '0')}
+                      </span>
                     </div>
                   ))}
                 </div>
@@ -327,7 +381,9 @@ export function ResourcesIndex({
                     )
                   })
                 ) : (
-                  <p className="text-sm leading-7 text-white/52">No entries available for timeline aggregation.</p>
+                  <p className="text-sm leading-7 text-white/52">
+                    No entries available for timeline aggregation.
+                  </p>
                 )}
               </div>
             </section>
@@ -338,14 +394,25 @@ export function ResourcesIndex({
                 <span>JSON Source</span>
               </div>
               <div className="mt-6 grid gap-3 sm:grid-cols-2">
-                {['title', 'url', 'description', 'notes', 'kind', 'status', 'addedAt', 'tags', 'stack'].map((field) => (
+                {[
+                  'title',
+                  'url',
+                  'description',
+                  'notes',
+                  'kind',
+                  'status',
+                  'addedAt',
+                  'tags',
+                  'stack',
+                ].map((field) => (
                   <div key={field} className="resource-chip">
                     {field}
                   </div>
                 ))}
               </div>
               <p className="mt-6 max-w-2xl text-sm leading-7 text-white/58">
-                Use one record per link. Keep `description` focused on what it is, and put your own judgment in `notes`.
+                Use one record per link. Keep `description` focused on what it is, and put your own
+                judgment in `notes`.
               </p>
             </section>
           </div>
@@ -356,7 +423,9 @@ export function ResourcesIndex({
             <article key={entry.id} className="resource-card">
               <div className="flex flex-col gap-6 lg:grid lg:grid-cols-[88px_minmax(0,1fr)_220px] lg:items-start">
                 <div className="flex items-start justify-between lg:block">
-                  <span className="text-[11px] uppercase tracking-[0.42em] text-white/28">{entry.indexLabel}</span>
+                  <span className="text-[11px] uppercase tracking-[0.42em] text-white/28">
+                    {entry.indexLabel}
+                  </span>
                   <span className="resource-badge mt-0 lg:mt-4" data-tone={entry.kind}>
                     {kindMeta[entry.kind]?.label ?? entry.kind}
                   </span>
@@ -371,15 +440,22 @@ export function ResourcesIndex({
                       className="group inline-flex items-center gap-3 text-[clamp(1.15rem,2vw,2rem)] font-semibold leading-[0.96] tracking-[-0.035em] text-white transition hover:text-cyan-100"
                     >
                       <span>{entry.title}</span>
-                      <ArrowUpRight className="h-5 w-5 text-white/34 transition group-hover:text-cyan-300" strokeWidth={1.7} />
+                      <ArrowUpRight
+                        className="h-5 w-5 text-white/34 transition group-hover:text-cyan-300"
+                        strokeWidth={1.7}
+                      />
                     </a>
                     <span className="resource-badge" data-tone={entry.status}>
                       {statusMeta[entry.status]?.label ?? entry.status}
                     </span>
                   </div>
 
-                  <p className="mt-5 max-w-3xl text-sm leading-7 text-white/60 md:text-[15px]">{entry.description}</p>
-                  {entry.notes ? <p className="mt-3 max-w-3xl text-sm leading-7 text-white/42">{entry.notes}</p> : null}
+                  <p className="mt-5 max-w-3xl text-sm leading-7 text-white/60 md:text-[15px]">
+                    {entry.description}
+                  </p>
+                  {entry.notes ? (
+                    <p className="mt-3 max-w-3xl text-sm leading-7 text-white/42">{entry.notes}</p>
+                  ) : null}
 
                   <div className="mt-5 flex flex-wrap gap-2">
                     {entry.tags.map((tag) => (
@@ -392,7 +468,9 @@ export function ResourcesIndex({
 
                 <div className="flex flex-wrap items-center gap-x-5 gap-y-3 lg:justify-end lg:text-right">
                   <div>
-                    <div className="text-[11px] uppercase tracking-[0.36em] text-white/26">{formatResourceDate(entry.addedAt)}</div>
+                    <div className="text-[11px] uppercase tracking-[0.36em] text-white/26">
+                      {formatResourceDate(entry.addedAt)}
+                    </div>
                     <div className="mt-2 text-sm text-white/56">{entry.source}</div>
                   </div>
                   <div className="flex flex-wrap gap-2 lg:justify-end">

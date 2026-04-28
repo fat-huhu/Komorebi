@@ -1,13 +1,13 @@
 {
   "version": 1,
-  "generatedAt": "2026-04-28T00:44:37.501Z",
+  "generatedAt": "2026-04-28T06:10:12.509Z",
   "documents": [
     {
-      "id": "shadcn-ui",
-      "title": "shadcn/ui",
-      "url": "https://ui.shadcn.com/",
-      "description": "可组合的 React 组件集合，适合快速搭建一致性较高的产品级界面。",
-      "notes": "适合做中后台和内容工具，复制到本地后可按项目风格继续改，不会被组件库约束死。",
+      "id": "jakubantalik",
+      "title": "jakubantalik",
+      "url": "https://beam.jakubantalik.com/",
+      "description": "一个可以让边框炫彩起来的组件",
+      "notes": "适合做输入框",
       "kind": "component",
       "status": "using",
       "addedAt": "2026-04-28",
@@ -18,2972 +18,1225 @@
         "tailwind",
         "design-system"
       ],
-      "stack": [
-        "React",
-        "Tailwind CSS",
-        "Radix UI"
-      ],
+      "stack": [],
       "indexLabel": "01"
     },
     {
-      "id": "motion-primitives",
-      "title": "Motion-Primitives",
-      "url": "https://motion-primitives.com/",
-      "description": "偏展示和交互动效的现成组件集合，适合补充页面的微交互层。",
-      "notes": "适合局部提气，但不要整站滥用，最好只挑关键入口和状态反馈位置接入。",
+      "id": "uiprompt",
+      "title": "uiprompt",
+      "url": "https://www.uiprompt.site/zh/styles",
+      "description": "一个查看ui风格提示词的网站",
+      "notes": "适合给ai投喂基础风格",
       "kind": "component",
-      "status": "marked",
+      "status": "using",
       "addedAt": "2026-04-27",
       "source": "official",
       "tags": [
-        "animation",
-        "react",
-        "interaction"
+        "ui"
       ],
-      "stack": [
-        "React",
-        "Motion"
-      ],
+      "stack": [],
       "indexLabel": "02"
     },
     {
-      "id": "tweakcn",
-      "title": "TweakCN",
-      "url": "https://tweakcn.com/",
-      "description": "针对 shadcn 生态的主题和样式生成工具，适合快速试配色和 token。",
-      "notes": "适合前期找方向，最终仍然应该把变量收回项目内统一管理。",
-      "kind": "tool",
-      "status": "watching",
-      "addedAt": "2026-04-26",
-      "source": "community",
-      "tags": [
-        "theme",
-        "shadcn",
-        "tailwind"
-      ],
-      "stack": [
-        "Tailwind CSS",
-        "shadcn/ui"
-      ],
-      "indexLabel": "03"
-    },
-    {
-      "id": "react-scan",
-      "title": "React Scan",
-      "url": "https://github.com/aidenybai/react-scan",
-      "description": "定位不必要重渲染的调试工具，适合前端性能排查。",
-      "notes": "组件变复杂后很有价值，尤其是做列表、表单和拖拽交互时。",
-      "kind": "open-source",
+      "id": "architecture-diagram",
+      "title": "architecture-diagram",
+      "url": "https://github.com/Cocoon-AI/architecture-diagram-generator",
+      "description": "一个画流程图的skill",
+      "notes": "一个画流程图的skill",
+      "kind": "skill",
       "status": "marked",
       "addedAt": "2026-04-25",
       "source": "github",
       "tags": [
-        "performance",
-        "debug",
-        "react"
+        "ai",
+        "skill"
       ],
-      "stack": [
-        "React"
+      "stack": [],
+      "indexLabel": "03"
+    },
+    {
+      "id": "excalidraw-diagram-skill",
+      "title": "excalidraw-diagram-skill",
+      "url": "https://github.com/coleam00/excalidraw-diagram-skill",
+      "description": "一个手绘风格流程图的skill",
+      "notes": "一个手绘风格流程图的skill",
+      "kind": "skill",
+      "status": "marked",
+      "addedAt": "2026-04-25",
+      "source": "github",
+      "tags": [
+        "ai",
+        "skill"
       ],
+      "stack": [],
       "indexLabel": "04"
+    },
+    {
+      "id": "excalidraw-diagram-skill",
+      "title": "excalidraw-diagram-skill",
+      "url": "https://github.com/coleam00/excalidraw-diagram-skill",
+      "description": "一个手绘风格流程图的skill",
+      "notes": "一个手绘风格流程图的skill",
+      "kind": "skill",
+      "status": "marked",
+      "addedAt": "2026-04-25",
+      "source": "github",
+      "tags": [
+        "ai",
+        "skill"
+      ],
+      "stack": [],
+      "indexLabel": "05"
     }
   ],
   "postings": {
-    "按": [
+    "边": [
       [
-        "shadcn-ui",
-        6
-      ]
-    ],
-    "按项": [
-      [
-        "shadcn-ui",
-        6
-      ]
-    ],
-    "把": [
-      [
-        "tweakcn",
-        6
-      ]
-    ],
-    "把变": [
-      [
-        "tweakcn",
-        6
-      ]
-    ],
-    "被": [
-      [
-        "shadcn-ui",
-        6
-      ]
-    ],
-    "被组": [
-      [
-        "shadcn-ui",
-        6
-      ]
-    ],
-    "本": [
-      [
-        "shadcn-ui",
-        6
-      ]
-    ],
-    "本地": [
-      [
-        "shadcn-ui",
-        6
-      ]
-    ],
-    "必": [
-      [
-        "react-scan",
+        "jakubantalik",
         7
       ]
     ],
-    "必要": [
+    "边框": [
       [
-        "react-scan",
+        "jakubantalik",
         7
       ]
     ],
-    "变": [
+    "彩": [
       [
-        "tweakcn",
-        6
-      ],
-      [
-        "react-scan",
-        6
-      ]
-    ],
-    "变复": [
-      [
-        "react-scan",
-        6
-      ]
-    ],
-    "变量": [
-      [
-        "tweakcn",
-        6
-      ]
-    ],
-    "表": [
-      [
-        "react-scan",
-        6
-      ]
-    ],
-    "表单": [
-      [
-        "react-scan",
-        6
-      ]
-    ],
-    "表单和拖拽交互时": [
-      [
-        "react-scan",
-        6
-      ]
-    ],
-    "补": [
-      [
-        "motion-primitives",
+        "jakubantalik",
         7
       ]
     ],
-    "补充": [
+    "彩起": [
       [
-        "motion-primitives",
-        7
-      ]
-    ],
-    "不": [
-      [
-        "react-scan",
-        7
-      ],
-      [
-        "shadcn-ui",
-        6
-      ],
-      [
-        "motion-primitives",
-        6
-      ]
-    ],
-    "不必": [
-      [
-        "react-scan",
-        7
-      ]
-    ],
-    "不会": [
-      [
-        "shadcn-ui",
-        6
-      ]
-    ],
-    "不要": [
-      [
-        "motion-primitives",
-        6
-      ]
-    ],
-    "部": [
-      [
-        "motion-primitives",
-        6
-      ]
-    ],
-    "部提": [
-      [
-        "motion-primitives",
-        6
-      ]
-    ],
-    "层": [
-      [
-        "motion-primitives",
+        "jakubantalik",
         7
       ]
     ],
     "查": [
       [
-        "react-scan",
+        "uiprompt",
         7
       ]
     ],
-    "产": [
+    "查看": [
       [
-        "shadcn-ui",
+        "uiprompt",
         7
       ]
     ],
-    "产品": [
+    "程": [
       [
-        "shadcn-ui",
-        7
-      ]
-    ],
-    "成": [
-      [
-        "motion-primitives",
-        7
+        "excalidraw-diagram-skill",
+        26
       ],
       [
-        "tweakcn",
+        "architecture-diagram",
+        13
+      ]
+    ],
+    "程图": [
+      [
+        "excalidraw-diagram-skill",
+        26
+      ],
+      [
+        "architecture-diagram",
+        13
+      ]
+    ],
+    "础": [
+      [
+        "uiprompt",
+        6
+      ]
+    ],
+    "础风": [
+      [
+        "uiprompt",
+        6
+      ]
+    ],
+    "词": [
+      [
+        "uiprompt",
         7
       ]
     ],
-    "成工": [
+    "词的": [
       [
-        "tweakcn",
+        "uiprompt",
         7
-      ]
-    ],
-    "成组": [
-      [
-        "motion-primitives",
-        7
-      ]
-    ],
-    "充": [
-      [
-        "motion-primitives",
-        7
-      ]
-    ],
-    "充页": [
-      [
-        "motion-primitives",
-        7
-      ]
-    ],
-    "搭": [
-      [
-        "shadcn-ui",
-        7
-      ]
-    ],
-    "搭建": [
-      [
-        "shadcn-ui",
-        7
-      ]
-    ],
-    "单": [
-      [
-        "react-scan",
-        6
-      ]
-    ],
-    "单和": [
-      [
-        "react-scan",
-        6
-      ]
-    ],
-    "但": [
-      [
-        "motion-primitives",
-        6
-      ]
-    ],
-    "但不": [
-      [
-        "motion-primitives",
-        6
-      ]
-    ],
-    "但不要整站滥用": [
-      [
-        "motion-primitives",
-        6
-      ]
-    ],
-    "到": [
-      [
-        "shadcn-ui",
-        6
-      ]
-    ],
-    "到本": [
-      [
-        "shadcn-ui",
-        6
-      ]
-    ],
-    "地": [
-      [
-        "shadcn-ui",
-        6
-      ]
-    ],
-    "地后": [
-      [
-        "shadcn-ui",
-        6
       ]
     ],
     "的": [
       [
-        "shadcn-ui",
+        "excalidraw-diagram-skill",
+        26
+      ],
+      [
+        "architecture-diagram",
+        13
+      ],
+      [
+        "jakubantalik",
         7
       ],
       [
-        "motion-primitives",
-        7
-      ],
-      [
-        "tweakcn",
-        7
-      ],
-      [
-        "react-scan",
+        "uiprompt",
         7
       ]
     ],
-    "的产": [
+    "的网": [
       [
-        "shadcn-ui",
+        "uiprompt",
         7
       ]
     ],
-    "的调": [
+    "的组": [
       [
-        "react-scan",
+        "jakubantalik",
         7
-      ]
-    ],
-    "的微": [
-      [
-        "motion-primitives",
-        7
-      ]
-    ],
-    "的现": [
-      [
-        "motion-primitives",
-        7
-      ]
-    ],
-    "的主": [
-      [
-        "tweakcn",
-        7
-      ]
-    ],
-    "调": [
-      [
-        "react-scan",
-        7
-      ]
-    ],
-    "调试": [
-      [
-        "react-scan",
-        7
-      ]
-    ],
-    "定": [
-      [
-        "react-scan",
-        7
-      ]
-    ],
-    "定位": [
-      [
-        "react-scan",
-        7
-      ]
-    ],
-    "动": [
-      [
-        "motion-primitives",
-        7
-      ]
-    ],
-    "动效": [
-      [
-        "motion-primitives",
-        7
-      ]
-    ],
-    "端": [
-      [
-        "react-scan",
-        7
-      ]
-    ],
-    "端性": [
-      [
-        "react-scan",
-        7
-      ]
-    ],
-    "对": [
-      [
-        "tweakcn",
-        7
-      ]
-    ],
-    "反": [
-      [
-        "motion-primitives",
-        6
-      ]
-    ],
-    "反馈": [
-      [
-        "motion-primitives",
-        6
-      ]
-    ],
-    "方": [
-      [
-        "tweakcn",
-        6
-      ]
-    ],
-    "方向": [
-      [
-        "tweakcn",
-        6
       ]
     ],
     "风": [
       [
-        "shadcn-ui",
-        6
+        "excalidraw-diagram-skill",
+        26
+      ],
+      [
+        "uiprompt",
+        13
       ]
     ],
     "风格": [
       [
-        "shadcn-ui",
-        6
-      ]
-    ],
-    "复": [
-      [
-        "shadcn-ui",
-        6
+        "excalidraw-diagram-skill",
+        26
       ],
       [
-        "react-scan",
-        6
+        "uiprompt",
+        13
       ]
     ],
-    "复杂": [
+    "风格提示词的网站": [
       [
-        "react-scan",
-        6
-      ]
-    ],
-    "复制": [
-      [
-        "shadcn-ui",
-        6
-      ]
-    ],
-    "该": [
-      [
-        "tweakcn",
-        6
-      ]
-    ],
-    "该把": [
-      [
-        "tweakcn",
-        6
-      ]
-    ],
-    "改": [
-      [
-        "shadcn-ui",
-        6
-      ]
-    ],
-    "高": [
-      [
-        "shadcn-ui",
-        7
-      ]
-    ],
-    "高的": [
-      [
-        "shadcn-ui",
+        "uiprompt",
         7
       ]
     ],
     "格": [
       [
-        "shadcn-ui",
-        6
+        "excalidraw-diagram-skill",
+        26
+      ],
+      [
+        "uiprompt",
+        13
       ]
     ],
-    "格继": [
+    "格流": [
       [
-        "shadcn-ui",
-        6
+        "excalidraw-diagram-skill",
+        26
       ]
     ],
-    "工": [
+    "格提": [
       [
-        "tweakcn",
+        "uiprompt",
+        7
+      ]
+    ],
+    "个": [
+      [
+        "excalidraw-diagram-skill",
+        26
+      ],
+      [
+        "architecture-diagram",
+        13
+      ],
+      [
+        "jakubantalik",
         7
       ],
       [
-        "react-scan",
+        "uiprompt",
         7
-      ],
-      [
-        "shadcn-ui",
-        6
       ]
     ],
-    "工具": [
+    "个查": [
       [
-        "tweakcn",
+        "uiprompt",
         7
-      ],
+      ]
+    ],
+    "个画": [
       [
-        "react-scan",
+        "architecture-diagram",
+        13
+      ]
+    ],
+    "个可": [
+      [
+        "jakubantalik",
         7
-      ],
-      [
-        "shadcn-ui",
-        6
       ]
     ],
-    "关": [
+    "个手": [
       [
-        "motion-primitives",
-        6
+        "excalidraw-diagram-skill",
+        26
       ]
     ],
-    "关键": [
+    "给": [
       [
-        "motion-primitives",
-        6
-      ]
-    ],
-    "管": [
-      [
-        "tweakcn",
-        6
-      ]
-    ],
-    "管理": [
-      [
-        "tweakcn",
-        6
-      ]
-    ],
-    "好": [
-      [
-        "motion-primitives",
-        6
-      ]
-    ],
-    "好只": [
-      [
-        "motion-primitives",
+        "uiprompt",
         6
       ]
     ],
     "合": [
       [
-        "shadcn-ui",
-        13
+        "jakubantalik",
+        6
       ],
       [
-        "motion-primitives",
-        13
-      ],
-      [
-        "tweakcn",
-        13
-      ],
-      [
-        "react-scan",
-        7
-      ]
-    ],
-    "合补": [
-      [
-        "motion-primitives",
-        7
-      ]
-    ],
-    "合的": [
-      [
-        "shadcn-ui",
-        7
-      ]
-    ],
-    "合局": [
-      [
-        "motion-primitives",
+        "uiprompt",
         6
       ]
     ],
-    "合快": [
+    "合给": [
       [
-        "shadcn-ui",
-        7
-      ],
-      [
-        "tweakcn",
-        7
-      ]
-    ],
-    "合前": [
-      [
-        "react-scan",
-        7
-      ],
-      [
-        "tweakcn",
+        "uiprompt",
         6
       ]
     ],
     "合做": [
       [
-        "shadcn-ui",
+        "jakubantalik",
         6
       ]
     ],
-    "和": [
+    "画": [
       [
-        "motion-primitives",
+        "architecture-diagram",
         13
-      ],
-      [
-        "tweakcn",
-        7
-      ],
-      [
-        "shadcn-ui",
-        6
-      ],
-      [
-        "react-scan",
-        6
       ]
     ],
-    "和交": [
+    "画流": [
       [
-        "motion-primitives",
-        7
+        "architecture-diagram",
+        13
       ]
     ],
-    "和内": [
+    "绘": [
       [
-        "shadcn-ui",
-        6
+        "excalidraw-diagram-skill",
+        26
       ]
     ],
-    "和拖": [
+    "绘风": [
       [
-        "react-scan",
+        "excalidraw-diagram-skill",
+        26
+      ]
+    ],
+    "基": [
+      [
+        "uiprompt",
         6
       ]
     ],
-    "和样": [
+    "基础": [
       [
-        "tweakcn",
-        7
-      ]
-    ],
-    "和状": [
-      [
-        "motion-primitives",
-        6
-      ]
-    ],
-    "很": [
-      [
-        "react-scan",
-        6
-      ]
-    ],
-    "很有": [
-      [
-        "react-scan",
-        6
-      ]
-    ],
-    "后": [
-      [
-        "shadcn-ui",
-        6
-      ],
-      [
-        "react-scan",
-        6
-      ]
-    ],
-    "后很": [
-      [
-        "react-scan",
-        6
-      ]
-    ],
-    "后可": [
-      [
-        "shadcn-ui",
-        6
-      ]
-    ],
-    "后台": [
-      [
-        "shadcn-ui",
-        6
-      ]
-    ],
-    "互": [
-      [
-        "motion-primitives",
-        7
-      ],
-      [
-        "react-scan",
-        6
-      ]
-    ],
-    "互层": [
-      [
-        "motion-primitives",
-        7
-      ]
-    ],
-    "互动": [
-      [
-        "motion-primitives",
-        7
-      ]
-    ],
-    "互时": [
-      [
-        "react-scan",
-        6
-      ]
-    ],
-    "回": [
-      [
-        "tweakcn",
-        6
-      ]
-    ],
-    "回项": [
-      [
-        "tweakcn",
-        6
-      ]
-    ],
-    "会": [
-      [
-        "shadcn-ui",
-        6
-      ]
-    ],
-    "会被": [
-      [
-        "shadcn-ui",
-        6
-      ]
-    ],
-    "级": [
-      [
-        "shadcn-ui",
-        7
-      ]
-    ],
-    "级界": [
-      [
-        "shadcn-ui",
-        7
-      ]
-    ],
-    "集": [
-      [
-        "shadcn-ui",
-        7
-      ],
-      [
-        "motion-primitives",
-        7
-      ]
-    ],
-    "集合": [
-      [
-        "shadcn-ui",
-        7
-      ],
-      [
-        "motion-primitives",
-        7
-      ]
-    ],
-    "继": [
-      [
-        "shadcn-ui",
-        6
-      ]
-    ],
-    "继续": [
-      [
-        "shadcn-ui",
-        6
-      ]
-    ],
-    "价": [
-      [
-        "react-scan",
-        6
-      ]
-    ],
-    "价值": [
-      [
-        "react-scan",
+        "uiprompt",
         6
       ]
     ],
     "件": [
       [
-        "shadcn-ui",
-        13
-      ],
-      [
-        "motion-primitives",
-        7
-      ],
-      [
-        "react-scan",
-        6
-      ]
-    ],
-    "件变": [
-      [
-        "react-scan",
-        6
-      ]
-    ],
-    "件集": [
-      [
-        "shadcn-ui",
-        7
-      ],
-      [
-        "motion-primitives",
+        "jakubantalik",
         7
       ]
     ],
-    "件库": [
+    "看": [
       [
-        "shadcn-ui",
-        6
-      ]
-    ],
-    "建": [
-      [
-        "shadcn-ui",
+        "uiprompt",
         7
-      ]
-    ],
-    "建一": [
-      [
-        "shadcn-ui",
-        7
-      ]
-    ],
-    "键": [
-      [
-        "motion-primitives",
-        6
-      ]
-    ],
-    "键入": [
-      [
-        "motion-primitives",
-        6
-      ]
-    ],
-    "交": [
-      [
-        "motion-primitives",
-        7
-      ],
-      [
-        "react-scan",
-        6
-      ]
-    ],
-    "交互": [
-      [
-        "motion-primitives",
-        7
-      ],
-      [
-        "react-scan",
-        6
-      ]
-    ],
-    "较": [
-      [
-        "shadcn-ui",
-        7
-      ]
-    ],
-    "较高": [
-      [
-        "shadcn-ui",
-        7
-      ]
-    ],
-    "接": [
-      [
-        "motion-primitives",
-        6
-      ]
-    ],
-    "接入": [
-      [
-        "motion-primitives",
-        6
-      ]
-    ],
-    "界": [
-      [
-        "shadcn-ui",
-        7
-      ]
-    ],
-    "界面": [
-      [
-        "shadcn-ui",
-        7
-      ]
-    ],
-    "局": [
-      [
-        "motion-primitives",
-        6
-      ]
-    ],
-    "局部": [
-      [
-        "motion-primitives",
-        6
-      ]
-    ],
-    "具": [
-      [
-        "tweakcn",
-        7
-      ],
-      [
-        "react-scan",
-        7
-      ],
-      [
-        "shadcn-ui",
-        6
       ]
     ],
     "可": [
       [
-        "shadcn-ui",
+        "jakubantalik",
+        7
+      ]
+    ],
+    "可以": [
+      [
+        "jakubantalik",
+        7
+      ]
+    ],
+    "框": [
+      [
+        "jakubantalik",
         13
       ]
     ],
-    "可按": [
+    "框炫": [
       [
-        "shadcn-ui",
-        6
-      ]
-    ],
-    "可组": [
-      [
-        "shadcn-ui",
+        "jakubantalik",
         7
       ]
     ],
-    "可组合的": [
+    "来": [
       [
-        "shadcn-ui",
+        "jakubantalik",
         7
       ]
     ],
-    "口": [
+    "来的": [
       [
-        "motion-primitives",
-        6
-      ]
-    ],
-    "口和": [
-      [
-        "motion-primitives",
-        6
-      ]
-    ],
-    "库": [
-      [
-        "shadcn-ui",
-        6
-      ]
-    ],
-    "库约": [
-      [
-        "shadcn-ui",
-        6
-      ]
-    ],
-    "快": [
-      [
-        "shadcn-ui",
+        "jakubantalik",
         7
+      ]
+    ],
+    "流": [
+      [
+        "excalidraw-diagram-skill",
+        26
       ],
       [
-        "tweakcn",
-        7
+        "architecture-diagram",
+        13
       ]
     ],
-    "快速": [
+    "流程": [
       [
-        "shadcn-ui",
-        7
+        "excalidraw-diagram-skill",
+        26
       ],
       [
-        "tweakcn",
+        "architecture-diagram",
+        13
+      ]
+    ],
+    "起": [
+      [
+        "jakubantalik",
         7
       ]
     ],
-    "馈": [
+    "起来": [
       [
-        "motion-primitives",
-        6
-      ]
-    ],
-    "馈位": [
-      [
-        "motion-primitives",
-        6
-      ]
-    ],
-    "滥": [
-      [
-        "motion-primitives",
-        6
-      ]
-    ],
-    "滥用": [
-      [
-        "motion-primitives",
-        6
-      ]
-    ],
-    "理": [
-      [
-        "tweakcn",
-        6
-      ]
-    ],
-    "量": [
-      [
-        "tweakcn",
-        6
-      ]
-    ],
-    "量收": [
-      [
-        "tweakcn",
-        6
-      ]
-    ],
-    "列": [
-      [
-        "react-scan",
-        6
-      ]
-    ],
-    "列表": [
-      [
-        "react-scan",
-        6
-      ]
-    ],
-    "面": [
-      [
-        "shadcn-ui",
-        7
-      ],
-      [
-        "motion-primitives",
+        "jakubantalik",
         7
       ]
     ],
-    "面的": [
+    "让": [
       [
-        "motion-primitives",
+        "jakubantalik",
         7
       ]
     ],
-    "目": [
+    "让边": [
       [
-        "shadcn-ui",
-        6
-      ],
-      [
-        "tweakcn",
-        6
-      ]
-    ],
-    "目风": [
-      [
-        "shadcn-ui",
-        6
-      ]
-    ],
-    "目内": [
-      [
-        "tweakcn",
-        6
-      ]
-    ],
-    "内": [
-      [
-        "shadcn-ui",
-        6
-      ],
-      [
-        "tweakcn",
-        6
-      ]
-    ],
-    "内容": [
-      [
-        "shadcn-ui",
-        6
-      ]
-    ],
-    "内统": [
-      [
-        "tweakcn",
-        6
-      ]
-    ],
-    "能": [
-      [
-        "react-scan",
+        "jakubantalik",
         7
-      ]
-    ],
-    "能排": [
-      [
-        "react-scan",
-        7
-      ]
-    ],
-    "排": [
-      [
-        "react-scan",
-        7
-      ]
-    ],
-    "排查": [
-      [
-        "react-scan",
-        7
-      ]
-    ],
-    "配": [
-      [
-        "tweakcn",
-        7
-      ]
-    ],
-    "配色": [
-      [
-        "tweakcn",
-        7
-      ]
-    ],
-    "偏": [
-      [
-        "motion-primitives",
-        7
-      ]
-    ],
-    "偏展": [
-      [
-        "motion-primitives",
-        7
-      ]
-    ],
-    "品": [
-      [
-        "shadcn-ui",
-        7
-      ]
-    ],
-    "品级": [
-      [
-        "shadcn-ui",
-        7
-      ]
-    ],
-    "期": [
-      [
-        "tweakcn",
-        6
-      ]
-    ],
-    "期找": [
-      [
-        "tweakcn",
-        6
-      ]
-    ],
-    "其": [
-      [
-        "react-scan",
-        6
-      ]
-    ],
-    "其是": [
-      [
-        "react-scan",
-        6
-      ]
-    ],
-    "气": [
-      [
-        "motion-primitives",
-        6
-      ]
-    ],
-    "前": [
-      [
-        "react-scan",
-        7
-      ],
-      [
-        "tweakcn",
-        6
-      ]
-    ],
-    "前端": [
-      [
-        "react-scan",
-        7
-      ]
-    ],
-    "前期": [
-      [
-        "tweakcn",
-        6
-      ]
-    ],
-    "然": [
-      [
-        "tweakcn",
-        6
-      ]
-    ],
-    "然应": [
-      [
-        "tweakcn",
-        6
-      ]
-    ],
-    "染": [
-      [
-        "react-scan",
-        7
-      ]
-    ],
-    "染的": [
-      [
-        "react-scan",
-        7
-      ]
-    ],
-    "仍": [
-      [
-        "tweakcn",
-        6
-      ]
-    ],
-    "仍然": [
-      [
-        "tweakcn",
-        6
-      ]
-    ],
-    "容": [
-      [
-        "shadcn-ui",
-        6
-      ]
-    ],
-    "容工": [
-      [
-        "shadcn-ui",
-        6
       ]
     ],
     "入": [
       [
-        "motion-primitives",
+        "jakubantalik",
         6
       ]
     ],
-    "入口": [
+    "入框": [
       [
-        "motion-primitives",
-        6
-      ]
-    ],
-    "色": [
-      [
-        "tweakcn",
-        7
-      ]
-    ],
-    "色和": [
-      [
-        "tweakcn",
-        7
-      ]
-    ],
-    "生": [
-      [
-        "tweakcn",
-        7
-      ]
-    ],
-    "生成": [
-      [
-        "tweakcn",
-        7
-      ]
-    ],
-    "生态": [
-      [
-        "tweakcn",
-        7
-      ]
-    ],
-    "时": [
-      [
-        "react-scan",
+        "jakubantalik",
         6
       ]
     ],
     "示": [
       [
-        "motion-primitives",
+        "uiprompt",
         7
       ]
     ],
-    "示和": [
+    "示词": [
       [
-        "motion-primitives",
+        "uiprompt",
         7
-      ]
-    ],
-    "式": [
-      [
-        "tweakcn",
-        7
-      ]
-    ],
-    "式生": [
-      [
-        "tweakcn",
-        7
-      ]
-    ],
-    "试": [
-      [
-        "tweakcn",
-        7
-      ],
-      [
-        "react-scan",
-        7
-      ]
-    ],
-    "试工": [
-      [
-        "react-scan",
-        7
-      ]
-    ],
-    "试配": [
-      [
-        "tweakcn",
-        7
-      ]
-    ],
-    "是": [
-      [
-        "react-scan",
-        6
-      ]
-    ],
-    "是做": [
-      [
-        "react-scan",
-        6
       ]
     ],
     "适": [
       [
-        "shadcn-ui",
-        13
+        "jakubantalik",
+        6
       ],
       [
-        "motion-primitives",
-        13
-      ],
-      [
-        "tweakcn",
-        13
-      ],
-      [
-        "react-scan",
-        7
+        "uiprompt",
+        6
       ]
     ],
     "适合": [
       [
-        "shadcn-ui",
-        13
+        "jakubantalik",
+        6
       ],
       [
-        "motion-primitives",
-        13
-      ],
-      [
-        "tweakcn",
-        13
-      ],
-      [
-        "react-scan",
-        7
-      ]
-    ],
-    "适合局部提气": [
-      [
-        "motion-primitives",
+        "uiprompt",
         6
       ]
     ],
-    "适合快速试配色和": [
+    "适合给": [
       [
-        "tweakcn",
-        7
-      ]
-    ],
-    "适合前端性能排查": [
-      [
-        "react-scan",
-        7
-      ]
-    ],
-    "适合前期找方向": [
-      [
-        "tweakcn",
+        "uiprompt",
         6
       ]
     ],
-    "收": [
+    "适合做输入框": [
       [
-        "tweakcn",
+        "jakubantalik",
         6
       ]
     ],
-    "收回": [
+    "手": [
       [
-        "tweakcn",
+        "excalidraw-diagram-skill",
+        26
+      ]
+    ],
+    "手绘": [
+      [
+        "excalidraw-diagram-skill",
+        26
+      ]
+    ],
+    "输": [
+      [
+        "jakubantalik",
         6
       ]
     ],
-    "束": [
+    "输入": [
       [
-        "shadcn-ui",
-        6
-      ]
-    ],
-    "束死": [
-      [
-        "shadcn-ui",
-        6
-      ]
-    ],
-    "死": [
-      [
-        "shadcn-ui",
-        6
-      ]
-    ],
-    "速": [
-      [
-        "shadcn-ui",
-        7
-      ],
-      [
-        "tweakcn",
-        7
-      ]
-    ],
-    "速搭": [
-      [
-        "shadcn-ui",
-        7
-      ]
-    ],
-    "速试": [
-      [
-        "tweakcn",
-        7
-      ]
-    ],
-    "台": [
-      [
-        "shadcn-ui",
-        6
-      ]
-    ],
-    "台和": [
-      [
-        "shadcn-ui",
-        6
-      ]
-    ],
-    "态": [
-      [
-        "tweakcn",
-        7
-      ],
-      [
-        "motion-primitives",
-        6
-      ]
-    ],
-    "态的": [
-      [
-        "tweakcn",
-        7
-      ]
-    ],
-    "态反": [
-      [
-        "motion-primitives",
+        "jakubantalik",
         6
       ]
     ],
     "提": [
       [
-        "motion-primitives",
-        6
-      ]
-    ],
-    "提气": [
-      [
-        "motion-primitives",
-        6
-      ]
-    ],
-    "题": [
-      [
-        "tweakcn",
+        "uiprompt",
         7
       ]
     ],
-    "题和": [
+    "提示": [
       [
-        "tweakcn",
+        "uiprompt",
         7
       ]
     ],
-    "挑": [
+    "投": [
       [
-        "motion-primitives",
+        "uiprompt",
         6
       ]
     ],
-    "挑关": [
+    "投喂": [
       [
-        "motion-primitives",
+        "uiprompt",
         6
       ]
     ],
-    "统": [
+    "投喂基础风格": [
       [
-        "tweakcn",
+        "uiprompt",
         6
       ]
     ],
-    "统一": [
+    "图": [
       [
-        "tweakcn",
-        6
-      ]
-    ],
-    "拖": [
-      [
-        "react-scan",
-        6
-      ]
-    ],
-    "拖拽": [
-      [
-        "react-scan",
-        6
-      ]
-    ],
-    "微": [
-      [
-        "motion-primitives",
-        7
-      ]
-    ],
-    "微交": [
-      [
-        "motion-primitives",
-        7
-      ]
-    ],
-    "位": [
-      [
-        "react-scan",
-        7
+        "excalidraw-diagram-skill",
+        26
       ],
       [
-        "motion-primitives",
-        6
+        "architecture-diagram",
+        13
       ]
     ],
-    "位不": [
+    "图的": [
       [
-        "react-scan",
-        7
-      ]
-    ],
-    "位置": [
-      [
-        "motion-primitives",
-        6
-      ]
-    ],
-    "现": [
-      [
-        "motion-primitives",
-        7
-      ]
-    ],
-    "现成": [
-      [
-        "motion-primitives",
-        7
-      ]
-    ],
-    "向": [
-      [
-        "tweakcn",
-        6
-      ]
-    ],
-    "项": [
-      [
-        "shadcn-ui",
-        6
+        "excalidraw-diagram-skill",
+        26
       ],
       [
-        "tweakcn",
+        "architecture-diagram",
+        13
+      ]
+    ],
+    "网": [
+      [
+        "uiprompt",
+        7
+      ]
+    ],
+    "网站": [
+      [
+        "uiprompt",
+        7
+      ]
+    ],
+    "喂": [
+      [
+        "uiprompt",
         6
       ]
     ],
-    "项目": [
+    "喂基": [
       [
-        "shadcn-ui",
-        6
-      ],
-      [
-        "tweakcn",
+        "uiprompt",
         6
       ]
     ],
-    "效": [
+    "炫": [
       [
-        "motion-primitives",
+        "jakubantalik",
         7
       ]
     ],
-    "效的": [
+    "炫彩": [
       [
-        "motion-primitives",
-        7
-      ]
-    ],
-    "性": [
-      [
-        "shadcn-ui",
-        7
-      ],
-      [
-        "react-scan",
-        7
-      ]
-    ],
-    "性较": [
-      [
-        "shadcn-ui",
-        7
-      ]
-    ],
-    "性能": [
-      [
-        "react-scan",
-        7
-      ]
-    ],
-    "续": [
-      [
-        "shadcn-ui",
-        6
-      ]
-    ],
-    "续改": [
-      [
-        "shadcn-ui",
-        6
-      ]
-    ],
-    "渲": [
-      [
-        "react-scan",
-        7
-      ]
-    ],
-    "渲染": [
-      [
-        "react-scan",
-        7
-      ]
-    ],
-    "样": [
-      [
-        "tweakcn",
-        7
-      ]
-    ],
-    "样式": [
-      [
-        "tweakcn",
-        7
-      ]
-    ],
-    "要": [
-      [
-        "react-scan",
-        7
-      ],
-      [
-        "motion-primitives",
-        6
-      ]
-    ],
-    "要整": [
-      [
-        "motion-primitives",
-        6
-      ]
-    ],
-    "要重": [
-      [
-        "react-scan",
-        7
-      ]
-    ],
-    "页": [
-      [
-        "motion-primitives",
-        7
-      ]
-    ],
-    "页面": [
-      [
-        "motion-primitives",
+        "jakubantalik",
         7
       ]
     ],
     "一": [
       [
-        "shadcn-ui",
+        "excalidraw-diagram-skill",
+        26
+      ],
+      [
+        "architecture-diagram",
+        13
+      ],
+      [
+        "jakubantalik",
         7
       ],
       [
-        "tweakcn",
-        6
-      ]
-    ],
-    "一管": [
-      [
-        "tweakcn",
-        6
-      ]
-    ],
-    "一致": [
-      [
-        "shadcn-ui",
+        "uiprompt",
         7
       ]
     ],
-    "应": [
+    "一个": [
       [
-        "tweakcn",
-        6
-      ]
-    ],
-    "应该": [
+        "excalidraw-diagram-skill",
+        26
+      ],
       [
-        "tweakcn",
-        6
-      ]
-    ],
-    "用": [
+        "architecture-diagram",
+        13
+      ],
       [
-        "motion-primitives",
-        6
-      ]
-    ],
-    "尤": [
+        "jakubantalik",
+        7
+      ],
       [
-        "react-scan",
-        6
-      ]
-    ],
-    "尤其": [
-      [
-        "react-scan",
-        6
-      ]
-    ],
-    "尤其是做列表": [
-      [
-        "react-scan",
-        6
-      ]
-    ],
-    "有": [
-      [
-        "react-scan",
-        6
-      ]
-    ],
-    "有价": [
-      [
-        "react-scan",
-        6
-      ]
-    ],
-    "约": [
-      [
-        "shadcn-ui",
-        6
-      ]
-    ],
-    "约束": [
-      [
-        "shadcn-ui",
-        6
-      ]
-    ],
-    "杂": [
-      [
-        "react-scan",
-        6
-      ]
-    ],
-    "杂后": [
-      [
-        "react-scan",
-        6
-      ]
-    ],
-    "展": [
-      [
-        "motion-primitives",
+        "uiprompt",
         7
       ]
     ],
-    "展示": [
+    "一个查看": [
       [
-        "motion-primitives",
+        "uiprompt",
+        7
+      ]
+    ],
+    "一个画流程图的": [
+      [
+        "architecture-diagram",
+        13
+      ]
+    ],
+    "以": [
+      [
+        "jakubantalik",
+        7
+      ]
+    ],
+    "以让": [
+      [
+        "jakubantalik",
         7
       ]
     ],
     "站": [
       [
-        "motion-primitives",
-        6
-      ]
-    ],
-    "站滥": [
-      [
-        "motion-primitives",
-        6
-      ]
-    ],
-    "找": [
-      [
-        "tweakcn",
-        6
-      ]
-    ],
-    "找方": [
-      [
-        "tweakcn",
-        6
-      ]
-    ],
-    "针": [
-      [
-        "tweakcn",
+        "uiprompt",
         7
-      ]
-    ],
-    "针对": [
-      [
-        "tweakcn",
-        7
-      ]
-    ],
-    "整": [
-      [
-        "motion-primitives",
-        6
-      ]
-    ],
-    "整站": [
-      [
-        "motion-primitives",
-        6
-      ]
-    ],
-    "值": [
-      [
-        "react-scan",
-        6
-      ]
-    ],
-    "只": [
-      [
-        "motion-primitives",
-        6
-      ]
-    ],
-    "只挑": [
-      [
-        "motion-primitives",
-        6
-      ]
-    ],
-    "制": [
-      [
-        "shadcn-ui",
-        6
-      ]
-    ],
-    "制到": [
-      [
-        "shadcn-ui",
-        6
-      ]
-    ],
-    "致": [
-      [
-        "shadcn-ui",
-        7
-      ]
-    ],
-    "致性": [
-      [
-        "shadcn-ui",
-        7
-      ]
-    ],
-    "置": [
-      [
-        "motion-primitives",
-        6
-      ]
-    ],
-    "置接": [
-      [
-        "motion-primitives",
-        6
-      ]
-    ],
-    "中": [
-      [
-        "shadcn-ui",
-        6
-      ]
-    ],
-    "中后": [
-      [
-        "shadcn-ui",
-        6
-      ]
-    ],
-    "终": [
-      [
-        "tweakcn",
-        6
-      ]
-    ],
-    "终仍": [
-      [
-        "tweakcn",
-        6
-      ]
-    ],
-    "重": [
-      [
-        "react-scan",
-        7
-      ]
-    ],
-    "重渲": [
-      [
-        "react-scan",
-        7
-      ]
-    ],
-    "主": [
-      [
-        "tweakcn",
-        7
-      ]
-    ],
-    "主题": [
-      [
-        "tweakcn",
-        7
-      ]
-    ],
-    "拽": [
-      [
-        "react-scan",
-        6
-      ]
-    ],
-    "拽交": [
-      [
-        "react-scan",
-        6
-      ]
-    ],
-    "状": [
-      [
-        "motion-primitives",
-        6
-      ]
-    ],
-    "状态": [
-      [
-        "motion-primitives",
-        6
       ]
     ],
     "组": [
       [
-        "shadcn-ui",
-        13
-      ],
-      [
-        "motion-primitives",
-        7
-      ],
-      [
-        "react-scan",
-        6
-      ]
-    ],
-    "组合": [
-      [
-        "shadcn-ui",
+        "jakubantalik",
         7
       ]
     ],
     "组件": [
       [
-        "shadcn-ui",
-        13
-      ],
-      [
-        "motion-primitives",
+        "jakubantalik",
         7
-      ],
-      [
-        "react-scan",
-        6
-      ]
-    ],
-    "组件集合": [
-      [
-        "shadcn-ui",
-        7
-      ]
-    ],
-    "最": [
-      [
-        "motion-primitives",
-        6
-      ],
-      [
-        "tweakcn",
-        6
-      ]
-    ],
-    "最好": [
-      [
-        "motion-primitives",
-        6
-      ]
-    ],
-    "最终": [
-      [
-        "tweakcn",
-        6
       ]
     ],
     "做": [
       [
-        "shadcn-ui",
+        "jakubantalik",
         6
+      ]
+    ],
+    "做输": [
+      [
+        "jakubantalik",
+        6
+      ]
+    ],
+    "ai": [
+      [
+        "excalidraw-diagram-skill",
+        16
       ],
       [
-        "react-scan",
+        "architecture-diagram",
+        8
+      ],
+      [
+        "uiprompt",
         6
       ]
     ],
-    "做列": [
+    "arc": [
       [
-        "react-scan",
-        6
+        "architecture-diagram",
+        10
       ]
     ],
-    "做中": [
+    "arch": [
       [
-        "shadcn-ui",
-        6
+        "architecture-diagram",
+        10
       ]
     ],
-    "ani": [
+    "archi": [
       [
-        "motion-primitives",
-        8
+        "architecture-diagram",
+        10
       ]
     ],
-    "anim": [
+    "archit": [
       [
-        "motion-primitives",
-        8
+        "architecture-diagram",
+        10
       ]
     ],
-    "anima": [
+    "archite": [
       [
-        "motion-primitives",
-        8
+        "architecture-diagram",
+        10
       ]
     ],
-    "animat": [
+    "architec": [
       [
-        "motion-primitives",
-        8
+        "architecture-diagram",
+        10
       ]
     ],
-    "animati": [
+    "architect": [
       [
-        "motion-primitives",
-        8
+        "architecture-diagram",
+        10
       ]
     ],
-    "animatio": [
+    "architectu": [
       [
-        "motion-primitives",
-        8
+        "architecture-diagram",
+        10
       ]
     ],
-    "animation": [
+    "architecture": [
       [
-        "motion-primitives",
-        8
+        "architecture-diagram",
+        10
       ]
     ],
     "com": [
       [
-        "shadcn-ui",
+        "jakubantalik",
         5
       ],
       [
-        "motion-primitives",
+        "uiprompt",
         5
       ]
     ],
     "comp": [
       [
-        "shadcn-ui",
+        "jakubantalik",
         5
       ],
       [
-        "motion-primitives",
+        "uiprompt",
         5
       ]
     ],
     "compo": [
       [
-        "shadcn-ui",
+        "jakubantalik",
         5
       ],
       [
-        "motion-primitives",
+        "uiprompt",
         5
       ]
     ],
     "compon": [
       [
-        "shadcn-ui",
+        "jakubantalik",
         5
       ],
       [
-        "motion-primitives",
+        "uiprompt",
         5
       ]
     ],
     "compone": [
       [
-        "shadcn-ui",
+        "jakubantalik",
         5
       ],
       [
-        "motion-primitives",
+        "uiprompt",
         5
       ]
     ],
     "componen": [
       [
-        "shadcn-ui",
+        "jakubantalik",
         5
       ],
       [
-        "motion-primitives",
+        "uiprompt",
         5
       ]
     ],
     "component": [
       [
-        "shadcn-ui",
+        "jakubantalik",
         5
       ],
       [
-        "motion-primitives",
+        "uiprompt",
         5
-      ]
-    ],
-    "css": [
-      [
-        "shadcn-ui",
-        6
-      ],
-      [
-        "tweakcn",
-        6
-      ]
-    ],
-    "deb": [
-      [
-        "react-scan",
-        8
-      ]
-    ],
-    "debu": [
-      [
-        "react-scan",
-        8
-      ]
-    ],
-    "debug": [
-      [
-        "react-scan",
-        8
       ]
     ],
     "des": [
       [
-        "shadcn-ui",
+        "jakubantalik",
         8
       ]
     ],
     "desi": [
       [
-        "shadcn-ui",
+        "jakubantalik",
         8
       ]
     ],
     "desig": [
       [
-        "shadcn-ui",
+        "jakubantalik",
         8
       ]
     ],
     "design": [
       [
-        "shadcn-ui",
+        "jakubantalik",
         8
       ]
     ],
-    "int": [
+    "dia": [
       [
-        "motion-primitives",
-        8
+        "excalidraw-diagram-skill",
+        20
+      ],
+      [
+        "architecture-diagram",
+        10
       ]
     ],
-    "inte": [
+    "diag": [
       [
-        "motion-primitives",
-        8
+        "excalidraw-diagram-skill",
+        20
+      ],
+      [
+        "architecture-diagram",
+        10
       ]
     ],
-    "inter": [
+    "diagr": [
       [
-        "motion-primitives",
-        8
+        "excalidraw-diagram-skill",
+        20
+      ],
+      [
+        "architecture-diagram",
+        10
       ]
     ],
-    "intera": [
+    "diagra": [
       [
-        "motion-primitives",
-        8
+        "excalidraw-diagram-skill",
+        20
+      ],
+      [
+        "architecture-diagram",
+        10
       ]
     ],
-    "interac": [
+    "diagram": [
       [
-        "motion-primitives",
-        8
+        "excalidraw-diagram-skill",
+        20
+      ],
+      [
+        "architecture-diagram",
+        10
       ]
     ],
-    "interact": [
+    "exc": [
       [
-        "motion-primitives",
-        8
+        "excalidraw-diagram-skill",
+        20
       ]
     ],
-    "interacti": [
+    "exca": [
       [
-        "motion-primitives",
-        8
+        "excalidraw-diagram-skill",
+        20
       ]
     ],
-    "interactio": [
+    "excal": [
       [
-        "motion-primitives",
-        8
+        "excalidraw-diagram-skill",
+        20
       ]
     ],
-    "interaction": [
+    "excali": [
       [
-        "motion-primitives",
-        8
+        "excalidraw-diagram-skill",
+        20
+      ]
+    ],
+    "excalid": [
+      [
+        "excalidraw-diagram-skill",
+        20
+      ]
+    ],
+    "excalidr": [
+      [
+        "excalidraw-diagram-skill",
+        20
+      ]
+    ],
+    "excalidra": [
+      [
+        "excalidraw-diagram-skill",
+        20
+      ]
+    ],
+    "excalidraw": [
+      [
+        "excalidraw-diagram-skill",
+        20
+      ]
+    ],
+    "jak": [
+      [
+        "jakubantalik",
+        10
+      ]
+    ],
+    "jaku": [
+      [
+        "jakubantalik",
+        10
+      ]
+    ],
+    "jakub": [
+      [
+        "jakubantalik",
+        10
+      ]
+    ],
+    "jakuba": [
+      [
+        "jakubantalik",
+        10
+      ]
+    ],
+    "jakuban": [
+      [
+        "jakubantalik",
+        10
+      ]
+    ],
+    "jakubant": [
+      [
+        "jakubantalik",
+        10
+      ]
+    ],
+    "jakubanta": [
+      [
+        "jakubantalik",
+        10
+      ]
+    ],
+    "jakubantal": [
+      [
+        "jakubantalik",
+        10
+      ]
+    ],
+    "jakubantalik": [
+      [
+        "jakubantalik",
+        10
       ]
     ],
     "mar": [
       [
-        "motion-primitives",
-        5
+        "excalidraw-diagram-skill",
+        10
       ],
       [
-        "react-scan",
+        "architecture-diagram",
         5
       ]
     ],
     "mark": [
       [
-        "motion-primitives",
-        5
+        "excalidraw-diagram-skill",
+        10
       ],
       [
-        "react-scan",
+        "architecture-diagram",
         5
       ]
     ],
     "marke": [
       [
-        "motion-primitives",
-        5
+        "excalidraw-diagram-skill",
+        10
       ],
       [
-        "react-scan",
+        "architecture-diagram",
         5
       ]
     ],
     "marked": [
       [
-        "motion-primitives",
-        5
+        "excalidraw-diagram-skill",
+        10
       ],
       [
-        "react-scan",
+        "architecture-diagram",
         5
-      ]
-    ],
-    "mot": [
-      [
-        "motion-primitives",
-        16
-      ]
-    ],
-    "moti": [
-      [
-        "motion-primitives",
-        16
-      ]
-    ],
-    "motio": [
-      [
-        "motion-primitives",
-        16
-      ]
-    ],
-    "motion": [
-      [
-        "motion-primitives",
-        16
-      ]
-    ],
-    "ope": [
-      [
-        "react-scan",
-        5
-      ]
-    ],
-    "open": [
-      [
-        "react-scan",
-        5
-      ]
-    ],
-    "per": [
-      [
-        "react-scan",
-        8
-      ]
-    ],
-    "perf": [
-      [
-        "react-scan",
-        8
-      ]
-    ],
-    "perfo": [
-      [
-        "react-scan",
-        8
-      ]
-    ],
-    "perfor": [
-      [
-        "react-scan",
-        8
-      ]
-    ],
-    "perform": [
-      [
-        "react-scan",
-        8
-      ]
-    ],
-    "performa": [
-      [
-        "react-scan",
-        8
-      ]
-    ],
-    "performan": [
-      [
-        "react-scan",
-        8
-      ]
-    ],
-    "performanc": [
-      [
-        "react-scan",
-        8
-      ]
-    ],
-    "performance": [
-      [
-        "react-scan",
-        8
-      ]
-    ],
-    "pri": [
-      [
-        "motion-primitives",
-        10
-      ]
-    ],
-    "prim": [
-      [
-        "motion-primitives",
-        10
-      ]
-    ],
-    "primi": [
-      [
-        "motion-primitives",
-        10
-      ]
-    ],
-    "primit": [
-      [
-        "motion-primitives",
-        10
-      ]
-    ],
-    "primiti": [
-      [
-        "motion-primitives",
-        10
-      ]
-    ],
-    "primitiv": [
-      [
-        "motion-primitives",
-        10
-      ]
-    ],
-    "primitive": [
-      [
-        "motion-primitives",
-        10
-      ]
-    ],
-    "primitives": [
-      [
-        "motion-primitives",
-        10
-      ]
-    ],
-    "rad": [
-      [
-        "shadcn-ui",
-        6
-      ]
-    ],
-    "radi": [
-      [
-        "shadcn-ui",
-        6
-      ]
-    ],
-    "radix": [
-      [
-        "shadcn-ui",
-        6
       ]
     ],
     "rea": [
       [
-        "react-scan",
-        24
-      ],
-      [
-        "shadcn-ui",
-        21
-      ],
-      [
-        "motion-primitives",
-        14
+        "jakubantalik",
+        8
       ]
     ],
     "reac": [
       [
-        "react-scan",
-        24
-      ],
-      [
-        "shadcn-ui",
-        21
-      ],
-      [
-        "motion-primitives",
-        14
+        "jakubantalik",
+        8
       ]
     ],
     "react": [
       [
-        "react-scan",
-        24
+        "jakubantalik",
+        8
+      ]
+    ],
+    "ski": [
+      [
+        "excalidraw-diagram-skill",
+        72
       ],
       [
-        "shadcn-ui",
-        21
+        "architecture-diagram",
+        26
+      ]
+    ],
+    "skil": [
+      [
+        "excalidraw-diagram-skill",
+        72
       ],
       [
-        "motion-primitives",
-        14
+        "architecture-diagram",
+        26
       ]
     ],
-    "sca": [
+    "skill": [
       [
-        "react-scan",
-        10
-      ]
-    ],
-    "scan": [
-      [
-        "react-scan",
-        10
-      ]
-    ],
-    "sha": [
-      [
-        "tweakcn",
-        21
+        "excalidraw-diagram-skill",
+        72
       ],
       [
-        "shadcn-ui",
-        10
-      ]
-    ],
-    "shad": [
-      [
-        "tweakcn",
-        21
-      ],
-      [
-        "shadcn-ui",
-        10
-      ]
-    ],
-    "shadc": [
-      [
-        "tweakcn",
-        21
-      ],
-      [
-        "shadcn-ui",
-        10
-      ]
-    ],
-    "shadcn": [
-      [
-        "tweakcn",
-        21
-      ],
-      [
-        "shadcn-ui",
-        10
-      ]
-    ],
-    "sou": [
-      [
-        "react-scan",
-        5
-      ]
-    ],
-    "sour": [
-      [
-        "react-scan",
-        5
-      ]
-    ],
-    "sourc": [
-      [
-        "react-scan",
-        5
-      ]
-    ],
-    "source": [
-      [
-        "react-scan",
-        5
+        "architecture-diagram",
+        26
       ]
     ],
     "sys": [
       [
-        "shadcn-ui",
+        "jakubantalik",
         8
       ]
     ],
     "syst": [
       [
-        "shadcn-ui",
+        "jakubantalik",
         8
       ]
     ],
     "syste": [
       [
-        "shadcn-ui",
+        "jakubantalik",
         8
       ]
     ],
     "system": [
       [
-        "shadcn-ui",
+        "jakubantalik",
         8
       ]
     ],
     "tai": [
       [
-        "shadcn-ui",
-        14
-      ],
-      [
-        "tweakcn",
-        14
+        "jakubantalik",
+        8
       ]
     ],
     "tail": [
       [
-        "shadcn-ui",
-        14
-      ],
-      [
-        "tweakcn",
-        14
+        "jakubantalik",
+        8
       ]
     ],
     "tailw": [
       [
-        "shadcn-ui",
-        14
-      ],
-      [
-        "tweakcn",
-        14
+        "jakubantalik",
+        8
       ]
     ],
     "tailwi": [
       [
-        "shadcn-ui",
-        14
-      ],
-      [
-        "tweakcn",
-        14
+        "jakubantalik",
+        8
       ]
     ],
     "tailwin": [
       [
-        "shadcn-ui",
-        14
-      ],
-      [
-        "tweakcn",
-        14
+        "jakubantalik",
+        8
       ]
     ],
     "tailwind": [
       [
-        "shadcn-ui",
-        14
-      ],
-      [
-        "tweakcn",
-        14
-      ]
-    ],
-    "the": [
-      [
-        "tweakcn",
+        "jakubantalik",
         8
-      ]
-    ],
-    "them": [
-      [
-        "tweakcn",
-        8
-      ]
-    ],
-    "theme": [
-      [
-        "tweakcn",
-        8
-      ]
-    ],
-    "tok": [
-      [
-        "tweakcn",
-        7
-      ]
-    ],
-    "toke": [
-      [
-        "tweakcn",
-        7
-      ]
-    ],
-    "token": [
-      [
-        "tweakcn",
-        7
-      ]
-    ],
-    "too": [
-      [
-        "tweakcn",
-        5
-      ]
-    ],
-    "tool": [
-      [
-        "tweakcn",
-        5
-      ]
-    ],
-    "twe": [
-      [
-        "tweakcn",
-        10
-      ]
-    ],
-    "twea": [
-      [
-        "tweakcn",
-        10
-      ]
-    ],
-    "tweak": [
-      [
-        "tweakcn",
-        10
-      ]
-    ],
-    "tweakc": [
-      [
-        "tweakcn",
-        10
-      ]
-    ],
-    "tweakcn": [
-      [
-        "tweakcn",
-        10
       ]
     ],
     "ui": [
       [
-        "shadcn-ui",
-        24
+        "uiprompt",
+        15
       ],
       [
-        "tweakcn",
-        6
+        "jakubantalik",
+        8
+      ]
+    ],
+    "uip": [
+      [
+        "uiprompt",
+        10
+      ]
+    ],
+    "uipr": [
+      [
+        "uiprompt",
+        10
+      ]
+    ],
+    "uipro": [
+      [
+        "uiprompt",
+        10
+      ]
+    ],
+    "uiprom": [
+      [
+        "uiprompt",
+        10
+      ]
+    ],
+    "uipromp": [
+      [
+        "uiprompt",
+        10
+      ]
+    ],
+    "uiprompt": [
+      [
+        "uiprompt",
+        10
       ]
     ],
     "usi": [
       [
-        "shadcn-ui",
+        "jakubantalik",
+        5
+      ],
+      [
+        "uiprompt",
         5
       ]
     ],
     "usin": [
       [
-        "shadcn-ui",
+        "jakubantalik",
+        5
+      ],
+      [
+        "uiprompt",
         5
       ]
     ],
     "using": [
       [
-        "shadcn-ui",
+        "jakubantalik",
         5
-      ]
-    ],
-    "wat": [
+      ],
       [
-        "tweakcn",
-        5
-      ]
-    ],
-    "watc": [
-      [
-        "tweakcn",
-        5
-      ]
-    ],
-    "watch": [
-      [
-        "tweakcn",
-        5
-      ]
-    ],
-    "watchi": [
-      [
-        "tweakcn",
-        5
-      ]
-    ],
-    "watchin": [
-      [
-        "tweakcn",
-        5
-      ]
-    ],
-    "watching": [
-      [
-        "tweakcn",
+        "uiprompt",
         5
       ]
     ]
