@@ -20,7 +20,7 @@ const kindMeta: Record<string, { label: string; color: string }> = {
   'open-source': { label: 'Open Source', color: '#f95d9b' },
   tool: { label: 'Tool', color: '#c7ff4d' },
   library: { label: 'Library', color: '#9b8cff' },
-  skill: { label: 'Skill', color: '#8cffde' },
+  skill: { label: 'Skill', color: '#2dd4bf' },
 }
 
 const statusMeta: Record<string, { label: string; color: string }> = {
@@ -413,7 +413,7 @@ export function ResourcesIndex({
 
         <main className={`grid gap-4 py-8 ${isManifestLoading ? 'hidden' : ''}`}>
           {filteredEntries.map((entry) => (
-            <article key={entry.id} className="resource-card">
+            <article key={entry.id} className="resource-card" data-kind={entry.kind}>
               <div className="flex flex-col gap-6 lg:grid lg:grid-cols-[88px_minmax(0,1fr)_220px] lg:items-start">
                 <div className="flex items-start justify-between lg:block">
                   <span className="text-[11px] uppercase tracking-[0.42em] text-white/28">

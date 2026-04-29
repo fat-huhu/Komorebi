@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-04-28T06:10:12.523Z",
-  "total": 5,
+  "generatedAt": "2026-04-29T07:06:19.250Z",
+  "total": 4,
   "resources": [
     {
       "id": "jakubantalik",
@@ -12,7 +12,12 @@
       "status": "using",
       "addedAt": "2026-04-28",
       "source": "official",
-      "tags": ["react", "ui", "tailwind", "design-system"],
+      "tags": [
+        "react",
+        "ui",
+        "tailwind",
+        "design-system"
+      ],
       "stack": [],
       "indexLabel": "01"
     },
@@ -26,7 +31,9 @@
       "status": "using",
       "addedAt": "2026-04-27",
       "source": "official",
-      "tags": ["ui"],
+      "tags": [
+        "ui"
+      ],
       "stack": [],
       "indexLabel": "02"
     },
@@ -40,7 +47,10 @@
       "status": "marked",
       "addedAt": "2026-04-25",
       "source": "github",
-      "tags": ["ai", "skill"],
+      "tags": [
+        "ai",
+        "skill"
+      ],
       "stack": [],
       "indexLabel": "03"
     },
@@ -54,7 +64,10 @@
       "status": "marked",
       "addedAt": "2026-04-25",
       "source": "github",
-      "tags": ["ai", "skill"],
+      "tags": [
+        "ai",
+        "skill"
+      ],
       "stack": [],
       "indexLabel": "04"
     }
