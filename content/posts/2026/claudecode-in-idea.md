@@ -25,7 +25,7 @@ lang: zh-CN
       "enabledMcpjsonServers": [],
       "disabledMcpjsonServers": [],
       "hasTrustDialogAccepted": false,
-      "projectOnboardingSeenCount": 0,
+      "projectOnboardingS[settings.json](../../../../../../.claude/settings.json)eenCount": 0,
       "hasClaudeMdExternalIncludesApproved": false,
       "hasClaudeMdExternalIncludesWarningShown": false
     }
@@ -33,12 +33,23 @@ lang: zh-CN
   "hasCompletedOnboarding": true  // 新增此字段
 }
 ```
+用户目录下的.claude文件夹下有个 settings.json ，加入：  
+```json
+
+{
+  "env": {
+    "ANTHROPIC_AUTH_TOKEN": "$apikey",
+    "ANTHROPIC_BASE_URL": "$baseurl",
+    "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": 1
+  },
+  //.....
+}
 然后  PowerShell：
 ```shell
 [Environment]::SetEnvironmentVariable("ANTHROPIC_AUTH_TOKEN", "sk-xxx", "User")
 [Environment]::SetEnvironmentVariable("ANTHROPIC_BASE_URL", "https://api.ikuncode.cc", "User")
 ```
-最后idea内使用，右上角 选择
+最后idea内使用，右上角 选择 添加自定义智能体
 ![img.png](assets/img2.png)
 进入 acp配置，添加
 ```json
