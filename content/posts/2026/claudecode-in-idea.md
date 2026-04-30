@@ -44,6 +44,7 @@ lang: zh-CN
   },
   //.....
 }
+```
 然后  PowerShell：
 ```shell
 [Environment]::SetEnvironmentVariable("ANTHROPIC_AUTH_TOKEN", "sk-xxx", "User")
