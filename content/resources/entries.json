@@ -50,5 +50,18 @@
     "source": "github",
     "tags": ["ai", "skill"],
     "stack": []
+  },
+  {
+    "id": "petdex",
+    "title": "codex-petdex",
+    "url": "https://petdex.crafter.run/zh",
+    "description": "codex桌宠索引平台",
+    "notes": "codex桌宠索引平台",
+    "kind": "plugin",
+    "status": "marked",
+    "addedAt": "2026-05-06",
+    "source": "github",
+    "tags": ["ai"],
+    "stack": []
   }
 ]
