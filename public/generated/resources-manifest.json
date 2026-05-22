@@ -1,7 +1,23 @@
 {
-  "generatedAt": "2026-04-29T07:06:19.250Z",
-  "total": 4,
+  "generatedAt": "2026-05-22T08:49:13.116Z",
+  "total": 5,
   "resources": [
+    {
+      "id": "petdex",
+      "title": "codex-petdex",
+      "url": "https://petdex.crafter.run/zh",
+      "description": "codex桌宠索引平台",
+      "notes": "codex桌宠索引平台",
+      "kind": "plugin",
+      "status": "marked",
+      "addedAt": "2026-05-06",
+      "source": "github",
+      "tags": [
+        "ai"
+      ],
+      "stack": [],
+      "indexLabel": "01"
+    },
     {
       "id": "jakubantalik",
       "title": "jakubantalik",
@@ -19,7 +35,7 @@
         "design-system"
       ],
       "stack": [],
-      "indexLabel": "01"
+      "indexLabel": "02"
     },
     {
       "id": "uiprompt",
@@ -35,7 +51,7 @@
         "ui"
       ],
       "stack": [],
-      "indexLabel": "02"
+      "indexLabel": "03"
     },
     {
       "id": "architecture-diagram",
@@ -52,7 +68,7 @@
         "skill"
       ],
       "stack": [],
-      "indexLabel": "03"
+      "indexLabel": "04"
     },
     {
       "id": "excalidraw-diagram-skill",
@@ -61,7 +77,7 @@
       "description": "一个手绘风格流程图的skill",
       "notes": "一个手绘风格流程图的skill",
       "kind": "skill",
-      "status": "marked",
+      "status": "using",
       "addedAt": "2026-04-25",
       "source": "github",
       "tags": [
@@ -69,7 +85,7 @@
         "skill"
       ],
       "stack": [],
-      "indexLabel": "04"
+      "indexLabel": "05"
     }
   ]
 }

@@ -1,0 +1,1397 @@
+{
+  "version": 1,
+  "generatedAt": "2026-05-22T08:49:13.115Z",
+  "documents": [
+    {
+      "id": "petdex",
+      "title": "codex-petdex",
+      "url": "https://petdex.crafter.run/zh",
+      "description": "codex桌宠索引平台",
+      "notes": "codex桌宠索引平台",
+      "kind": "plugin",
+      "status": "marked",
+      "addedAt": "2026-05-06",
+      "source": "github",
+      "tags": [
+        "ai"
+      ],
+      "stack": [],
+      "indexLabel": "01"
+    },
+    {
+      "id": "jakubantalik",
+      "title": "jakubantalik",
+      "url": "https://beam.jakubantalik.com/",
+      "description": "一个可以让边框炫彩起来的组件",
+      "notes": "适合做输入框",
+      "kind": "component",
+      "status": "using",
+      "addedAt": "2026-04-28",
+      "source": "official",
+      "tags": [
+        "react",
+        "ui",
+        "tailwind",
+        "design-system"
+      ],
+      "stack": [],
+      "indexLabel": "02"
+    },
+    {
+      "id": "uiprompt",
+      "title": "uiprompt",
+      "url": "https://www.uiprompt.site/zh/styles",
+      "description": "一个查看ui风格提示词的网站",
+      "notes": "适合给ai投喂基础风格",
+      "kind": "component",
+      "status": "using",
+      "addedAt": "2026-04-27",
+      "source": "official",
+      "tags": [
+        "ui"
+      ],
+      "stack": [],
+      "indexLabel": "03"
+    },
+    {
+      "id": "architecture-diagram",
+      "title": "architecture-diagram",
+      "url": "https://github.com/Cocoon-AI/architecture-diagram-generator",
+      "description": "一个画流程图的skill",
+      "notes": "一个画流程图的skill",
+      "kind": "skill",
+      "status": "marked",
+      "addedAt": "2026-04-25",
+      "source": "github",
+      "tags": [
+        "ai",
+        "skill"
+      ],
+      "stack": [],
+      "indexLabel": "04"
+    },
+    {
+      "id": "excalidraw-diagram-skill",
+      "title": "excalidraw-diagram-skill",
+      "url": "https://github.com/coleam00/excalidraw-diagram-skill",
+      "description": "一个手绘风格流程图的skill",
+      "notes": "一个手绘风格流程图的skill",
+      "kind": "skill",
+      "status": "using",
+      "addedAt": "2026-04-25",
+      "source": "github",
+      "tags": [
+        "ai",
+        "skill"
+      ],
+      "stack": [],
+      "indexLabel": "05"
+    }
+  ],
+  "postings": {
+    "边": [
+      [
+        "jakubantalik",
+        7
+      ]
+    ],
+    "边框": [
+      [
+        "jakubantalik",
+        7
+      ]
+    ],
+    "彩": [
+      [
+        "jakubantalik",
+        7
+      ]
+    ],
+    "彩起": [
+      [
+        "jakubantalik",
+        7
+      ]
+    ],
+    "查": [
+      [
+        "uiprompt",
+        7
+      ]
+    ],
+    "查看": [
+      [
+        "uiprompt",
+        7
+      ]
+    ],
+    "程": [
+      [
+        "architecture-diagram",
+        13
+      ],
+      [
+        "excalidraw-diagram-skill",
+        13
+      ]
+    ],
+    "程图": [
+      [
+        "architecture-diagram",
+        13
+      ],
+      [
+        "excalidraw-diagram-skill",
+        13
+      ]
+    ],
+    "宠": [
+      [
+        "petdex",
+        13
+      ]
+    ],
+    "宠索": [
+      [
+        "petdex",
+        13
+      ]
+    ],
+    "础": [
+      [
+        "uiprompt",
+        6
+      ]
+    ],
+    "础风": [
+      [
+        "uiprompt",
+        6
+      ]
+    ],
+    "词": [
+      [
+        "uiprompt",
+        7
+      ]
+    ],
+    "词的": [
+      [
+        "uiprompt",
+        7
+      ]
+    ],
+    "的": [
+      [
+        "architecture-diagram",
+        13
+      ],
+      [
+        "excalidraw-diagram-skill",
+        13
+      ],
+      [
+        "jakubantalik",
+        7
+      ],
+      [
+        "uiprompt",
+        7
+      ]
+    ],
+    "的网": [
+      [
+        "uiprompt",
+        7
+      ]
+    ],
+    "的组": [
+      [
+        "jakubantalik",
+        7
+      ]
+    ],
+    "风": [
+      [
+        "uiprompt",
+        13
+      ],
+      [
+        "excalidraw-diagram-skill",
+        13
+      ]
+    ],
+    "风格": [
+      [
+        "uiprompt",
+        13
+      ],
+      [
+        "excalidraw-diagram-skill",
+        13
+      ]
+    ],
+    "风格提示词的网站": [
+      [
+        "uiprompt",
+        7
+      ]
+    ],
+    "格": [
+      [
+        "uiprompt",
+        13
+      ],
+      [
+        "excalidraw-diagram-skill",
+        13
+      ]
+    ],
+    "格流": [
+      [
+        "excalidraw-diagram-skill",
+        13
+      ]
+    ],
+    "格提": [
+      [
+        "uiprompt",
+        7
+      ]
+    ],
+    "个": [
+      [
+        "architecture-diagram",
+        13
+      ],
+      [
+        "excalidraw-diagram-skill",
+        13
+      ],
+      [
+        "jakubantalik",
+        7
+      ],
+      [
+        "uiprompt",
+        7
+      ]
+    ],
+    "个查": [
+      [
+        "uiprompt",
+        7
+      ]
+    ],
+    "个画": [
+      [
+        "architecture-diagram",
+        13
+      ]
+    ],
+    "个可": [
+      [
+        "jakubantalik",
+        7
+      ]
+    ],
+    "个手": [
+      [
+        "excalidraw-diagram-skill",
+        13
+      ]
+    ],
+    "给": [
+      [
+        "uiprompt",
+        6
+      ]
+    ],
+    "合": [
+      [
+        "jakubantalik",
+        6
+      ],
+      [
+        "uiprompt",
+        6
+      ]
+    ],
+    "合给": [
+      [
+        "uiprompt",
+        6
+      ]
+    ],
+    "合做": [
+      [
+        "jakubantalik",
+        6
+      ]
+    ],
+    "画": [
+      [
+        "architecture-diagram",
+        13
+      ]
+    ],
+    "画流": [
+      [
+        "architecture-diagram",
+        13
+      ]
+    ],
+    "绘": [
+      [
+        "excalidraw-diagram-skill",
+        13
+      ]
+    ],
+    "绘风": [
+      [
+        "excalidraw-diagram-skill",
+        13
+      ]
+    ],
+    "基": [
+      [
+        "uiprompt",
+        6
+      ]
+    ],
+    "基础": [
+      [
+        "uiprompt",
+        6
+      ]
+    ],
+    "件": [
+      [
+        "jakubantalik",
+        7
+      ]
+    ],
+    "看": [
+      [
+        "uiprompt",
+        7
+      ]
+    ],
+    "可": [
+      [
+        "jakubantalik",
+        7
+      ]
+    ],
+    "可以": [
+      [
+        "jakubantalik",
+        7
+      ]
+    ],
+    "框": [
+      [
+        "jakubantalik",
+        13
+      ]
+    ],
+    "框炫": [
+      [
+        "jakubantalik",
+        7
+      ]
+    ],
+    "来": [
+      [
+        "jakubantalik",
+        7
+      ]
+    ],
+    "来的": [
+      [
+        "jakubantalik",
+        7
+      ]
+    ],
+    "流": [
+      [
+        "architecture-diagram",
+        13
+      ],
+      [
+        "excalidraw-diagram-skill",
+        13
+      ]
+    ],
+    "流程": [
+      [
+        "architecture-diagram",
+        13
+      ],
+      [
+        "excalidraw-diagram-skill",
+        13
+      ]
+    ],
+    "平": [
+      [
+        "petdex",
+        13
+      ]
+    ],
+    "平台": [
+      [
+        "petdex",
+        13
+      ]
+    ],
+    "起": [
+      [
+        "jakubantalik",
+        7
+      ]
+    ],
+    "起来": [
+      [
+        "jakubantalik",
+        7
+      ]
+    ],
+    "让": [
+      [
+        "jakubantalik",
+        7
+      ]
+    ],
+    "让边": [
+      [
+        "jakubantalik",
+        7
+      ]
+    ],
+    "入": [
+      [
+        "jakubantalik",
+        6
+      ]
+    ],
+    "入框": [
+      [
+        "jakubantalik",
+        6
+      ]
+    ],
+    "示": [
+      [
+        "uiprompt",
+        7
+      ]
+    ],
+    "示词": [
+      [
+        "uiprompt",
+        7
+      ]
+    ],
+    "适": [
+      [
+        "jakubantalik",
+        6
+      ],
+      [
+        "uiprompt",
+        6
+      ]
+    ],
+    "适合": [
+      [
+        "jakubantalik",
+        6
+      ],
+      [
+        "uiprompt",
+        6
+      ]
+    ],
+    "适合给": [
+      [
+        "uiprompt",
+        6
+      ]
+    ],
+    "适合做输入框": [
+      [
+        "jakubantalik",
+        6
+      ]
+    ],
+    "手": [
+      [
+        "excalidraw-diagram-skill",
+        13
+      ]
+    ],
+    "手绘": [
+      [
+        "excalidraw-diagram-skill",
+        13
+      ]
+    ],
+    "输": [
+      [
+        "jakubantalik",
+        6
+      ]
+    ],
+    "输入": [
+      [
+        "jakubantalik",
+        6
+      ]
+    ],
+    "索": [
+      [
+        "petdex",
+        13
+      ]
+    ],
+    "索引": [
+      [
+        "petdex",
+        13
+      ]
+    ],
+    "台": [
+      [
+        "petdex",
+        13
+      ]
+    ],
+    "提": [
+      [
+        "uiprompt",
+        7
+      ]
+    ],
+    "提示": [
+      [
+        "uiprompt",
+        7
+      ]
+    ],
+    "投": [
+      [
+        "uiprompt",
+        6
+      ]
+    ],
+    "投喂": [
+      [
+        "uiprompt",
+        6
+      ]
+    ],
+    "投喂基础风格": [
+      [
+        "uiprompt",
+        6
+      ]
+    ],
+    "图": [
+      [
+        "architecture-diagram",
+        13
+      ],
+      [
+        "excalidraw-diagram-skill",
+        13
+      ]
+    ],
+    "图的": [
+      [
+        "architecture-diagram",
+        13
+      ],
+      [
+        "excalidraw-diagram-skill",
+        13
+      ]
+    ],
+    "网": [
+      [
+        "uiprompt",
+        7
+      ]
+    ],
+    "网站": [
+      [
+        "uiprompt",
+        7
+      ]
+    ],
+    "喂": [
+      [
+        "uiprompt",
+        6
+      ]
+    ],
+    "喂基": [
+      [
+        "uiprompt",
+        6
+      ]
+    ],
+    "炫": [
+      [
+        "jakubantalik",
+        7
+      ]
+    ],
+    "炫彩": [
+      [
+        "jakubantalik",
+        7
+      ]
+    ],
+    "一": [
+      [
+        "architecture-diagram",
+        13
+      ],
+      [
+        "excalidraw-diagram-skill",
+        13
+      ],
+      [
+        "jakubantalik",
+        7
+      ],
+      [
+        "uiprompt",
+        7
+      ]
+    ],
+    "一个": [
+      [
+        "architecture-diagram",
+        13
+      ],
+      [
+        "excalidraw-diagram-skill",
+        13
+      ],
+      [
+        "jakubantalik",
+        7
+      ],
+      [
+        "uiprompt",
+        7
+      ]
+    ],
+    "一个查看": [
+      [
+        "uiprompt",
+        7
+      ]
+    ],
+    "一个画流程图的": [
+      [
+        "architecture-diagram",
+        13
+      ]
+    ],
+    "以": [
+      [
+        "jakubantalik",
+        7
+      ]
+    ],
+    "以让": [
+      [
+        "jakubantalik",
+        7
+      ]
+    ],
+    "引": [
+      [
+        "petdex",
+        13
+      ]
+    ],
+    "引平": [
+      [
+        "petdex",
+        13
+      ]
+    ],
+    "站": [
+      [
+        "uiprompt",
+        7
+      ]
+    ],
+    "桌": [
+      [
+        "petdex",
+        13
+      ]
+    ],
+    "桌宠": [
+      [
+        "petdex",
+        13
+      ]
+    ],
+    "桌宠索引平台": [
+      [
+        "petdex",
+        13
+      ]
+    ],
+    "组": [
+      [
+        "jakubantalik",
+        7
+      ]
+    ],
+    "组件": [
+      [
+        "jakubantalik",
+        7
+      ]
+    ],
+    "做": [
+      [
+        "jakubantalik",
+        6
+      ]
+    ],
+    "做输": [
+      [
+        "jakubantalik",
+        6
+      ]
+    ],
+    "ai": [
+      [
+        "architecture-diagram",
+        8
+      ],
+      [
+        "excalidraw-diagram-skill",
+        8
+      ],
+      [
+        "petdex",
+        8
+      ],
+      [
+        "uiprompt",
+        6
+      ]
+    ],
+    "arc": [
+      [
+        "architecture-diagram",
+        10
+      ]
+    ],
+    "arch": [
+      [
+        "architecture-diagram",
+        10
+      ]
+    ],
+    "archi": [
+      [
+        "architecture-diagram",
+        10
+      ]
+    ],
+    "archit": [
+      [
+        "architecture-diagram",
+        10
+      ]
+    ],
+    "archite": [
+      [
+        "architecture-diagram",
+        10
+      ]
+    ],
+    "architec": [
+      [
+        "architecture-diagram",
+        10
+      ]
+    ],
+    "architect": [
+      [
+        "architecture-diagram",
+        10
+      ]
+    ],
+    "architectu": [
+      [
+        "architecture-diagram",
+        10
+      ]
+    ],
+    "architecture": [
+      [
+        "architecture-diagram",
+        10
+      ]
+    ],
+    "cod": [
+      [
+        "petdex",
+        23
+      ]
+    ],
+    "code": [
+      [
+        "petdex",
+        23
+      ]
+    ],
+    "codex": [
+      [
+        "petdex",
+        23
+      ]
+    ],
+    "com": [
+      [
+        "jakubantalik",
+        5
+      ],
+      [
+        "uiprompt",
+        5
+      ]
+    ],
+    "comp": [
+      [
+        "jakubantalik",
+        5
+      ],
+      [
+        "uiprompt",
+        5
+      ]
+    ],
+    "compo": [
+      [
+        "jakubantalik",
+        5
+      ],
+      [
+        "uiprompt",
+        5
+      ]
+    ],
+    "compon": [
+      [
+        "jakubantalik",
+        5
+      ],
+      [
+        "uiprompt",
+        5
+      ]
+    ],
+    "compone": [
+      [
+        "jakubantalik",
+        5
+      ],
+      [
+        "uiprompt",
+        5
+      ]
+    ],
+    "componen": [
+      [
+        "jakubantalik",
+        5
+      ],
+      [
+        "uiprompt",
+        5
+      ]
+    ],
+    "component": [
+      [
+        "jakubantalik",
+        5
+      ],
+      [
+        "uiprompt",
+        5
+      ]
+    ],
+    "des": [
+      [
+        "jakubantalik",
+        8
+      ]
+    ],
+    "desi": [
+      [
+        "jakubantalik",
+        8
+      ]
+    ],
+    "desig": [
+      [
+        "jakubantalik",
+        8
+      ]
+    ],
+    "design": [
+      [
+        "jakubantalik",
+        8
+      ]
+    ],
+    "dia": [
+      [
+        "architecture-diagram",
+        10
+      ],
+      [
+        "excalidraw-diagram-skill",
+        10
+      ]
+    ],
+    "diag": [
+      [
+        "architecture-diagram",
+        10
+      ],
+      [
+        "excalidraw-diagram-skill",
+        10
+      ]
+    ],
+    "diagr": [
+      [
+        "architecture-diagram",
+        10
+      ],
+      [
+        "excalidraw-diagram-skill",
+        10
+      ]
+    ],
+    "diagra": [
+      [
+        "architecture-diagram",
+        10
+      ],
+      [
+        "excalidraw-diagram-skill",
+        10
+      ]
+    ],
+    "diagram": [
+      [
+        "architecture-diagram",
+        10
+      ],
+      [
+        "excalidraw-diagram-skill",
+        10
+      ]
+    ],
+    "exc": [
+      [
+        "excalidraw-diagram-skill",
+        10
+      ]
+    ],
+    "exca": [
+      [
+        "excalidraw-diagram-skill",
+        10
+      ]
+    ],
+    "excal": [
+      [
+        "excalidraw-diagram-skill",
+        10
+      ]
+    ],
+    "excali": [
+      [
+        "excalidraw-diagram-skill",
+        10
+      ]
+    ],
+    "excalid": [
+      [
+        "excalidraw-diagram-skill",
+        10
+      ]
+    ],
+    "excalidr": [
+      [
+        "excalidraw-diagram-skill",
+        10
+      ]
+    ],
+    "excalidra": [
+      [
+        "excalidraw-diagram-skill",
+        10
+      ]
+    ],
+    "excalidraw": [
+      [
+        "excalidraw-diagram-skill",
+        10
+      ]
+    ],
+    "jak": [
+      [
+        "jakubantalik",
+        10
+      ]
+    ],
+    "jaku": [
+      [
+        "jakubantalik",
+        10
+      ]
+    ],
+    "jakub": [
+      [
+        "jakubantalik",
+        10
+      ]
+    ],
+    "jakuba": [
+      [
+        "jakubantalik",
+        10
+      ]
+    ],
+    "jakuban": [
+      [
+        "jakubantalik",
+        10
+      ]
+    ],
+    "jakubant": [
+      [
+        "jakubantalik",
+        10
+      ]
+    ],
+    "jakubanta": [
+      [
+        "jakubantalik",
+        10
+      ]
+    ],
+    "jakubantal": [
+      [
+        "jakubantalik",
+        10
+      ]
+    ],
+    "jakubantalik": [
+      [
+        "jakubantalik",
+        10
+      ]
+    ],
+    "mar": [
+      [
+        "architecture-diagram",
+        5
+      ],
+      [
+        "petdex",
+        5
+      ]
+    ],
+    "mark": [
+      [
+        "architecture-diagram",
+        5
+      ],
+      [
+        "petdex",
+        5
+      ]
+    ],
+    "marke": [
+      [
+        "architecture-diagram",
+        5
+      ],
+      [
+        "petdex",
+        5
+      ]
+    ],
+    "marked": [
+      [
+        "architecture-diagram",
+        5
+      ],
+      [
+        "petdex",
+        5
+      ]
+    ],
+    "pet": [
+      [
+        "petdex",
+        10
+      ]
+    ],
+    "petd": [
+      [
+        "petdex",
+        10
+      ]
+    ],
+    "petde": [
+      [
+        "petdex",
+        10
+      ]
+    ],
+    "petdex": [
+      [
+        "petdex",
+        10
+      ]
+    ],
+    "plu": [
+      [
+        "petdex",
+        5
+      ]
+    ],
+    "plug": [
+      [
+        "petdex",
+        5
+      ]
+    ],
+    "plugi": [
+      [
+        "petdex",
+        5
+      ]
+    ],
+    "plugin": [
+      [
+        "petdex",
+        5
+      ]
+    ],
+    "rea": [
+      [
+        "jakubantalik",
+        8
+      ]
+    ],
+    "reac": [
+      [
+        "jakubantalik",
+        8
+      ]
+    ],
+    "react": [
+      [
+        "jakubantalik",
+        8
+      ]
+    ],
+    "ski": [
+      [
+        "excalidraw-diagram-skill",
+        36
+      ],
+      [
+        "architecture-diagram",
+        26
+      ]
+    ],
+    "skil": [
+      [
+        "excalidraw-diagram-skill",
+        36
+      ],
+      [
+        "architecture-diagram",
+        26
+      ]
+    ],
+    "skill": [
+      [
+        "excalidraw-diagram-skill",
+        36
+      ],
+      [
+        "architecture-diagram",
+        26
+      ]
+    ],
+    "sys": [
+      [
+        "jakubantalik",
+        8
+      ]
+    ],
+    "syst": [
+      [
+        "jakubantalik",
+        8
+      ]
+    ],
+    "syste": [
+      [
+        "jakubantalik",
+        8
+      ]
+    ],
+    "system": [
+      [
+        "jakubantalik",
+        8
+      ]
+    ],
+    "tai": [
+      [
+        "jakubantalik",
+        8
+      ]
+    ],
+    "tail": [
+      [
+        "jakubantalik",
+        8
+      ]
+    ],
+    "tailw": [
+      [
+        "jakubantalik",
+        8
+      ]
+    ],
+    "tailwi": [
+      [
+        "jakubantalik",
+        8
+      ]
+    ],
+    "tailwin": [
+      [
+        "jakubantalik",
+        8
+      ]
+    ],
+    "tailwind": [
+      [
+        "jakubantalik",
+        8
+      ]
+    ],
+    "ui": [
+      [
+        "uiprompt",
+        15
+      ],
+      [
+        "jakubantalik",
+        8
+      ]
+    ],
+    "uip": [
+      [
+        "uiprompt",
+        10
+      ]
+    ],
+    "uipr": [
+      [
+        "uiprompt",
+        10
+      ]
+    ],
+    "uipro": [
+      [
+        "uiprompt",
+        10
+      ]
+    ],
+    "uiprom": [
+      [
+        "uiprompt",
+        10
+      ]
+    ],
+    "uipromp": [
+      [
+        "uiprompt",
+        10
+      ]
+    ],
+    "uiprompt": [
+      [
+        "uiprompt",
+        10
+      ]
+    ],
+    "usi": [
+      [
+        "jakubantalik",
+        5
+      ],
+      [
+        "uiprompt",
+        5
+      ],
+      [
+        "excalidraw-diagram-skill",
+        5
+      ]
+    ],
+    "usin": [
+      [
+        "jakubantalik",
+        5
+      ],
+      [
+        "uiprompt",
+        5
+      ],
+      [
+        "excalidraw-diagram-skill",
+        5
+      ]
+    ],
+    "using": [
+      [
+        "jakubantalik",
+        5
+      ],
+      [
+        "uiprompt",
+        5
+      ],
+      [
+        "excalidraw-diagram-skill",
+        5
+      ]
+    ]
+  }
+}

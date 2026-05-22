@@ -1,7 +1,52 @@
 {
-  "generatedAt": "2026-04-29T07:06:19.285Z",
-  "total": 1,
+  "generatedAt": "2026-05-22T08:49:13.171Z",
+  "total": 3,
   "posts": [
+    {
+      "slug": "2026/swagger-feign",
+      "title": "关于spring-openapi的get请求 query字段问题",
+      "date": "2026-05-22",
+      "updated": null,
+      "summary": "解决再knife4j中和feign client中的冲突",
+      "tags": [
+        "web",
+        "spring"
+      ],
+      "cover": null,
+      "category": "spring",
+      "accent": "#f95d9b",
+      "lang": "zh-CN",
+      "readingTime": 1,
+      "path": "2026/swagger-feign.json",
+      "headings": [],
+      "media": [],
+      "indexLabel": "01"
+    },
+    {
+      "slug": "2026/claudecode-in-idea",
+      "title": "在idea中使用中转站的claude code",
+      "date": "2026-04-28",
+      "updated": null,
+      "summary": "解决中转站在idea内的使用问题",
+      "tags": [
+        "ide"
+      ],
+      "cover": null,
+      "category": "ide",
+      "accent": "#ff7a1a",
+      "lang": "zh-CN",
+      "readingTime": 1,
+      "path": "2026/claudecode-in-idea.json",
+      "headings": [],
+      "media": [
+        {
+          "alt": "img.png",
+          "src": "generated/media/2026/claudecode-in-idea/img2.png",
+          "fileName": "img2.png"
+        }
+      ],
+      "indexLabel": "02"
+    },
     {
       "slug": "2026/idea-in-codex-version",
       "title": "在idea中更新其托管codex版本",
@@ -13,7 +58,7 @@
       ],
       "cover": null,
       "category": "ide",
-      "accent": "#ff7a1a",
+      "accent": "#6ee7ff",
       "lang": "zh-CN",
       "readingTime": 1,
       "path": "2026/idea-in-codex-version.json",
@@ -25,7 +70,7 @@
           "fileName": "img.png"
         }
       ],
-      "indexLabel": "01"
+      "indexLabel": "03"
     }
   ]
 }
