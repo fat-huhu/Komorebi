@@ -528,6 +528,58 @@
   padding-left: 1.5rem;
 }
 
+.article-prose table {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid rgb(255 255 255 / 0.1);
+  border-radius: 24px;
+  background:
+    linear-gradient(180deg, rgb(255 255 255 / 0.035), transparent 24%),
+    rgb(255 255 255 / 0.02);
+  box-shadow:
+    0 18px 44px rgb(0 0 0 / 0.2),
+    0 0 0 1px rgb(255 255 255 / 0.02) inset;
+}
+
+.article-prose thead {
+  background: rgb(255 255 255 / 0.05);
+}
+
+.article-prose tbody tr + tr {
+  border-top: 1px solid rgb(255 255 255 / 0.08);
+}
+
+.article-prose th,
+.article-prose td {
+  min-width: 9rem;
+  padding: 1rem 1.1rem;
+  text-align: left;
+  vertical-align: top;
+  white-space: normal;
+}
+
+.article-prose th {
+  font-size: 0.84rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgb(255 255 255 / 0.92);
+}
+
+.article-prose td {
+  font-size: 0.98rem;
+  line-height: 1.8;
+  color: rgb(248 244 237 / 0.76);
+}
+
+.article-prose th code,
+.article-prose td code {
+  white-space: nowrap;
+}
+
 .article-prose li + li {
   margin-top: 0.5rem;
 }
