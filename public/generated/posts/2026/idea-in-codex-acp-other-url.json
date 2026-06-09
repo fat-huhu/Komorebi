@@ -1,0 +1,21 @@
+{
+  "slug": "2026/idea-in-codex-acp-other-url",
+  "title": "解决codex acp使用第三方中转站url的问题",
+  "date": "2026-06-08",
+  "updated": null,
+  "summary": "无需修改源码，指定鉴权网关地址即可",
+  "tags": [
+    "ide"
+  ],
+  "cover": null,
+  "category": "ide",
+  "accent": "#6ee7ff",
+  "lang": "zh-CN",
+  "readingTime": 1,
+  "path": "2026/idea-in-codex-acp-other-url.json",
+  "headings": [],
+  "media": [],
+  "indexLabel": "02",
+  "html": "<p>git clone <a href=\"https://github.com/agentclientprotocol/codex-acp#\" rel=\"noreferrer\" target=\"_blank\">https://github.com/agentclientprotocol/codex-acp#</a> 到本地<br><code>npm config set registry https://registry.npmmirror.com</code> 安装依赖<br>在idea的acp配置里添加  </p>\n<pre><code class=\"language-json\"><span class=\"hljs-punctuation\">{</span>\n  <span class=\"hljs-attr\">&quot;agent_servers&quot;</span><span class=\"hljs-punctuation\">:</span> <span class=\"hljs-punctuation\">{</span>\n    <span class=\"hljs-attr\">&quot;Codex Acp&quot;</span><span class=\"hljs-punctuation\">:</span> <span class=\"hljs-punctuation\">{</span>\n      <span class=\"hljs-attr\">&quot;command&quot;</span><span class=\"hljs-punctuation\">:</span> <span class=\"hljs-string\">&quot;npx&quot;</span><span class=\"hljs-punctuation\">,</span>\n      <span class=\"hljs-attr\">&quot;args&quot;</span><span class=\"hljs-punctuation\">:</span> <span class=\"hljs-punctuation\">[</span>\n        <span class=\"hljs-string\">&quot;npm&quot;</span><span class=\"hljs-punctuation\">,</span>\n        <span class=\"hljs-string\">&quot;run&quot;</span><span class=\"hljs-punctuation\">,</span>\n        <span class=\"hljs-string\">&quot;start&quot;</span><span class=\"hljs-punctuation\">,</span>\n        <span class=\"hljs-string\">&quot;--prefix&quot;</span><span class=\"hljs-punctuation\">,</span>\n        <span class=\"hljs-string\">&quot;源码位置&quot;</span>\n      <span class=\"hljs-punctuation\">]</span><span class=\"hljs-punctuation\">,</span>\n      <span class=\"hljs-attr\">&quot;env&quot;</span><span class=\"hljs-punctuation\">:</span> <span class=\"hljs-punctuation\">{</span>\n        <span class=\"hljs-attr\">&quot;CODEX_PATH&quot;</span><span class=\"hljs-punctuation\">:</span> <span class=\"hljs-string\">&quot;node_modules/.bin/codex&quot;</span><span class=\"hljs-punctuation\">,</span>\n        <span class=\"hljs-attr\">&quot;APP_SERVER_LOGS&quot;</span><span class=\"hljs-punctuation\">:</span> <span class=\"hljs-string\">&quot;自己指定一个日志位置&quot;</span><span class=\"hljs-punctuation\">,</span>\n        <span class=\"hljs-attr\">&quot;DEFAULT_AUTH_REQUEST&quot;</span><span class=\"hljs-punctuation\">:</span> <span class=\"hljs-string\">&quot;{\\&quot;methodId\\&quot;:\\&quot;gateway\\&quot;,\\&quot;_meta\\&quot;:{\\&quot;gateway\\&quot;:{\\&quot;baseUrl\\&quot;:\\&quot;中转站url\\&quot;,\\&quot;providerName\\&quot;:\\&quot;MyGateway\\&quot;,\\&quot;headers\\&quot;:{\\&quot;Authorization\\&quot;:\\&quot;Bearer api-key\\&quot;}}}}&quot;</span>\n      <span class=\"hljs-punctuation\">}</span>\n    <span class=\"hljs-punctuation\">}</span>\n  <span class=\"hljs-punctuation\">}</span>\n<span class=\"hljs-punctuation\">}</span>\n</code></pre>\n<p>然后就可以正常使用了</p>\n",
+  "plainText": "git clone https://github.com/agentclientprotocol/codex acp# 到本地 安装依赖 在idea的acp配置里添加 然后就可以正常使用了"
+}

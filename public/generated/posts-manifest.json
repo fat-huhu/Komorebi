@@ -1,7 +1,117 @@
 {
-  "generatedAt": "2026-05-22T08:50:32.247Z",
-  "total": 3,
+  "generatedAt": "2026-06-09T09:22:09.955Z",
+  "total": 5,
   "posts": [
+    {
+      "slug": "2026/jvm-vm-thread",
+      "title": "分析虚拟线程原理及使用",
+      "date": "2026-06-09",
+      "updated": null,
+      "summary": "从传统线程模型到虚拟线程",
+      "tags": [
+        "jvm"
+      ],
+      "cover": null,
+      "category": "jvm",
+      "accent": "#c7ff4d",
+      "lang": "zh-CN",
+      "readingTime": 24,
+      "path": "2026/jvm-vm-thread.json",
+      "headings": [
+        {
+          "depth": 2,
+          "text": "写在前面",
+          "id": "写在前面"
+        },
+        {
+          "depth": 2,
+          "text": "Java 微服务并发模型的演进",
+          "id": "java-微服务并发模型的演进"
+        },
+        {
+          "depth": 2,
+          "text": "有栈与无栈：协程模型的核心分歧",
+          "id": "有栈与无栈协程模型的核心分歧"
+        },
+        {
+          "depth": 2,
+          "text": "JVM 虚拟线程的整体结构",
+          "id": "jvm-虚拟线程的整体结构"
+        },
+        {
+          "depth": 2,
+          "text": "虚拟线程的生命周期：mount、unmount、remount",
+          "id": "虚拟线程的生命周期mountunmountremount"
+        },
+        {
+          "depth": 2,
+          "text": "栈：虚拟线程最关键的实现点",
+          "id": "栈虚拟线程最关键的实现点"
+        },
+        {
+          "depth": 2,
+          "text": "阻塞如何变成“可挂起”",
+          "id": "阻塞如何变成可挂起"
+        },
+        {
+          "depth": 2,
+          "text": "Pinning：为什么虚拟线程有时不能卸载",
+          "id": "pinning为什么虚拟线程有时不能卸载"
+        },
+        {
+          "depth": 2,
+          "text": "虚拟线程与平台线程、Reactive 的取舍",
+          "id": "虚拟线程与平台线程reactive-的取舍"
+        },
+        {
+          "depth": 2,
+          "text": "正确使用方式",
+          "id": "正确使用方式"
+        },
+        {
+          "depth": 2,
+          "text": "生产排查：如何证明虚拟线程真的在工作",
+          "id": "生产排查如何证明虚拟线程真的在工作"
+        },
+        {
+          "depth": 2,
+          "text": "一句话总结原理",
+          "id": "一句话总结原理"
+        },
+        {
+          "depth": 2,
+          "text": "参考资料",
+          "id": "参考资料"
+        }
+      ],
+      "media": [
+        {
+          "alt": "虚拟线程挂起恢复与栈 Chunk",
+          "src": "generated/media/2026/jvm-vm-thread/virtual-thread-stack-lifecycle.png",
+          "fileName": "virtual-thread-stack-lifecycle.png"
+        }
+      ],
+      "indexLabel": "01"
+    },
+    {
+      "slug": "2026/idea-in-codex-acp-other-url",
+      "title": "解决codex acp使用第三方中转站url的问题",
+      "date": "2026-06-08",
+      "updated": null,
+      "summary": "无需修改源码，指定鉴权网关地址即可",
+      "tags": [
+        "ide"
+      ],
+      "cover": null,
+      "category": "ide",
+      "accent": "#6ee7ff",
+      "lang": "zh-CN",
+      "readingTime": 1,
+      "path": "2026/idea-in-codex-acp-other-url.json",
+      "headings": [],
+      "media": [],
+      "indexLabel": "02"
+    },
     {
       "slug": "2026/swagger-feign",
       "title": "关于spring-openapi的get请求 query字段问题",
@@ -14,13 +124,13 @@
       ],
       "cover": null,
       "category": "spring",
-      "accent": "#f95d9b",
+      "accent": "#ffb84d",
       "lang": "zh-CN",
       "readingTime": 1,
       "path": "2026/swagger-feign.json",
       "headings": [],
       "media": [],
-      "indexLabel": "01"
+      "indexLabel": "03"
     },
     {
       "slug": "2026/claudecode-in-idea",
@@ -45,7 +155,7 @@
           "fileName": "img2.png"
         }
       ],
-      "indexLabel": "02"
+      "indexLabel": "04"
     },
     {
       "slug": "2026/idea-in-codex-version",
@@ -58,7 +168,7 @@
       ],
       "cover": null,
       "category": "ide",
-      "accent": "#6ee7ff",
+      "accent": "#f95d9b",
       "lang": "zh-CN",
       "readingTime": 1,
       "path": "2026/idea-in-codex-version.json",
@@ -70,7 +180,7 @@
           "fileName": "img.png"
         }
       ],
-      "indexLabel": "03"
+      "indexLabel": "05"
     }
   ]
 }
