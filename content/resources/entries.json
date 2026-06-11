@@ -1,5 +1,31 @@
 [
   {
+    "id": "OpenTUI",
+    "title": "OpenTUI",
+    "url": "https://opentui.com/",
+    "description": "终端ui组件库",
+    "notes": "适合开发cli工具",
+    "kind": "tool",
+    "status": "marked",
+    "addedAt": "2026-06-11",
+    "source": "github",
+    "tags": ["cli", "ui"],
+    "stack": []
+  },
+  {
+    "id": "rustlings",
+    "title": "rustlings",
+    "url": "https://rustlings.iwiki.rs/",
+    "description": "学习rust的网站",
+    "notes": "适合跨语言学习",
+    "kind": "library",
+    "status": "marked",
+    "addedAt": "2026-06-11",
+    "source": "github",
+    "tags": ["rust"],
+    "stack": []
+  },
+  {
     "id": "jakubantalik",
     "title": "jakubantalik",
     "url": "https://beam.jakubantalik.com/",
